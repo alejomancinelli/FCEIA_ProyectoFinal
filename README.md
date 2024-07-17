@@ -13,3 +13,18 @@ In addition to this, you need to add the ESP8266 boards to the Arduino IDE with 
 3. Select the ESP8266 module that you are using. In this case, select **NodeMCU 1.0 (ESP-12E Module)**.
 
 4. Go to `Tools -> Port` and select the appropriate PORT for your device.
+
+## Installing libraries
+You need to install the following libraries in your Arduino IDE to build the web server for this project.
+
+- ESPAsyncWebServer
+- ESPAsyncTCP
+
+## LittleFS
+LittleFS is a lightweight filesystem created for microcontrollers that lets you access the flash memory like you would do in a standard file system on your computer, but it’s simpler and more limited. You can read, write, close, and delete files and folders. 
+
+### Filesystem Uploader
+Before proceeding, you need to have the ESP8266 Uploader Plugin installed in your Arduino IDE. 
+
+- [ArduinoIDE 1.8.x](https://randomnerdtutorials.com/install-esp8266-nodemcu-littlefs-arduino/)
+- [ArduinoIDE 2.1.1 or higher](https://randomnerdtutorials.com/arduino-ide-2-install-esp8266-littlefs/)
