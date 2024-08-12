@@ -33,11 +33,11 @@ void setup()
 void loop()
 {
   float voltage;
-  bl0940.getVoltage( &voltage );
+  bl0940.getVoltageRMS( &voltage );
   Serial.printf("%.2f [V]\n", voltage );
 
   float current;
-  bl0940.getCurrent( &current );
+  bl0940.getCurrentRMS( &current );
   Serial.printf("%.2f [A]\n", current );
 
   float activePower;

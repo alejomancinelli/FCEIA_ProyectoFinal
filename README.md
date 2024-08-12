@@ -19,6 +19,7 @@ You need to install the following libraries in your Arduino IDE to build the web
 
 - ESPAsyncWebServer
 - ESPAsyncTCP
+- TODO: Add MQTT libraries PubSubClient y no me acuerdo cuál otra
 
 ## LittleFS
 LittleFS is a lightweight filesystem created for microcontrollers that lets you access the flash memory like you would do in a standard file system on your computer, but it’s simpler and more limited. You can read, write, close, and delete files and folders. 
@@ -71,7 +72,6 @@ Mosquitto can also be run in the background as a daemon. This has to be done eve
 ```
 mosquitto -d
 ```
-
 We can test if everything is in order by creating a publisher and a subscriber in separate shells:
 
 ```

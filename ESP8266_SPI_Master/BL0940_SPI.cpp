@@ -316,7 +316,7 @@ bool BL0940_SPI::setOverCurrentDetection(float detectionCurrent) {
 
   return true;
 }
-
+  
 bool BL0940_SPI::setCFOutputMode() {
   //MODE[12] CF_UNABLE set 0 : alarm, enable by TPS_CTRL[14] configured
   uint32_t data;
