@@ -1,34 +1,153 @@
 <!DOCTYPE html>
-<html>
+<html lnag="es">
+
 <head>
-  <title>ESP Wi-Fi Manager</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="icon" href="lightning.png" type="image/png" sizes="32x32">
+  <title>Sistema de Monitoreo de Red Eléctrica</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
+
   <div class="topnav">
-    <h1>ESP Wi-Fi Manager</h1>
+    <h1>Sistema de Monitoreo de Red Eléctrica</h1>
   </div>
   <div class="content">
     <div class="card-grid">
       <div class="card">
-        <form action="/" method="POST">
-          <p>
+
+        <p class="page-title">Configuración Wi-Fi</p>
+
+        <form id="wifiForm" action="/" method="POST">
+
+          <div class="form-group">
             <label for="ssid">SSID</label>
-            <input type="text" id ="ssid" name="ssid"><br>
-            <label for="pass">Password</label>
-            <input type="text" id ="pass" name="pass"><br>
-            <label for="ip">IP Address</label>
-            <input type="text" id ="ip" name="ip" value="192.168.1.200"><br>
-            <label for="gateway">Gateway Address</label>
-            <input type="text" id ="gateway" name="gateway" value="192.168.1.1"><br>
-            <input type ="submit" value ="Submit">
-          </p>
+            <input type="text" id="ssid" name="ssid"><br>
+          </div>
+
+          <div class="form-group">
+            <label for="pass">Contraseña</label>
+            <input type="password" id="password" name="pass"><br>
+          </div>
+
+          <button type="button" class="advanced-options-button" onclick="showHideFields()">
+            Opciones avanzadas
+          </button>
+
+          <br><br>
+
+          <div id="hidden-fields">
+
+            <div id="static-ip-checkbox">
+              <label for="static-ip-enable">IP Estática</label>
+              <input type="checkbox" id="static-ip-enable" name="static-ip-enable"/>
+            </div>
+
+            <div class="form-group">
+              <label for="static-ip">Dirección IP</label>
+              <input type="text" id="static-ip" name="static-ip" disabled="true" value="192.168.1.200"><br>
+            </div>
+
+            <div class="form-group">
+              <label for="gateway">Gateway Address</label>
+              <input type="text" id="gateway" name="gateway" disabled="true" value="192.168.1.1"><br>
+            </div>
+
+          </div>
+          
+          <div class="form-buttons">
+            <input type="submit" id="saveButton" value="Guardar">
+            <button type="button" id="cancelButton">Cancelar</button>
+          </div>
         </form>
+
+        <div id="overlay"></div>
+        <div id="popup">
+          <p>Datos guardados correctamente</p>
+          <button id="closePopup">Cerrar</button>
+        </div>
+
       </div>
     </div>
   </div>
+
+  <script>
+    // Hacer una solicitud GET al servidor para obtener los datos dinámicos
+    fetch('/getConfig')
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById('ssid').value = data.ssid;
+        document.getElementById('password').value = data.password;
+        document.getElementById('static-ip-enable').value = data.static-ip-enable;
+        document.getElementById('static-ip').value = data.static-ip;
+        document.getElementById('gateway').value = data.gateway;
+      })
+      .catch(error => console.error('Error al obtener los datos:', error));
+      
+    // --------------------------------------------------
+    // Muestra los campos al tildar el checkbox
+    var checkbox = document.getElementById('static-ip-enable');
+    var fields = document.querySelectorAll('#hidden-fields .form-group input');
+    
+    checkbox.addEventListener('change', function() {
+      fields.forEach(function(field) {
+        if (checkbox.checked) {
+          field.disabled = false;
+        } else {
+          field.disabled = true;
+        }
+      });
+    });
+    
+    function showHideFields() {
+      var divFields = document.getElementById('hidden-fields');
+      var advanceOptionsButton = document.querySelector('.advanced-options-button')
+      
+      divFields.classList.toggle('show');
+      advanceOptionsButton.classList.toggle('active');
+    }
+    
+    // --------------------------------------------------
+    // Mostrar el pop-up al guardar
+    const saveButton = document.getElementById("saveButton");
+    const popup = document.getElementById("popup");
+    const overlay = document.getElementById("overlay");
+    const cerrarPopup = document.getElementById("closePopup");
+    
+    saveButton.addEventListener("click", () => {
+      popup.style.display = "block";
+      overlay.style.display = "block";
+    });
+    
+    // Ocultar el pop-up al cerrar
+    closePopup.addEventListener("click", () => {
+      popup.style.display = "none";
+      overlay.style.display = "none";
+    });
+    
+    // También puedes cerrar el pop-up haciendo clic en el fondo oscuro
+    overlay.addEventListener("click", () => {
+      popup.style.display = "none";
+      overlay.style.display = "none";
+    });
+    
+    // --------------------------------------------------
+    // Borrar los campos al apretar cancel
+    document.getElementById("cancelButton").addEventListener("click", () => {
+      const form = document.getElementById("wifiForm");
+      
+      form.reset();
+    });
+    
+  </script>
+
 </body>
+
 </html>
