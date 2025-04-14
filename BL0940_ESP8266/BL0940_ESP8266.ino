@@ -8,6 +8,8 @@
 #include <WiFiUdp.h>
 #include <NTPClient.h>
 
+#include "circularBuffer.hpp"
+
 typedef struct {
   const char* ssid;
   const char* password;
@@ -18,7 +20,6 @@ typedef struct {
 
 WifiConfigParams wifiConfig;
 
-bool restart = false;
 bool apRunning = false;
 
 // -------------------------------------------------------------- //
@@ -69,6 +70,7 @@ void saveConfig(const WifiConfigParams& config)
   }
 
   serializeJson(doc, file);
+  
   file.close();
   Serial.println("Wifi config saved");
 }
@@ -98,6 +100,10 @@ void loadConfig(WifiConfigParams& config)
     return;
   }
 
+  // Prints saved data
+  serializeJson(doc, Serial);
+  Serial.println();
+
   config.ssid = strdup(doc["ssid"] | "");
   config.password = strdup(doc["password"] | "");
   config.staticIpEnable = doc["static_ip_enable"] | false;
@@ -120,6 +126,12 @@ unsigned long lastMillisSync;                 // Último tiempo de sincronizaci�
 unsigned long lastNTPUpdate = 0;              // Última sincronización con NTP
 const unsigned long syncInterval = 3600000;   // 1 hora en milisegundos
 
+long prevNtpRetryTime = 0;
+#define NTP_RETRY_TIME 2000
+
+bool ntpStarted = false;
+bool ntpSync = false;
+
 /**
  * @brief Controls and updates system time every X time
  */
@@ -130,18 +142,24 @@ void timeControl(void)
     timeClient.update();
     updateLocalTime();  // Actualiza la hora con NTP
     lastNTPUpdate = millis();  // Guarda el tiempo de la última actualización
-  } else {
-    updateTimeWithoutNTP();  // Sigue actualizando sin Internet
-  }
+  } 
 }
 
 /**
  * @brief Updates local time with the NTP information
  */
-void updateLocalTime(void) 
+bool updateLocalTime(void) 
 {
+  if (!timeClient.update()) {
+    Serial.println("NTP update failed");
+    return false;
+  }
+
   currentTime = timeClient.getEpochTime(); // Obtiene la hora en formato UNIX
+  Serial.print("Current time: ");
+  Serial.println(currentTime);
   lastMillisSync = millis();  // Guarda el tiempo del último sync
+  return true;
 }
 
 /**
@@ -161,8 +179,13 @@ void updateTimeWithoutNTP(void)
  */
 String getFormattedTime(void) 
 {
+  updateTimeWithoutNTP();
+  
   struct tm *timeInfo;
   timeInfo = localtime(&currentTime);  // Convierte el tiempo UNIX a estructura de fecha y hora
+
+  Serial.print("Current time: ");
+  Serial.println(currentTime);
 
   char buffer[20];  
   strftime(buffer, 20, "%d/%m/%Y %H:%M:%S", timeInfo); // Formato DD/MM/YYYY HH:MM:SS
@@ -174,59 +197,7 @@ String getFormattedTime(void)
 // -------------------- [ Circular Buffer ] --------------------- //
 // -------------------------------------------------------------- //
 
-#define MAX_DATA 300  // Tamaño máximo de la cola
-
-// Creamos un arreglo de strings para almacenar los mensajes
-String dataQueue[MAX_DATA];
-
-// Índices de la cola circular
-int writeIndex = 0;
-int readIndex = 0;
-
-/**
- * @brief Saves a new data into the circular buffer
- *
- * @param mqttMessage message to save in the buffer
- */
-void saveData(String mqttMessage) {
-  // Guardar el mensaje en el índice de escritura
-  dataQueue[writeIndex] = mqttMessage;
-
-  // Avanzar el índice de escritura (y si llega al final, vuelve al principio)
-  writeIndex = (writeIndex + 1) % MAX_DATA;
-
-  // Si la cola está llena, el índice de lectura se mueve para sobrescribir los datos más antiguos
-  if (writeIndex == readIndex) {
-      readIndex = (readIndex + 1) % MAX_DATA;
-  }
-
-  Serial.println("Dato guardado en índice " + String(writeIndex));
-}
-
-/**
- * @brief Returns the next unread data in the circular buffer
- *
- * @return message saved in the buffer
- */
-String getSavedData(void) {
-  if (readIndex == writeIndex) {
-      // Si los índices son iguales, significa que no hay datos nuevos
-      return "";
-  }
-
-  // Recuperar el mensaje más antiguo (el próximo en la cola)
-  String data = dataQueue[readIndex];
-  
-  // Avanzar el índice de lectura
-  readIndex = (readIndex + 1) % MAX_DATA;
-
-  return data;
-}
-
-int amountOfSavedData(void)
-{
-  return abs(writeIndex - readIndex);
-}
+CircularBuffer circularBuffer;
 
 // -------------------------------------------------------------- //
 // --------------------- [ Config Button ] ---------------------- //
@@ -303,7 +274,7 @@ enum WIFI_ERROR_CODES {
 };
 
 #define RETRY_THRESHOLD 5000 // 5 seg
-long prevRetryTime = 0;
+long prevWifiRetryTime = 0;
 bool wifiStarted = false;
 
 // Initialize WiFi
@@ -375,7 +346,7 @@ void initAP(WifiConfigParams &config)
 
   // Get wifi configuration
   server.on("/", HTTP_POST, [&config](AsyncWebServerRequest *request) {
-    int params = request->params();
+    int params = request->params(); // TODO: Creo que este no está andando?
     for (int i=0; i<params; i++) {
       AsyncWebParameter* p = request->getParam(i);
       if (p->isPost()) {
@@ -414,8 +385,7 @@ void initAP(WifiConfigParams &config)
 
     saveConfig(config); 
 
-    restart = true;
-    // request->send(200, "text/plain", "Done. ESP will restart, connect to your router and go to IP address: " + String(config.staticIp));
+    // TODO: Ver bien cómo mostrar la página después
   });
   
   server.begin();
@@ -433,7 +403,7 @@ const char* MQTT_TOPIC = "mi/topico/prueba";    // Tópico donde publicar
 WiFiClient espClient;  
 PubSubClient mqttClient(espClient);
 
-#define MQTT_RETRY_THRESHOLD 2000 // 5 seg
+#define MQTT_RETRY_THRESHOLD 2000 // 2 seg
 
 bool mqttActive = true; // Bandera para controlar el estado de MQTT
 
@@ -464,7 +434,7 @@ void connectToMQTT()
   static long prevMqttRetryTime = 0;
 
   if (millis() - prevMqttRetryTime >= MQTT_RETRY_THRESHOLD) {
-    prevRetryTime = millis();
+    prevWifiRetryTime = millis();
     
     Serial.println("Conectando al broker MQTT...");
     if (mqttClient.connect("ESP8266Client")) { // Nombre del cliente MQTT
@@ -512,6 +482,7 @@ void mqttConnectionControl()
 enum mefStates {
   sWebServer = 0,
   sConnectWifiSta,
+  sSyncTime,
   sReadEnergy,
   sSendValues,
   sStandBy,
@@ -520,8 +491,10 @@ enum mefStates {
 int state = 0;
 bool stateEntry = true;
 
-#define READING_THS           500     // 0.5 seg
-#define SAVE_DATA_THS         300000  // 5.0 min
+// #define READING_THS           500     // 0.5 seg
+#define READING_THS           2000     // 2 seg
+// #define SAVE_DATA_THS         300000  // 5.0 min
+#define SAVE_DATA_THS         10000  // 10 seg
 
 unsigned long prevReading = 0;
 unsigned long prevSaveData = 0;
@@ -547,10 +520,6 @@ void setup() {
 
   // Initial state
   (wifiConfig.ssid != NULL) ? state = sConnectWifiSta : state = sWebServer;
-
-  // Iniciar cliente NTP
-  timeClient.begin();
-  updateLocalTime();
 }
 
 // -------------------------------------------------------------- //
@@ -582,7 +551,7 @@ void loop() {
         deinitWifi();
         apRunning = false;
 
-        initWiFi(wifiConfig);
+        loadConfig(wifiConfig);
         
         state = sConnectWifiSta;
         stateEntry = true;
@@ -598,32 +567,45 @@ void loop() {
         stateEntry = false;
         
         if (!wifiStarted) {
-          initWiFi(wifiConfig); // TODO: Checkear que de bien, sino abrir AP
-          wifiStarted = true;
+          if (initWiFi(wifiConfig) != SUCCESS) {
+            state = sWebServer;
+            stateEntry = true;
+          }
+          else {
+            wifiStarted = true;
+          }
         }
 
         mqttActive = false;
 
-        prevRetryTime = millis();
+        prevWifiRetryTime = millis();
         prevSaveData = millis();
       }
 
-      if (millis() - prevRetryTime >= RETRY_THRESHOLD) {
-        prevRetryTime = millis();
+      if (WiFi.status() != WL_CONNECTED && millis() - prevWifiRetryTime >= RETRY_THRESHOLD) {
+        prevWifiRetryTime = millis();
+        Serial.println("Failed to connect. Retrying WiFi connection in 5 seconds...");
+      }
+
+      if (WiFi.status() == WL_CONNECTED) {
+        Serial.println("Wifi connected!.");
+        Serial.println(WiFi.localIP());
         
-        if (WiFi.status() != WL_CONNECTED) {
-          Serial.println("Failed to connect. Retrying WiFi connection in 5 seconds...");
+        // Iniciar cliente NTP
+        if (!ntpStarted) {
+          timeClient.begin();
+          ntpStarted = true;
+
+          state = sSyncTime;
+          stateEntry = true;
         }
         else {
-          Serial.println("Wifi connected!.");
-          Serial.println(WiFi.localIP());
-          
           state = sReadEnergy;
           stateEntry = true;
         }
       }
 
-      if (millis() - prevSaveData >= SAVE_DATA_THS) {
+      if (millis() - prevSaveData >= SAVE_DATA_THS && ntpSync) {
         prevSaveData = millis();
         saveDataFlag = true;
 
@@ -638,15 +620,51 @@ void loop() {
 
       break;
     } 
+    case sSyncTime:
+    {
+      if (stateEntry) {
+        Serial.println("state: sSyncTime");
+        
+        if (updateLocalTime()) {
+          ntpSync = true;
+
+          state = sReadEnergy;
+          stateEntry = true;
+        }
+        
+        prevNtpRetryTime = millis();
+      }
+      
+      if (!ntpSync && millis() - prevNtpRetryTime >= NTP_RETRY_TIME) {
+        if (updateLocalTime()) {
+          ntpSync = true;
+
+          state = sReadEnergy;
+          stateEntry = true;
+        }
+      }
+
+      if (configButton()) {
+        state = sWebServer;
+        stateEntry = true;
+      }
+      
+      break;
+    }
     case sReadEnergy:
     {
       if (stateEntry) {
         Serial.println("state: sReadEnergy");
         stateEntry = false;
+
+        prevReading = millis();
       }
       
       // Lectura del BL0940 y formato del mensaje
-      message = getFormattedTime() + "|" + "Hello World!";
+      static int value = 0;
+      // message = getFormattedTime() + "|" + "Hello World!";
+      message = getFormattedTime() + "|" + value;
+      value += 1;
 
       state = sSendValues;
       stateEntry = true;
@@ -660,6 +678,8 @@ void loop() {
         stateEntry = false;
       }
 
+      static bool savedData = false;
+
       if (mqttActive) {
         if (mqttClient.publish(MQTT_TOPIC, message.c_str())) {
           Serial.println("Mensaje publicado! Mensaje: ");
@@ -667,10 +687,12 @@ void loop() {
 
           prevSendData = millis();
 
-          if (amountOfSavedData() != 0) {
-            message = getSavedData();
+          if (circularBuffer.amountOfSavedData() != 0) {
+            message = circularBuffer.getSavedData();
+            savedData = true;
           }
           else {
+            savedData = false;
             state = sStandBy;
             stateEntry = true;
           }
@@ -682,12 +704,10 @@ void loop() {
         
         prevSendData = millis();
         
-        saveData(message);
-        state = sConnectWifiSta;
-        stateEntry = true;
+        circularBuffer.saveData(message);
       }
       
-      if (millis() - prevReading > READING_THS) {
+      if (millis() - prevReading > READING_THS && !savedData) {
         state = sReadEnergy;
         stateEntry = true;
       }
