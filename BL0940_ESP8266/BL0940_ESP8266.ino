@@ -9,6 +9,7 @@
 #include <NTPClient.h>
 
 #include "circularBuffer.hpp"
+#include "BL0940_SPI.hpp"
 
 typedef struct {
   const char* ssid;
@@ -16,11 +17,16 @@ typedef struct {
   bool staticIpEnable;
   const char* staticIp;
   const char* gateway;
-} WifiConfigParams;
+  bool customMqttBroker;
+  const char* mqttBroker;
+  int mqttPort;
+} energyMeterConfigParams;
 
-WifiConfigParams wifiConfig;
+energyMeterConfigParams energyMeterConfig;
 
 bool apRunning = false;
+
+BL0940_SPI bl0940(SS);
 
 // -------------------------------------------------------------- //
 // ------------------------ [ LittleFS ] ------------------------ //
@@ -53,7 +59,7 @@ const char* configPath = "/config.json";
  * 
  * @param config 
  */
-void saveConfig(const WifiConfigParams& config) 
+void saveConfig(const energyMeterConfigParams& config) 
 {
   DynamicJsonDocument doc(256);
 
@@ -62,6 +68,9 @@ void saveConfig(const WifiConfigParams& config)
   doc["static_ip_enable"] = config.staticIpEnable;
   doc["static_ip"] = config.staticIp;
   doc["gateway"] = config.gateway;
+  doc["custom_mqtt_broker"] = config.customMqttBroker;
+  doc["mqtt_broker"] = config.mqttBroker;
+  doc["mqtt_port"] = config.mqttPort;
 
   File file = LittleFS.open(configPath, "w");
   if (!file) {
@@ -80,7 +89,7 @@ void saveConfig(const WifiConfigParams& config)
  * 
  * @param config 
  */
-void loadConfig(WifiConfigParams& config) 
+void loadConfig(energyMeterConfigParams& config) 
 {
   if (!LittleFS.exists(configPath)) {
     Serial.println("File doesn't exist");
@@ -109,6 +118,9 @@ void loadConfig(WifiConfigParams& config)
   config.staticIpEnable = doc["static_ip_enable"] | false;
   config.staticIp = strdup(doc["static_ip"] | "");
   config.gateway = strdup(doc["gateway"] | "");
+  config.customMqttBroker = doc["customMqttBroker"] | false;
+  config.mqttBroker = strdup(doc["mqtt_broker"] | "");
+  config.mqttPort = doc["mqtt_port"] | 0;
 
   file.close();
 }
@@ -188,7 +200,7 @@ String getFormattedTime(void)
   Serial.println(currentTime);
 
   char buffer[20];  
-  strftime(buffer, 20, "%d/%m/%Y %H:%M:%S", timeInfo); // Formato DD/MM/YYYY HH:MM:SS
+  strftime(buffer, 20, "%Y-%m-%d %H:%M:%S", timeInfo); // Formato DD/MM/YYYY HH:MM:SS
 
   return String(buffer);
 }
@@ -205,7 +217,7 @@ CircularBuffer circularBuffer;
 
 #define DEBOUNCE_DELAY 50 
 
-const int WIFI_RESET_BUTTON = 14;
+const int WIFI_RESET_BUTTON = 5;
 
 bool configButtonState() 
 {
@@ -250,8 +262,93 @@ bool configButton()
 }
 
 // -------------------------------------------------------------- //
+// -------------------------- [ MQTT ] -------------------------- //
+// -------------------------------------------------------------- //
+
+const char* MQTT_SERVER = "raspberrypi.local";  // Dirección del broker MQTT
+const int MQTT_PORT = 1883;                     // Puerto MQTT (usualmente 1883)
+const char* MQTT_TOPIC = "energyMeter";         // Tópico donde publicar
+
+WiFiClient espClient;  
+PubSubClient mqttClient(espClient);
+
+#define MQTT_RETRY_THRESHOLD 2000 // 2 seg
+
+bool mqttActive = true; // Bandera para controlar el estado de MQTT
+
+String message;
+
+void updateMqttServer(const char* mqtt_server, const int mqtt_port)
+{
+  static IPAddress lastResolvedIP;
+  IPAddress resolvedIP;
+   
+  if (WiFi.hostByName(mqtt_server, resolvedIP)) {
+    if (resolvedIP != lastResolvedIP) {
+      Serial.print("Nueva IP resuelta para MQTT: ");
+      Serial.println(resolvedIP);
+
+      lastResolvedIP = resolvedIP;
+      mqttClient.setServer(resolvedIP, mqtt_port);
+    }
+  } 
+  else {
+    Serial.print("No se pudo resolver ");
+    Serial.println(mqtt_server);
+  }
+}
+
+void connectToMQTT() 
+{
+  static long prevMqttRetryTime = 0;
+
+  if (millis() - prevMqttRetryTime >= MQTT_RETRY_THRESHOLD) {
+    prevMqttRetryTime = millis();
+    
+    Serial.println("Conectando al broker MQTT...");
+    if (mqttClient.connect("ESP8266Client")) { // Nombre del cliente MQTT
+      Serial.println("Conectado al broker MQTT.");
+      mqttActive = true;
+    } 
+    else {
+      Serial.print("Falló la conexión MQTT. Código: ");
+      Serial.println(mqttClient.state());
+    }
+  }
+}
+
+// Detener MQTT
+void stopMQTT() 
+{
+  if (mqttClient.connected()) {
+    mqttClient.disconnect(); // Cerrar la conexión con el broker
+    mqttActive = false;  // Desactivar MQTT en el loop
+    Serial.println("MQTT detenido.");
+  }
+}
+
+void mqttConnectionControl()
+{
+  if (WiFi.status() == WL_CONNECTED) {
+    
+    if (!energyMeterConfig.customMqttBroker) {
+      updateMqttServer(MQTT_SERVER, MQTT_PORT); 
+    }
+            
+    if (!mqttClient.connected()) {
+      connectToMQTT();
+      return;
+    }
+
+    mqttClient.loop(); // Mantener conexión MQTT
+  }
+}
+
+// -------------------------------------------------------------- //
 // -------------------------- [ Wifi ] -------------------------- //
 // -------------------------------------------------------------- //
+
+const int LED_WEB_SERVER = 4;
 
 // Create AsyncWebServer object on port 80
 AsyncWebServer server(80);
@@ -262,6 +359,9 @@ const char* PARAM_INPUT_2 = "pass";
 const char* PARAM_INPUT_3 = "static-ip-enable";
 const char* PARAM_INPUT_4 = "static-ip";
 const char* PARAM_INPUT_5 = "gateway";
+const char* PARAM_INPUT_6 = "custom-mqtt-broker";
+const char* PARAM_INPUT_7 = "mqtt-broker";
+const char* PARAM_INPUT_8 = "mqtt-port";
 
 const char* WIFI_AP_SSID = "Energy Monitor";
 const char* WIFI_AP_PASSWORD = NULL;
@@ -278,19 +378,21 @@ long prevWifiRetryTime = 0;
 bool wifiStarted = false;
 
 // Initialize WiFi
-int initWiFi(const WifiConfigParams& config) 
+int initWiFi(const energyMeterConfigParams& config) 
 {
   // Configure static IP
   if (config.staticIpEnable) {
     
     IPAddress localIP;
     IPAddress localGateway;
-    IPAddress subnet(255, 255, 0, 0);
+    IPAddress subnet(255, 255, 255, 0);
+    IPAddress primaryDNS(8, 8, 8, 8);         
+    IPAddress secondaryDNS(8, 8, 4, 4);       
     
     localIP.fromString(config.staticIp);
     localGateway.fromString(config.gateway);
     
-    if (!WiFi.config(localIP, localGateway, subnet)) {
+    if (!WiFi.config(localIP, localGateway, subnet, primaryDNS, secondaryDNS)) {
       Serial.println("STA Failed to configure");
       return STA_FAILED;
     }
@@ -316,7 +418,7 @@ int deinitWifi()
   return SUCCESS;
 }
 
-void initAP(WifiConfigParams &config)
+void initAP(energyMeterConfigParams &config)
 {
   Serial.println("Setting AP (Access Point)");
   WiFi.softAP(WIFI_AP_SSID, WIFI_AP_PASSWORD);
@@ -340,13 +442,16 @@ void initAP(WifiConfigParams &config)
     json += "\"static-ip-enable\":\"" + String(config.staticIpEnable ? "true" : "false") + "\",";
     json += "\"static-ip\":\"" + String(config.staticIp) + "\",";
     json += "\"gateway\":\"" + String(config.gateway) + "\"";
+    json += "\"custom-mqtt-broker\":\"" + String(config.customMqttBroker ? "true" : "false") + "\",";
+    json += "\"mqtt-broker\":\"" + String(config.mqttBroker) + "\",";
+    json += "\"mqtt-port\":\"" + String(config.mqttPort) + "\"";
     json += "}";
     request->send(200, "application/json", json);
   });
 
   // Get wifi configuration
   server.on("/", HTTP_POST, [&config](AsyncWebServerRequest *request) {
-    int params = request->params(); // TODO: Creo que este no está andando?
+    int params = request->params();
     for (int i=0; i<params; i++) {
       AsyncWebParameter* p = request->getParam(i);
       if (p->isPost()) {
@@ -380,99 +485,39 @@ void initAP(WifiConfigParams &config)
           Serial.print("Gateway set to: ");
           Serial.println(config.gateway);
         }
+        // HTTP POST custom mqtt broker value
+        if (p->name() == PARAM_INPUT_6) {
+          config.customMqttBroker = (p->value() == "on") ;
+          Serial.print("Custom MQTT Broker: ");
+          Serial.println(config.staticIpEnable);
+        }
+        // HTTP POST mqtt broker ip value
+        if (p->name() == PARAM_INPUT_7) {
+          config.mqttBroker = p->value().c_str();
+          Serial.print("MQTT Broker set to: ");
+          Serial.println(config.mqttBroker);
+        }
+        // HTTP POST mqtt port value
+        if (p->name() == PARAM_INPUT_8) {
+          config.mqttPort = p->value().toInt();
+          Serial.print("MQTT Port set to: ");
+          Serial.println(config.mqttPort);
+        }
       }
+    }
+
+    if (config.customMqttBroker) {
+      mqttClient.setServer(config.mqttBroker, config.mqttPort);
     }
 
     saveConfig(config); 
 
-    // TODO: Ver bien cómo mostrar la página después
+    // Returns confirmation
+    request->send(200, "text/plain", "OK");
   });
   
   server.begin();
   apRunning = true;
-}
-
-// -------------------------------------------------------------- //
-// -------------------------- [ MQTT ] -------------------------- //
-// -------------------------------------------------------------- //
-
-const char* MQTT_SERVER = "raspberrypi.local";  // Dirección del broker MQTT
-const int MQTT_PORT = 1883;                     // Puerto MQTT (usualmente 1883)
-const char* MQTT_TOPIC = "mi/topico/prueba";    // Tópico donde publicar
-
-WiFiClient espClient;  
-PubSubClient mqttClient(espClient);
-
-#define MQTT_RETRY_THRESHOLD 2000 // 2 seg
-
-bool mqttActive = true; // Bandera para controlar el estado de MQTT
-
-String message;
-
-void updateMqttServer(const char* mqtt_server, const int mqtt_port)
-{
-  static IPAddress lastResolvedIP;
-  IPAddress resolvedIP;
-  
-  if (WiFi.hostByName(mqtt_server, resolvedIP)) {
-    if (resolvedIP != lastResolvedIP) {
-      Serial.print("Nueva IP resuelta para MQTT: ");
-      Serial.println(resolvedIP);
-
-      lastResolvedIP = resolvedIP;
-      mqttClient.setServer(resolvedIP, mqtt_port);
-    }
-  } 
-  else {
-    Serial.print("No se pudo resolver ");
-    Serial.println(mqtt_server);
-  }
-}
-
-void connectToMQTT() 
-{
-  static long prevMqttRetryTime = 0;
-
-  if (millis() - prevMqttRetryTime >= MQTT_RETRY_THRESHOLD) {
-    prevWifiRetryTime = millis();
-    
-    Serial.println("Conectando al broker MQTT...");
-    if (mqttClient.connect("ESP8266Client")) { // Nombre del cliente MQTT
-      Serial.println("Conectado al broker MQTT.");
-      mqttActive = true;
-    } 
-    else {
-      Serial.print("Falló la conexión MQTT. Código: ");
-      Serial.println(mqttClient.state());
-    }
-  }
-}
-
-// Detener MQTT
-void stopMQTT() 
-{
-  if (mqttClient.connected()) {
-    mqttClient.disconnect(); // Cerrar la conexión con el broker
-    mqttActive = false;  // Desactivar MQTT en el loop
-    Serial.println("MQTT detenido.");
-  }
-}
-
-void mqttConnectionControl()
-{
-  if (WiFi.status() == WL_CONNECTED) {
-    
-    // TODO: En todo caso, revisar esto cada X tiempo si es que tarda mucho, o solo una vez, aunque si cambia la IP de la RPi se caga todo
-    updateMqttServer(MQTT_SERVER, MQTT_PORT); 
-    // TODO: Agregar esto también en la página web si se modifica para poder cambiar el broker
-    
-    if (!mqttClient.connected()) {
-      connectToMQTT();
-      return;
-    }
-
-    mqttClient.loop(); // Mantener conexión MQTT
-  }
 }
 
 // -------------------------------------------------------------- //
@@ -492,9 +537,9 @@ int state = 0;
 bool stateEntry = true;
 
 // #define READING_THS           500     // 0.5 seg
-#define READING_THS           2000     // 2 seg
+#define READING_THS              5000    // 5 seg
 // #define SAVE_DATA_THS         300000  // 5.0 min
-#define SAVE_DATA_THS         10000  // 10 seg
+#define SAVE_DATA_THS            30000    // 30 seg
 
 unsigned long prevReading = 0;
 unsigned long prevSaveData = 0;
@@ -512,14 +557,19 @@ void setup() {
   Serial.begin(9600);
   
   pinMode(WIFI_RESET_BUTTON, INPUT_PULLUP);
+  pinMode(LED_WEB_SERVER, OUTPUT);
 
   initFS();
   
   // Load values saved in LittleFS
-  loadConfig(wifiConfig);
+  loadConfig(energyMeterConfig);
 
   // Initial state
-  (wifiConfig.ssid != NULL) ? state = sConnectWifiSta : state = sWebServer;
+  (energyMeterConfig.ssid != NULL) ? state = sConnectWifiSta : state = sWebServer;
+
+  bl0940.Reset();
+  bl0940.setFrequency(50);    // 50[Hz]
+  bl0940.setUpdateRate(800);  // 800[ms]
 }
 
 // -------------------------------------------------------------- //
@@ -543,15 +593,17 @@ void loop() {
 
         if (!apRunning) {
           deinitWifi();
-          initAP(wifiConfig);
+          digitalWrite(LED_WEB_SERVER, HIGH);
+          initAP(energyMeterConfig);
         }
       }
       
       if (configButton()) {
         deinitWifi();
+        digitalWrite(LED_WEB_SERVER, LOW);
         apRunning = false;
 
-        loadConfig(wifiConfig);
+        loadConfig(energyMeterConfig);
         
         state = sConnectWifiSta;
         stateEntry = true;
@@ -567,7 +619,7 @@ void loop() {
         stateEntry = false;
         
         if (!wifiStarted) {
-          if (initWiFi(wifiConfig) != SUCCESS) {
+          if (initWiFi(energyMeterConfig) != SUCCESS) {
             state = sWebServer;
             stateEntry = true;
           }
@@ -606,7 +658,6 @@ void loop() {
       }
 
       if (millis() - prevSaveData >= SAVE_DATA_THS && ntpSync) {
-        prevSaveData = millis();
         saveDataFlag = true;
 
         state = sReadEnergy;
@@ -624,7 +675,7 @@ void loop() {
     {
       if (stateEntry) {
         Serial.println("state: sSyncTime");
-        
+
         if (updateLocalTime()) {
           ntpSync = true;
 
@@ -659,12 +710,33 @@ void loop() {
 
         prevReading = millis();
       }
-      
-      // Lectura del BL0940 y formato del mensaje
-      static int value = 0;
-      // message = getFormattedTime() + "|" + "Hello World!";
-      message = getFormattedTime() + "|" + value;
-      value += 1;
+    
+      // Read BL0940 data
+      float voltage;
+      bl0940.getVoltageRMS( &voltage );
+
+      float current;
+      bl0940.getCurrentRMS( &current );
+
+      float activePower;
+      bl0940.getActivePower( &activePower );
+
+      float activeEnergy;
+      bl0940.getActiveEnergy( &activeEnergy );
+
+      float powerFactor;
+      bl0940.getPowerFactor( &powerFactor );
+
+      // Format MQTT message
+      // YYYY-MM-DD HH:mm:ss|VoltageRMS|CurrentRMS|ActivePower|ActiveEnergy|PowerFactor
+      message = getFormattedTime() + "|" + 
+                voltage + "|" +
+                current + "|" + 
+                activePower + "|" +
+                activeEnergy + "|" +
+                powerFactor;
+      Serial.print("MQTT message: ");
+      Serial.println(message);
 
       state = sSendValues;
       stateEntry = true;

@@ -84,13 +84,23 @@ select {
   text-align: center;
 }
 
-#static-ip-checkbox {
+#static-ip-checkbox,
+#mqtt-broker-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between label and checkbox */
   margin-top: 10px;
   margin-bottom: 30px;
 }
 
-#static-ip-checkbox label {
-  margin-right: 10%;
+#static-ip-checkbox label,
+#mqtt-broker-checkbox label {
+  margin: 0;
+}
+
+#static-ip-checkbox input,
+#mqtt-broker-checkbox input {
+  margin: 0;
 }
 
 #static-ip input {
