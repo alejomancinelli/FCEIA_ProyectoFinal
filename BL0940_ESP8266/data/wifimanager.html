@@ -25,7 +25,8 @@
 
         <p class="page-title">Configuración Wi-Fi</p>
 
-        <form id="wifiForm" action="/" method="POST">
+        <!-- <form id="wifiForm" action="/" method="POST"> -->
+        <form id="wifiForm">
 
           <div class="form-group">
             <label for="ssid">SSID</label>
@@ -59,6 +60,21 @@
               <label for="gateway">Gateway Address</label>
               <input type="text" id="gateway" name="gateway" disabled="true" value="192.168.1.1"><br>
             </div>
+            
+            <div id="mqtt-broker-checkbox">
+              <label for="custom-mqtt-broker">Custom MQTT Broker</label>
+              <input type="checkbox" id="custom-mqtt-broker" name="custom-mqtt-broker"/>
+            </div>
+
+            <div class="form-group">
+              <label for="mqtt-broker">MQTT Broker IP</label>
+              <input type="text" id="mqtt-broker" name="mqtt-broker" disabled="true" value="192.168.1.22"><br>
+            </div>
+            
+            <div class="form-group">
+              <label for="mqtt-port">MQTT Port</label>
+              <input type="text" id="mqtt-port" name="mqtt-port" disabled="true" value="1883"><br>
+            </div>
 
           </div>
           
@@ -88,24 +104,39 @@
         document.getElementById('static-ip-enable').value = data.static-ip-enable;
         document.getElementById('static-ip').value = data.static-ip;
         document.getElementById('gateway').value = data.gateway;
+        document.getElementById('custom-mqtt-broker').value = data.custom-mqtt-broker;
+        document.getElementById('mqtt-broker').value = data.mqtt-broker;
+        document.getElementById('mqtt-port').value = data.mqtt-port;
       })
       .catch(error => console.error('Error al obtener los datos:', error));
       
     // --------------------------------------------------
-    // Muestra los campos al tildar el checkbox
-    var checkbox = document.getElementById('static-ip-enable');
-    var fields = document.querySelectorAll('#hidden-fields .form-group input');
-    
-    checkbox.addEventListener('change', function() {
-      fields.forEach(function(field) {
-        if (checkbox.checked) {
-          field.disabled = false;
-        } else {
-          field.disabled = true;
-        }
+    // Toggle Static IP fields when checkbox is changed
+    var staticIpCheckbox = document.getElementById('static-ip-enable');
+    var staticIpFields = [
+      document.getElementById('static-ip'),
+      document.getElementById('gateway')
+    ];
+
+    staticIpCheckbox.addEventListener('change', function() {
+      staticIpFields.forEach(function(field) {
+        field.disabled = !staticIpCheckbox.checked;
       });
     });
-    
+
+    // Toggle MQTT broker fields when checkbox is changed
+    var mqttCheckbox = document.getElementById('custom-mqtt-broker');
+    var mqttFields = [
+      document.getElementById('mqtt-broker'),
+      document.getElementById('mqtt-port')
+    ];
+
+    mqttCheckbox.addEventListener('change', function() {
+      mqttFields.forEach(function(field) {
+        field.disabled = !mqttCheckbox.checked;
+      });
+    });
+
     function showHideFields() {
       var divFields = document.getElementById('hidden-fields');
       var advanceOptionsButton = document.querySelector('.advanced-options-button')
@@ -146,6 +177,31 @@
       form.reset();
     });
     
+    // --------------------------------------------------
+    document.getElementById("wifiForm").addEventListener("submit", function(e) {
+      e.preventDefault(); // Prevent full page reload
+
+      const formData = new FormData(this);
+
+      fetch("/", {
+        method: "POST",
+        body: formData
+      })
+      .then(response => {
+        if (response.ok) {
+          popup.style.display = "block";
+          overlay.style.display = "block";
+        } else {
+          alert("Error al guardar la configuración");
+        }
+      })
+      .catch(error => {
+        console.error("Error:", error);
+        alert("Error de conexión");
+      });
+    });
+
+
   </script>
 
 </body>
