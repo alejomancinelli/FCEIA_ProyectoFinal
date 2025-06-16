@@ -1,0 +1,6236 @@
+[
+    {
+        "id": "b0af0ce7369514a3",
+        "type": "tab",
+        "label": "Data Acquisition",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "999bc0a47d0df7f6",
+        "type": "tab",
+        "label": "Alarms",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "1f43a42441b6f63c",
+        "type": "tab",
+        "label": "Alarms Historic",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "482bde5f7ef38274",
+        "type": "tab",
+        "label": "Users Management",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "fe72ad617b9a8a48",
+        "type": "tab",
+        "label": "Data analysis",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6f0143a3bde4efa8",
+        "type": "group",
+        "z": "b0af0ce7369514a3",
+        "name": "Get data from ESP8266 via MQTT",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "d71276f4c389b10c",
+            "155fd0e456750fa5",
+            "eb7e0a26a78ab06a",
+            "c6990dfcbb58ec80",
+            "79149befeaf59fa8"
+        ],
+        "x": 54,
+        "y": 39,
+        "w": 672,
+        "h": 122
+    },
+    {
+        "id": "f8b20ae8640a9fc1",
+        "type": "group",
+        "z": "999bc0a47d0df7f6",
+        "name": "Enable/Disable overvoltage alarm",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "9beed1aa2194674b",
+            "411dc7f38c14a2e4",
+            "01aa74f3312d6a52",
+            "c497d63524ee58ad",
+            "ea12c701471b3a3f",
+            "167ef4670e9d9fc1",
+            "21ece2c880e16c30",
+            "62a4b6779751e9d3",
+            "22247cf719379c4c",
+            "15bba15c2ec7944c",
+            "2c22627b96fd09ca",
+            "2dc60a325032678c"
+        ],
+        "x": 14,
+        "y": 359,
+        "w": 1032,
+        "h": 202
+    },
+    {
+        "id": "eaea5e605a485fbb",
+        "type": "group",
+        "z": "999bc0a47d0df7f6",
+        "name": "Check alarms",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "a10d6a22eaf41d85",
+            "1a1c62b470f46324",
+            "6578e0499dea146a",
+            "bdf46ed83973910b",
+            "db6f0f0277716231",
+            "84d32fe5ee201877",
+            "49f987bfacb35dab",
+            "c175c8ce19cfd98d",
+            "04f0d584c06ab2cf"
+        ],
+        "x": 24,
+        "y": 1639,
+        "w": 792,
+        "h": 202
+    },
+    {
+        "id": "b90b2cc6f056d966",
+        "type": "group",
+        "z": "999bc0a47d0df7f6",
+        "name": "Enable/Disable undervoltage alarm",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "ff79ce1ed4bbfa3c",
+            "16632e81b89ee699",
+            "758a84efe9a8f665",
+            "4d8795e6a4c80cc2",
+            "0bcb0ed45c8d2664",
+            "54cb53387b06207a",
+            "48b89a2cba4efde4",
+            "fd32d8e79fe71e0e",
+            "c228f0505765199f",
+            "3c681ca6b4561a74",
+            "9ca28d6980876470",
+            "46895f724a52fe88"
+        ],
+        "x": 14,
+        "y": 579,
+        "w": 1052,
+        "h": 202
+    },
+    {
+        "id": "19e98ffbd0844fc9",
+        "type": "group",
+        "z": "999bc0a47d0df7f6",
+        "name": "Enable/Disable overcurrent alarm",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "df353a5c39172caf",
+            "a88bf7e7ac37823c",
+            "646922c8c97bec7f",
+            "36377791ae9c719e",
+            "f51133c7d7d9e5f4",
+            "fed3fcfa987b1b03",
+            "c91cdae5cf1fb728",
+            "c4bc6f3f7d6b3120",
+            "ff454f680eb9e5ac",
+            "ff9e91a5d091186f",
+            "d4d24181f42a8280",
+            "f19fe9df90aa9314"
+        ],
+        "x": 14,
+        "y": 799,
+        "w": 1032,
+        "h": 202
+    },
+    {
+        "id": "b6295e28d8b86c52",
+        "type": "group",
+        "z": "999bc0a47d0df7f6",
+        "name": "Enable/Disable overconsumption alarm",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "52111ee3d62b7569",
+            "c3aeb147bf96a227",
+            "053e8743baec8a94",
+            "1760f6cd248976d5",
+            "3d00bddfcd6a745c",
+            "87692cc1b3629f22",
+            "3e522c8921c0ee58",
+            "67ea2498effaed84",
+            "e69e6066980b15e7",
+            "d344d82b093adf16",
+            "0cd17987b9c70caf",
+            "70bbde10e4faa7d9"
+        ],
+        "x": 14,
+        "y": 1019,
+        "w": 1052,
+        "h": 202
+    },
+    {
+        "id": "2fbd0fbd8f990790",
+        "type": "group",
+        "z": "999bc0a47d0df7f6",
+        "name": "Set threshold values",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "6fc32d3239ab4da3",
+            "0426487f4ccf5b18",
+            "07b95302d95ea1ba",
+            "e1e9d493f4a18e24",
+            "c7336fa80764f71c",
+            "4e8b176d29e77ba5",
+            "e17627c9227f928e",
+            "9638751ead0f8f73",
+            "dbcc77638fa8f7ff",
+            "0d138de8154c3978",
+            "148199254e0cc55e",
+            "fddb374c7fe31434",
+            "2559e8c84910d219",
+            "1850ef5565c7435a",
+            "f5153970f7d46048"
+        ],
+        "x": 14,
+        "y": 1259,
+        "w": 912,
+        "h": 362
+    },
+    {
+        "id": "c9065a9ed0d57479",
+        "type": "group",
+        "z": "b0af0ce7369514a3",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "f1d0ac2160939dc9",
+            "7f7ee486550e364a",
+            "8745157f0f289caf",
+            "d29e6989bec42e21",
+            "c3301738deb4e1f1",
+            "6b91cdda79e5e1df",
+            "6d9cd7b8d1ac56cd",
+            "546ff7c105f245a7",
+            "3d684a97b057f51d",
+            "2262f67bcda5aa03",
+            "db768e2b48edeb48",
+            "3a38a347c1c97115",
+            "fe735c7e72db98ec",
+            "40a1371555cfd25e",
+            "096b1813f91ac182",
+            "72e4ece2f4c10804",
+            "379a38da8aaf6b1f",
+            "47954f663248a36c",
+            "38ed4e5e142361f7"
+        ],
+        "x": 54,
+        "y": 199,
+        "w": 592,
+        "h": 522
+    },
+    {
+        "id": "e813f2f14ced1eb7",
+        "type": "group",
+        "z": "1f43a42441b6f63c",
+        "name": "Alarm historic table",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "f0a4f6fb14284a77",
+            "5bdee2bf7accab06",
+            "876c099a375d6cc7",
+            "f14de6b435f3f23f",
+            "9e39cfb912a6dce7"
+        ],
+        "x": 54,
+        "y": 39,
+        "w": 652,
+        "h": 122
+    },
+    {
+        "id": "f1691c5914160b1b",
+        "type": "group",
+        "z": "999bc0a47d0df7f6",
+        "name": "Save alarm in DB",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "aab51cbd69c48b70",
+            "883d13997b3b77ca",
+            "e86b7369d042c10f",
+            "7433e8168f2576ab",
+            "c65e88ea024b131f",
+            "6314529a303f7e63"
+        ],
+        "x": 14,
+        "y": 2359,
+        "w": 532,
+        "h": 162
+    },
+    {
+        "id": "b191d481f7cd8b4a",
+        "type": "group",
+        "z": "999bc0a47d0df7f6",
+        "name": "Send Email",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "473a76b058a905f6",
+            "2b9c257870e2496e",
+            "23829b84677b7c76",
+            "b64aeb96ae8f9fd2",
+            "c8cf8966b029e018",
+            "5ad943333ba368e8",
+            "545ca89af81d3639",
+            "eec5bf87f0cb5280",
+            "80bf1b1e6a3e859f",
+            "7949de239c99a34b",
+            "dd880fb8bfd7a821",
+            "5f1b581f07969449",
+            "5a047c9b53637908",
+            "8253cd2582fa03a3",
+            "0fab8c05684619c4",
+            "0a5a0c02d3aa7cc2",
+            "b8c04561b45cba3a",
+            "2e35d729e4594c80",
+            "0e13beaca899fbf6",
+            "d361e9e5d533168e"
+        ],
+        "x": 14,
+        "y": 2599,
+        "w": 1272,
+        "h": 362
+    },
+    {
+        "id": "1102123cbc3891e1",
+        "type": "group",
+        "z": "482bde5f7ef38274",
+        "name": "Add new user",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "273322c83865bde6",
+            "7f7414539189a065",
+            "7e07cb64f4770d81",
+            "3a20b3bd99f04d16",
+            "f129b36a497407b7"
+        ],
+        "x": 34,
+        "y": 159,
+        "w": 592,
+        "h": 122
+    },
+    {
+        "id": "2c8eda0455efa68b",
+        "type": "group",
+        "z": "482bde5f7ef38274",
+        "name": "Update Table",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "59f358c717560f2f",
+            "df6489f2db26559e",
+            "c023858f7988e11b",
+            "b08f8b26dea3da57"
+        ],
+        "x": 34,
+        "y": 39,
+        "w": 492,
+        "h": 82
+    },
+    {
+        "id": "9996a8587542bcf9",
+        "type": "group",
+        "z": "999bc0a47d0df7f6",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "0e790badd828e6a0",
+            "98a6df06f042dc23"
+        ],
+        "x": 894,
+        "y": 2499,
+        "w": 262,
+        "h": 82
+    },
+    {
+        "id": "372d6a6ba94b0d06",
+        "type": "group",
+        "z": "999bc0a47d0df7f6",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "d35f9e07f9b786bf",
+            "13f41426b533b5e0",
+            "adcfde493a44c574",
+            "61679f5c3fc57edd"
+        ],
+        "x": 894,
+        "y": 2359,
+        "w": 572,
+        "h": 122
+    },
+    {
+        "id": "1d5a30a49e64d027",
+        "type": "group",
+        "z": "999bc0a47d0df7f6",
+        "name": "Get alarm settings from DB",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "a7d3afeeaa62f101",
+            "a7166432024eefbd",
+            "63444506723e8328",
+            "71799f604656576d",
+            "4688cb13219dbd40",
+            "a4b2bc47e8e0af15",
+            "d2d00b980929e9bc",
+            "9d16cffe2c80db08",
+            "3b85289612278ea2",
+            "18a752b213e2dd5e",
+            "b2e18e49460b8ac6",
+            "5bbaa5c1f913bf1b",
+            "54d1cee1061e74a1",
+            "ac9070e265e95f8b",
+            "743c83d183a56b65"
+        ],
+        "x": 14,
+        "y": 19,
+        "w": 922,
+        "h": 282
+    },
+    {
+        "id": "036f68430478cdae",
+        "type": "group",
+        "z": "482bde5f7ef38274",
+        "name": "Show users table",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "c8625d2a5063386f",
+            "7a5ef607bed59be3",
+            "906e5e947ee38712",
+            "bff8ddaba624602b",
+            "e9d0bf6fe6b4e4b8",
+            "9330c1a537b1162c",
+            "18a6aa9eb50aefd9"
+        ],
+        "x": 34,
+        "y": 319,
+        "w": 682,
+        "h": 122
+    },
+    {
+        "id": "d88b4db3501fe487",
+        "type": "group",
+        "z": "482bde5f7ef38274",
+        "name": "Delete user",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "6a79a671d86edcd9",
+            "ea321daf8ad14ebc",
+            "e817f941465a3e0a",
+            "d41d17e5ced7d3e1",
+            "d710d7ed206a4588",
+            "7be9f4af7f7adcaf",
+            "2207f1a4c6f5208d",
+            "8bd388d4f217e86b",
+            "8a837eb8e1da3067",
+            "cb7a58acec2c1a7c"
+        ],
+        "x": 34,
+        "y": 479,
+        "w": 952,
+        "h": 202
+    },
+    {
+        "id": "8951563d9636cbc7",
+        "type": "group",
+        "z": "999bc0a47d0df7f6",
+        "name": "Alarms cooldown configuration",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "3cb950e6de8d7af7",
+            "cb11038b5e13ec62",
+            "e69b68ce76a467cd",
+            "178df268cb435b9a",
+            "3fab71b4ace5efcc"
+        ],
+        "x": 14,
+        "y": 2059,
+        "w": 872,
+        "h": 122
+    },
+    {
+        "id": "17df376e8b411382",
+        "type": "group",
+        "z": "999bc0a47d0df7f6",
+        "name": "Overconsumption alarm time ths configuration",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "39262c5f0ed362c6",
+            "193d85ec0623b985",
+            "a03a27bf7979cb5d",
+            "d5f7e3f3a739697f",
+            "efdf2c1c43cf7345"
+        ],
+        "x": 14,
+        "y": 2199,
+        "w": 992,
+        "h": 122
+    },
+    {
+        "id": "636b94da61ad5308",
+        "type": "group",
+        "z": "999bc0a47d0df7f6",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "43678ee4de192165",
+            "c6357c20e5c0e532",
+            "dc4b7f02eafbc6b9"
+        ],
+        "x": 14,
+        "y": 1899,
+        "w": 472,
+        "h": 122
+    },
+    {
+        "id": "56370940d96f10de",
+        "type": "mqtt-broker",
+        "name": "Mosquitto Broker",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "ea8df98f6d598fb3",
+        "type": "mqtt-broker",
+        "name": "currentRMS",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "2da3fa7dd95ff419",
+        "type": "mqtt-broker",
+        "name": "activePower",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "e8189595b0e77054",
+        "type": "mqtt-broker",
+        "name": "activeEnergy",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "aab6ec07b47e0ee1",
+        "type": "mqtt-broker",
+        "name": "powerFactor",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "e55b5dfb4584041e",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "true",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "bf84fbcf15edd73e",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "102f2b0868c8e818",
+        "type": "sqlitedb",
+        "db": "/home/pi/EnergyMeter/energyMeter.db",
+        "mode": "RW"
+    },
+    {
+        "id": "147ac8b566301e6c",
+        "type": "ui_tab",
+        "name": "Users",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "1c8c4bf21adf2105",
+        "type": "ui_group",
+        "name": "User",
+        "tab": "147ac8b566301e6c",
+        "order": 1,
+        "disp": false,
+        "width": 16,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7e42e3890f16c7cb",
+        "type": "ui_tab",
+        "name": "Settings",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "06bb1ecfe875d51e",
+        "type": "ui_tab",
+        "name": "Alarm Historic",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "bbd948ee4eae4c1f",
+        "type": "ui_group",
+        "name": "Historic",
+        "tab": "06bb1ecfe875d51e",
+        "order": 1,
+        "disp": false,
+        "width": "10",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3999f441ae228e70",
+        "type": "ui_group",
+        "name": "Charts",
+        "tab": "bf84fbcf15edd73e",
+        "order": 6,
+        "disp": false,
+        "width": 24,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c0014e95575a695d",
+        "type": "ui_tab",
+        "name": "Charts",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "c658951498713792",
+        "type": "ui_group",
+        "name": "default",
+        "tab": "c0014e95575a695d",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b56f97102bf0afad",
+        "type": "ui_group",
+        "name": "Enable/Disable",
+        "tab": "7e42e3890f16c7cb",
+        "order": 1,
+        "disp": false,
+        "width": 17,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "42b8d4c8e0d0a77b",
+        "type": "ui_spacer",
+        "z": "1f43a42441b6f63c",
+        "name": "spacer",
+        "group": "3999f441ae228e70",
+        "order": 3,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "5d0a94cd44833eef",
+        "type": "ui_spacer",
+        "z": "1f43a42441b6f63c",
+        "name": "spacer",
+        "group": "3999f441ae228e70",
+        "order": 5,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "3d542de418e96344",
+        "type": "ui_spacer",
+        "z": "1f43a42441b6f63c",
+        "name": "spacer",
+        "group": "3999f441ae228e70",
+        "order": 6,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "ac99e4a507062150",
+        "type": "ui_spacer",
+        "z": "1f43a42441b6f63c",
+        "name": "spacer",
+        "group": "3999f441ae228e70",
+        "order": 7,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "98b8f9db8209c505",
+        "type": "ui_spacer",
+        "z": "1f43a42441b6f63c",
+        "name": "spacer",
+        "group": "3999f441ae228e70",
+        "order": 8,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "0ab4dfb3db163466",
+        "type": "ui_spacer",
+        "z": "1f43a42441b6f63c",
+        "name": "spacer",
+        "group": "3999f441ae228e70",
+        "order": 9,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "5739dabbd35c6284",
+        "type": "ui_spacer",
+        "z": "1f43a42441b6f63c",
+        "name": "spacer",
+        "group": "3999f441ae228e70",
+        "order": 10,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "5a4b40827199b439",
+        "type": "ui_spacer",
+        "z": "1f43a42441b6f63c",
+        "name": "spacer",
+        "group": "3999f441ae228e70",
+        "order": 11,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "b5e48e7f3a8b3961",
+        "type": "ui_spacer",
+        "z": "1f43a42441b6f63c",
+        "name": "spacer",
+        "group": "3999f441ae228e70",
+        "order": 12,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "5436aa3d9be40e1e",
+        "type": "ui_spacer",
+        "z": "1f43a42441b6f63c",
+        "name": "spacer",
+        "group": "3999f441ae228e70",
+        "order": 13,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "3327b567ed226806",
+        "type": "ui_spacer",
+        "z": "1f43a42441b6f63c",
+        "name": "spacer",
+        "group": "3999f441ae228e70",
+        "order": 14,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "22545259534d2817",
+        "type": "ui_spacer",
+        "z": "1f43a42441b6f63c",
+        "name": "spacer",
+        "group": "3999f441ae228e70",
+        "order": 15,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "1e701e29f07af043",
+        "type": "ui_spacer",
+        "z": "1f43a42441b6f63c",
+        "name": "spacer",
+        "group": "3999f441ae228e70",
+        "order": 16,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "fb7753a51fd6ab3c",
+        "type": "ui_spacer",
+        "z": "1f43a42441b6f63c",
+        "name": "spacer",
+        "group": "3999f441ae228e70",
+        "order": 17,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "39050940b9ad40f4",
+        "type": "ui_group",
+        "name": "Time Threshold",
+        "tab": "7e42e3890f16c7cb",
+        "order": 2,
+        "disp": false,
+        "width": 7,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "34095c6ea2409c70",
+        "type": "ui_spacer",
+        "z": "999bc0a47d0df7f6",
+        "name": "spacer",
+        "group": "b56f97102bf0afad",
+        "order": 2,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "8499ba27feb601ec",
+        "type": "ui_spacer",
+        "z": "999bc0a47d0df7f6",
+        "name": "spacer",
+        "group": "b56f97102bf0afad",
+        "order": 4,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "17be4adf9aaac296",
+        "type": "ui_spacer",
+        "z": "999bc0a47d0df7f6",
+        "name": "spacer",
+        "group": "b56f97102bf0afad",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "4fcc7e4cfcc93ae8",
+        "type": "ui_spacer",
+        "z": "999bc0a47d0df7f6",
+        "name": "spacer",
+        "group": "b56f97102bf0afad",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "7170279b790d8ab7",
+        "type": "ui_spacer",
+        "z": "999bc0a47d0df7f6",
+        "name": "spacer",
+        "group": "b56f97102bf0afad",
+        "order": 15,
+        "width": 17,
+        "height": 1
+    },
+    {
+        "id": "52892342d135e8c8",
+        "type": "ui_spacer",
+        "z": "999bc0a47d0df7f6",
+        "name": "spacer",
+        "group": "b56f97102bf0afad",
+        "order": 17,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "46f8d3a253770022",
+        "type": "ui_spacer",
+        "z": "999bc0a47d0df7f6",
+        "name": "spacer",
+        "group": "b56f97102bf0afad",
+        "order": 19,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "a0db34b3be815223",
+        "type": "ui_spacer",
+        "z": "999bc0a47d0df7f6",
+        "name": "spacer",
+        "group": "b56f97102bf0afad",
+        "order": 22,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "0db3b189f5846bb6",
+        "type": "ui_spacer",
+        "z": "999bc0a47d0df7f6",
+        "name": "spacer",
+        "group": "b56f97102bf0afad",
+        "order": 27,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "49b4a4617c661cd3",
+        "type": "ui_spacer",
+        "z": "999bc0a47d0df7f6",
+        "name": "spacer",
+        "group": "39050940b9ad40f4",
+        "order": 3,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "f1d0ac2160939dc9",
+        "type": "ui_chart",
+        "z": "b0af0ce7369514a3",
+        "g": "c9065a9ed0d57479",
+        "name": "Voltage RMS Chart",
+        "group": "3999f441ae228e70",
+        "order": 1,
+        "width": 12,
+        "height": 7,
+        "label": "Voltage RMS [V]",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 510,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7f7ee486550e364a",
+        "type": "ui_chart",
+        "z": "b0af0ce7369514a3",
+        "g": "c9065a9ed0d57479",
+        "name": "Current RMS Chart",
+        "group": "3999f441ae228e70",
+        "order": 2,
+        "width": 12,
+        "height": 7,
+        "label": "Current RMS [A]",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 510,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8745157f0f289caf",
+        "type": "ui_chart",
+        "z": "b0af0ce7369514a3",
+        "g": "c9065a9ed0d57479",
+        "name": "Active Power Chart",
+        "group": "3999f441ae228e70",
+        "order": 4,
+        "width": 12,
+        "height": 7,
+        "label": "Active Power [W]",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 510,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d71276f4c389b10c",
+        "type": "mqtt in",
+        "z": "b0af0ce7369514a3",
+        "g": "6f0143a3bde4efa8",
+        "name": "Mosquitto Broker",
+        "topic": "energyMeter",
+        "qos": "2",
+        "datatype": "utf8",
+        "broker": "56370940d96f10de",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 80,
+        "wires": [
+            [
+                "155fd0e456750fa5"
+            ]
+        ]
+    },
+    {
+        "id": "d29e6989bec42e21",
+        "type": "ui_chart",
+        "z": "b0af0ce7369514a3",
+        "d": true,
+        "g": "c9065a9ed0d57479",
+        "name": "Active Energy Chart",
+        "group": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Energy [Wh]",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "2000",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 520,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c3301738deb4e1f1",
+        "type": "ui_chart",
+        "z": "b0af0ce7369514a3",
+        "d": true,
+        "g": "c9065a9ed0d57479",
+        "name": "Power Factor Chart",
+        "group": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Power Factor",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "2000",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 510,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6b91cdda79e5e1df",
+        "type": "change",
+        "z": "b0af0ce7369514a3",
+        "g": "c9065a9ed0d57479",
+        "name": "Voltage RMS",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "voltage",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Voltage RMS",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 250,
+        "y": 240,
+        "wires": [
+            [
+                "f1d0ac2160939dc9"
+            ]
+        ]
+    },
+    {
+        "id": "6d9cd7b8d1ac56cd",
+        "type": "change",
+        "z": "b0af0ce7369514a3",
+        "g": "c9065a9ed0d57479",
+        "name": "Current RMS",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "current",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Current RMS",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 250,
+        "y": 400,
+        "wires": [
+            [
+                "7f7ee486550e364a"
+            ]
+        ]
+    },
+    {
+        "id": "546ff7c105f245a7",
+        "type": "change",
+        "z": "b0af0ce7369514a3",
+        "g": "c9065a9ed0d57479",
+        "name": "Active Power RMS",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "active_power",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Active Power",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 270,
+        "y": 520,
+        "wires": [
+            [
+                "8745157f0f289caf"
+            ]
+        ]
+    },
+    {
+        "id": "155fd0e456750fa5",
+        "type": "function",
+        "z": "b0af0ce7369514a3",
+        "g": "6f0143a3bde4efa8",
+        "name": "parseData",
+        "func": "// Obtener el payload (el mensaje completo en este caso)\nvar data = msg.payload;\n\n// Separar la cadena por el delimitador '|'\nvar values = data.split('|');\n\n// Asignar cada valor a una propiedad diferente\nmsg.datetime = values[0]; \nmsg.voltage = parseFloat(values[1]); \nmsg.current = parseFloat(values[2]); \nmsg.active_power = parseFloat(values[3]); \nmsg.active_energy = parseFloat(values[4]); \nmsg.power_factor = parseFloat(values[5]); \n\n// Devolver el mensaje con los valores individuales\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 80,
+        "wires": [
+            [
+                "eb7e0a26a78ab06a",
+                "c6990dfcbb58ec80"
+            ]
+        ]
+    },
+    {
+        "id": "eb7e0a26a78ab06a",
+        "type": "link out",
+        "z": "b0af0ce7369514a3",
+        "g": "6f0143a3bde4efa8",
+        "name": "MQTT Data",
+        "mode": "link",
+        "links": [
+            "3d684a97b057f51d",
+            "2262f67bcda5aa03",
+            "db768e2b48edeb48",
+            "3a38a347c1c97115",
+            "40a1371555cfd25e",
+            "04f0d584c06ab2cf"
+        ],
+        "x": 475,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "3d684a97b057f51d",
+        "type": "link in",
+        "z": "b0af0ce7369514a3",
+        "g": "c9065a9ed0d57479",
+        "name": "MQTT Data",
+        "links": [
+            "eb7e0a26a78ab06a"
+        ],
+        "x": 95,
+        "y": 240,
+        "wires": [
+            [
+                "6b91cdda79e5e1df",
+                "72e4ece2f4c10804",
+                "379a38da8aaf6b1f"
+            ]
+        ]
+    },
+    {
+        "id": "2262f67bcda5aa03",
+        "type": "link in",
+        "z": "b0af0ce7369514a3",
+        "g": "c9065a9ed0d57479",
+        "name": "MQTT Data",
+        "links": [
+            "eb7e0a26a78ab06a"
+        ],
+        "x": 95,
+        "y": 400,
+        "wires": [
+            [
+                "6d9cd7b8d1ac56cd",
+                "47954f663248a36c"
+            ]
+        ]
+    },
+    {
+        "id": "db768e2b48edeb48",
+        "type": "link in",
+        "z": "b0af0ce7369514a3",
+        "g": "c9065a9ed0d57479",
+        "name": "MQTT Data",
+        "links": [
+            "eb7e0a26a78ab06a"
+        ],
+        "x": 95,
+        "y": 520,
+        "wires": [
+            [
+                "546ff7c105f245a7",
+                "38ed4e5e142361f7"
+            ]
+        ]
+    },
+    {
+        "id": "3a38a347c1c97115",
+        "type": "link in",
+        "z": "b0af0ce7369514a3",
+        "g": "c9065a9ed0d57479",
+        "name": "MQTT Data",
+        "links": [
+            "eb7e0a26a78ab06a"
+        ],
+        "x": 95,
+        "y": 620,
+        "wires": [
+            [
+                "fe735c7e72db98ec"
+            ]
+        ]
+    },
+    {
+        "id": "fe735c7e72db98ec",
+        "type": "change",
+        "z": "b0af0ce7369514a3",
+        "g": "c9065a9ed0d57479",
+        "name": "Active Energy",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "active_energy",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Active Energy",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 260,
+        "y": 620,
+        "wires": [
+            [
+                "d29e6989bec42e21"
+            ]
+        ]
+    },
+    {
+        "id": "40a1371555cfd25e",
+        "type": "link in",
+        "z": "b0af0ce7369514a3",
+        "g": "c9065a9ed0d57479",
+        "name": "MQTT Data",
+        "links": [
+            "eb7e0a26a78ab06a"
+        ],
+        "x": 95,
+        "y": 680,
+        "wires": [
+            [
+                "096b1813f91ac182"
+            ]
+        ]
+    },
+    {
+        "id": "096b1813f91ac182",
+        "type": "change",
+        "z": "b0af0ce7369514a3",
+        "g": "c9065a9ed0d57479",
+        "name": "Power Factor",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "power_factor",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Power Factor",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 250,
+        "y": 680,
+        "wires": [
+            [
+                "c3301738deb4e1f1"
+            ]
+        ]
+    },
+    {
+        "id": "c6990dfcbb58ec80",
+        "type": "function",
+        "z": "b0af0ce7369514a3",
+        "g": "6f0143a3bde4efa8",
+        "name": "Insert data into DB",
+        "func": "msg.topic = `INSERT INTO db_raw_data (datetime, voltage_rms, current_rms, active_power, active_energy, power_factor) VALUES ('${msg.datetime}', '${msg.voltage}', ${msg.current}, ${msg.active_power}, ${msg.active_energy}, ${msg.power_factor})`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 120,
+        "wires": [
+            [
+                "79149befeaf59fa8"
+            ]
+        ]
+    },
+    {
+        "id": "79149befeaf59fa8",
+        "type": "link out",
+        "z": "b0af0ce7369514a3",
+        "g": "6f0143a3bde4efa8",
+        "name": "Insert data in DB",
+        "mode": "link",
+        "links": [
+            "0e790badd828e6a0"
+        ],
+        "x": 685,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "72e4ece2f4c10804",
+        "type": "function",
+        "z": "b0af0ce7369514a3",
+        "g": "c9065a9ed0d57479",
+        "name": "Overvoltage THS",
+        "func": "if (global.get(\"overvoltage_alarm\") == true) {\n    msg.payload = global.get(\"overvoltage_ths\");\n}\nelse {\n    msg.payload = null;\n}\n\nmsg.topic = \"Overvoltage THS\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 280,
+        "wires": [
+            [
+                "f1d0ac2160939dc9"
+            ]
+        ]
+    },
+    {
+        "id": "379a38da8aaf6b1f",
+        "type": "function",
+        "z": "b0af0ce7369514a3",
+        "g": "c9065a9ed0d57479",
+        "name": "Undervoltage THS",
+        "func": "if (global.get(\"undervoltage_alarm\") == true) {\n    msg.payload = global.get(\"undervoltage_ths\");\n}\nelse {\n    msg.payload = null;\n}\n\nmsg.topic = \"Undervoltage THS\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 320,
+        "wires": [
+            [
+                "f1d0ac2160939dc9"
+            ]
+        ]
+    },
+    {
+        "id": "47954f663248a36c",
+        "type": "function",
+        "z": "b0af0ce7369514a3",
+        "g": "c9065a9ed0d57479",
+        "name": "Overcurrent THS",
+        "func": "if (global.get(\"overcurrent_alarm\") == true) {\n    msg.payload = global.get(\"overcurrent_ths\");\n}\nelse {\n    msg.payload = null;\n}\n\nmsg.topic = \"Overcurrent THS\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 440,
+        "wires": [
+            [
+                "7f7ee486550e364a"
+            ]
+        ]
+    },
+    {
+        "id": "38ed4e5e142361f7",
+        "type": "function",
+        "z": "b0af0ce7369514a3",
+        "g": "c9065a9ed0d57479",
+        "name": "Overconsumption",
+        "func": "if (global.get(\"overconsumption_alarm\") == true) {\n    msg.payload = global.get(\"overconsumption_ths\");\n}\nelse {\n    msg.payload = null;\n}\n\nmsg.topic = \"Overconsumption THS\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 560,
+        "wires": [
+            [
+                "8745157f0f289caf"
+            ]
+        ]
+    },
+    {
+        "id": "040b2048d7682f01",
+        "type": "comment",
+        "z": "b0af0ce7369514a3",
+        "name": "TODO: Qué pasa si se cae el ESP?",
+        "info": "No mandaría más datos, por lo que no se \nactualizaría el gráfico. Se pueden enviar\n0 desde el Node-RED o algo así?\nPor el momento vamos a finjir demencia",
+        "x": 860,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "a10d6a22eaf41d85",
+        "type": "function",
+        "z": "999bc0a47d0df7f6",
+        "g": "eaea5e605a485fbb",
+        "name": "Check Voltage Alarms",
+        "func": "msg.value = msg.voltage;\nmsg.time = new Date().toLocaleString(\"es-AR\", { timeZone: \"America/Argentina/Buenos_Aires\" });\n\nif (global.get('overvoltage_alarm') == true && msg.value > global.get('overvoltage_ths')){\n    // Reinicio de alarma\n    if (flow.get('t_overvoltage')  != -1 && Date.now() - flow.get('t_overvoltage') < global.get('alarm_cooldown')){\n        return null;\n    }       \n    //flow.set('f_overvoltage', true);\n    flow.set('t_overvoltage', Date.now());\n    \n    // Notificaction\n    msg.topic = \"SOBRETENSIÓN!\";\n    msg.payload = \"Se detectó un valor de tensión de \" + msg.value + \"V\";\n    // Info\n    msg.alarm = \"overvoltage\";\n    msg.threshold = global.get('overvoltage_ths');\n    msg.unit = \"V\";\n    return msg;\n}\n\nif (global.get('undervoltage_alarm') == true && msg.value < global.get('undervoltage_ths')){\n    // Reinicio de alarma\n    if (flow.get('t_undervoltage') != -1 && Date.now() - flow.get('t_undervoltage') < global.get('alarm_cooldown')) {\n        return null;\n    }\n    // flow.set('f_undervoltage', true);\n    flow.set('t_undervoltage', Date.now());\n    \n    // Notificaction\n    msg.topic = \"BAJA DE TENSIÓN!\";\n    msg.payload = \"Se detectó un valor de tensión de \" + msg.payload + \"V\";\n    // Info\n    msg.alarm = \"undervoltage\";\n    msg.threshold = global.get('undervoltage_ths');\n    msg.unit = \"V\";\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set('t_overvoltage', -1);\nflow.set('t_undervoltage', -1);",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 1680,
+        "wires": [
+            [
+                "49f987bfacb35dab"
+            ]
+        ]
+    },
+    {
+        "id": "1a1c62b470f46324",
+        "type": "ui_toast",
+        "z": "999bc0a47d0df7f6",
+        "g": "eaea5e605a485fbb",
+        "position": "bottom right",
+        "displayTime": "5",
+        "highlight": "red",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "Alarm Notification",
+        "x": 700,
+        "y": 1720,
+        "wires": []
+    },
+    {
+        "id": "9beed1aa2194674b",
+        "type": "ui_button",
+        "z": "999bc0a47d0df7f6",
+        "g": "f8b20ae8640a9fc1",
+        "name": "Enable 1",
+        "group": "b56f97102bf0afad",
+        "order": 10,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Enable",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "settings",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 440,
+        "y": 400,
+        "wires": [
+            [
+                "01aa74f3312d6a52",
+                "c497d63524ee58ad",
+                "62a4b6779751e9d3"
+            ]
+        ]
+    },
+    {
+        "id": "411dc7f38c14a2e4",
+        "type": "ui_button",
+        "z": "999bc0a47d0df7f6",
+        "g": "f8b20ae8640a9fc1",
+        "name": "Disable 1",
+        "group": "b56f97102bf0afad",
+        "order": 11,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Disable",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "settings",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 440,
+        "y": 520,
+        "wires": [
+            [
+                "167ef4670e9d9fc1",
+                "21ece2c880e16c30",
+                "62a4b6779751e9d3"
+            ]
+        ]
+    },
+    {
+        "id": "01aa74f3312d6a52",
+        "type": "change",
+        "z": "999bc0a47d0df7f6",
+        "g": "f8b20ae8640a9fc1",
+        "name": "Enable button",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 620,
+        "y": 400,
+        "wires": [
+            [
+                "411dc7f38c14a2e4"
+            ]
+        ]
+    },
+    {
+        "id": "c497d63524ee58ad",
+        "type": "change",
+        "z": "999bc0a47d0df7f6",
+        "g": "f8b20ae8640a9fc1",
+        "name": "Disable button",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 120,
+        "y": 400,
+        "wires": [
+            [
+                "9beed1aa2194674b"
+            ]
+        ]
+    },
+    {
+        "id": "ea12c701471b3a3f",
+        "type": "ui_led",
+        "z": "999bc0a47d0df7f6",
+        "g": "f8b20ae8640a9fc1",
+        "order": 6,
+        "group": "b56f97102bf0afad",
+        "width": 2,
+        "height": 2,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": false,
+        "name": "Overvotage Alarm",
+        "x": 930,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "167ef4670e9d9fc1",
+        "type": "change",
+        "z": "999bc0a47d0df7f6",
+        "g": "f8b20ae8640a9fc1",
+        "name": "Enable button",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 620,
+        "y": 520,
+        "wires": [
+            [
+                "9beed1aa2194674b"
+            ]
+        ]
+    },
+    {
+        "id": "21ece2c880e16c30",
+        "type": "change",
+        "z": "999bc0a47d0df7f6",
+        "g": "f8b20ae8640a9fc1",
+        "name": "Disable button",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 120,
+        "y": 520,
+        "wires": [
+            [
+                "411dc7f38c14a2e4"
+            ]
+        ]
+    },
+    {
+        "id": "ff79ce1ed4bbfa3c",
+        "type": "ui_button",
+        "z": "999bc0a47d0df7f6",
+        "g": "b90b2cc6f056d966",
+        "name": "Enable 2",
+        "group": "b56f97102bf0afad",
+        "order": 13,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Enable",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "settings",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 440,
+        "y": 620,
+        "wires": [
+            [
+                "758a84efe9a8f665",
+                "4d8795e6a4c80cc2",
+                "fd32d8e79fe71e0e"
+            ]
+        ]
+    },
+    {
+        "id": "16632e81b89ee699",
+        "type": "ui_button",
+        "z": "999bc0a47d0df7f6",
+        "g": "b90b2cc6f056d966",
+        "name": "Disable 2",
+        "group": "b56f97102bf0afad",
+        "order": 14,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Disable",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "settings",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 440,
+        "y": 740,
+        "wires": [
+            [
+                "54cb53387b06207a",
+                "48b89a2cba4efde4",
+                "fd32d8e79fe71e0e"
+            ]
+        ]
+    },
+    {
+        "id": "758a84efe9a8f665",
+        "type": "change",
+        "z": "999bc0a47d0df7f6",
+        "g": "b90b2cc6f056d966",
+        "name": "Enable button",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 620,
+        "y": 620,
+        "wires": [
+            [
+                "16632e81b89ee699"
+            ]
+        ]
+    },
+    {
+        "id": "4d8795e6a4c80cc2",
+        "type": "change",
+        "z": "999bc0a47d0df7f6",
+        "g": "b90b2cc6f056d966",
+        "name": "Disable button",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 120,
+        "y": 620,
+        "wires": [
+            [
+                "ff79ce1ed4bbfa3c"
+            ]
+        ]
+    },
+    {
+        "id": "0bcb0ed45c8d2664",
+        "type": "ui_led",
+        "z": "999bc0a47d0df7f6",
+        "g": "b90b2cc6f056d966",
+        "order": 9,
+        "group": "b56f97102bf0afad",
+        "width": 2,
+        "height": 2,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": false,
+        "name": "Undervoltage Alarm",
+        "x": 940,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "54cb53387b06207a",
+        "type": "change",
+        "z": "999bc0a47d0df7f6",
+        "g": "b90b2cc6f056d966",
+        "name": "Enable button",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 620,
+        "y": 740,
+        "wires": [
+            [
+                "ff79ce1ed4bbfa3c"
+            ]
+        ]
+    },
+    {
+        "id": "48b89a2cba4efde4",
+        "type": "change",
+        "z": "999bc0a47d0df7f6",
+        "g": "b90b2cc6f056d966",
+        "name": "Disable button",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 120,
+        "y": 740,
+        "wires": [
+            [
+                "16632e81b89ee699"
+            ]
+        ]
+    },
+    {
+        "id": "df353a5c39172caf",
+        "type": "ui_button",
+        "z": "999bc0a47d0df7f6",
+        "g": "19e98ffbd0844fc9",
+        "name": "Enable 3",
+        "group": "b56f97102bf0afad",
+        "order": 25,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Enable",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "settings",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 440,
+        "y": 840,
+        "wires": [
+            [
+                "646922c8c97bec7f",
+                "36377791ae9c719e",
+                "c4bc6f3f7d6b3120"
+            ]
+        ]
+    },
+    {
+        "id": "a88bf7e7ac37823c",
+        "type": "ui_button",
+        "z": "999bc0a47d0df7f6",
+        "g": "19e98ffbd0844fc9",
+        "name": "Disable 3",
+        "group": "b56f97102bf0afad",
+        "order": 26,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Disable",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "settings",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 440,
+        "y": 960,
+        "wires": [
+            [
+                "fed3fcfa987b1b03",
+                "c91cdae5cf1fb728",
+                "c4bc6f3f7d6b3120"
+            ]
+        ]
+    },
+    {
+        "id": "646922c8c97bec7f",
+        "type": "change",
+        "z": "999bc0a47d0df7f6",
+        "g": "19e98ffbd0844fc9",
+        "name": "Enable button",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 620,
+        "y": 840,
+        "wires": [
+            [
+                "a88bf7e7ac37823c"
+            ]
+        ]
+    },
+    {
+        "id": "36377791ae9c719e",
+        "type": "change",
+        "z": "999bc0a47d0df7f6",
+        "g": "19e98ffbd0844fc9",
+        "name": "Disable button",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 120,
+        "y": 840,
+        "wires": [
+            [
+                "df353a5c39172caf"
+            ]
+        ]
+    },
+    {
+        "id": "f51133c7d7d9e5f4",
+        "type": "ui_led",
+        "z": "999bc0a47d0df7f6",
+        "g": "19e98ffbd0844fc9",
+        "order": 21,
+        "group": "b56f97102bf0afad",
+        "width": 2,
+        "height": 2,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": false,
+        "name": "Overcurrent Alarm",
+        "x": 930,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "fed3fcfa987b1b03",
+        "type": "change",
+        "z": "999bc0a47d0df7f6",
+        "g": "19e98ffbd0844fc9",
+        "name": "Enable button",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 620,
+        "y": 960,
+        "wires": [
+            [
+                "df353a5c39172caf"
+            ]
+        ]
+    },
+    {
+        "id": "c91cdae5cf1fb728",
+        "type": "change",
+        "z": "999bc0a47d0df7f6",
+        "g": "19e98ffbd0844fc9",
+        "name": "Disable button",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 120,
+        "y": 960,
+        "wires": [
+            [
+                "a88bf7e7ac37823c"
+            ]
+        ]
+    },
+    {
+        "id": "52111ee3d62b7569",
+        "type": "ui_button",
+        "z": "999bc0a47d0df7f6",
+        "g": "b6295e28d8b86c52",
+        "name": "Enable 4",
+        "group": "b56f97102bf0afad",
+        "order": 28,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Enable",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "settings",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 440,
+        "y": 1060,
+        "wires": [
+            [
+                "053e8743baec8a94",
+                "1760f6cd248976d5",
+                "67ea2498effaed84"
+            ]
+        ]
+    },
+    {
+        "id": "c3aeb147bf96a227",
+        "type": "ui_button",
+        "z": "999bc0a47d0df7f6",
+        "g": "b6295e28d8b86c52",
+        "name": "Disable 4",
+        "group": "b56f97102bf0afad",
+        "order": 29,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Disable",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "settings",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 440,
+        "y": 1180,
+        "wires": [
+            [
+                "87692cc1b3629f22",
+                "3e522c8921c0ee58",
+                "67ea2498effaed84"
+            ]
+        ]
+    },
+    {
+        "id": "053e8743baec8a94",
+        "type": "change",
+        "z": "999bc0a47d0df7f6",
+        "g": "b6295e28d8b86c52",
+        "name": "Enable button",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 620,
+        "y": 1060,
+        "wires": [
+            [
+                "c3aeb147bf96a227"
+            ]
+        ]
+    },
+    {
+        "id": "1760f6cd248976d5",
+        "type": "change",
+        "z": "999bc0a47d0df7f6",
+        "g": "b6295e28d8b86c52",
+        "name": "Disable button",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 120,
+        "y": 1060,
+        "wires": [
+            [
+                "52111ee3d62b7569"
+            ]
+        ]
+    },
+    {
+        "id": "3d00bddfcd6a745c",
+        "type": "ui_led",
+        "z": "999bc0a47d0df7f6",
+        "g": "b6295e28d8b86c52",
+        "order": 24,
+        "group": "b56f97102bf0afad",
+        "width": 2,
+        "height": 2,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": false,
+        "name": "Overcomsuption Alarm",
+        "x": 940,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "87692cc1b3629f22",
+        "type": "change",
+        "z": "999bc0a47d0df7f6",
+        "g": "b6295e28d8b86c52",
+        "name": "Enable button",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 620,
+        "y": 1180,
+        "wires": [
+            [
+                "52111ee3d62b7569"
+            ]
+        ]
+    },
+    {
+        "id": "3e522c8921c0ee58",
+        "type": "change",
+        "z": "999bc0a47d0df7f6",
+        "g": "b6295e28d8b86c52",
+        "name": "Disable button",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 120,
+        "y": 1180,
+        "wires": [
+            [
+                "c3aeb147bf96a227"
+            ]
+        ]
+    },
+    {
+        "id": "6fc32d3239ab4da3",
+        "type": "ui_text_input",
+        "z": "999bc0a47d0df7f6",
+        "g": "2fbd0fbd8f990790",
+        "name": "Min Voltage Value",
+        "label": "Límite inferior de tensión [V]",
+        "tooltip": "",
+        "group": "b56f97102bf0afad",
+        "order": 8,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": "500",
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 210,
+        "y": 1380,
+        "wires": [
+            [
+                "c7336fa80764f71c",
+                "9638751ead0f8f73"
+            ]
+        ]
+    },
+    {
+        "id": "0426487f4ccf5b18",
+        "type": "ui_text_input",
+        "z": "999bc0a47d0df7f6",
+        "g": "2fbd0fbd8f990790",
+        "name": "Max Voltage Value",
+        "label": "Límite máximo de tensión [V]",
+        "tooltip": "",
+        "group": "b56f97102bf0afad",
+        "order": 5,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": "500",
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 210,
+        "y": 1300,
+        "wires": [
+            [
+                "f5153970f7d46048",
+                "9638751ead0f8f73"
+            ]
+        ]
+    },
+    {
+        "id": "07b95302d95ea1ba",
+        "type": "ui_text_input",
+        "z": "999bc0a47d0df7f6",
+        "g": "2fbd0fbd8f990790",
+        "name": "Max Current Value",
+        "label": "Límite máximo de corriente [A]",
+        "tooltip": "",
+        "group": "b56f97102bf0afad",
+        "order": 20,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": "500",
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 210,
+        "y": 1460,
+        "wires": [
+            [
+                "4e8b176d29e77ba5",
+                "9638751ead0f8f73"
+            ]
+        ]
+    },
+    {
+        "id": "e1e9d493f4a18e24",
+        "type": "ui_text_input",
+        "z": "999bc0a47d0df7f6",
+        "g": "2fbd0fbd8f990790",
+        "name": "Max Active Power Value",
+        "label": "Límite máximo de potencia [W]",
+        "tooltip": "",
+        "group": "b56f97102bf0afad",
+        "order": 23,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": "500",
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 230,
+        "y": 1540,
+        "wires": [
+            [
+                "e17627c9227f928e",
+                "9638751ead0f8f73"
+            ]
+        ]
+    },
+    {
+        "id": "c7336fa80764f71c",
+        "type": "change",
+        "z": "999bc0a47d0df7f6",
+        "g": "2fbd0fbd8f990790",
+        "name": "Set global var",
+        "rules": [
+            {
+                "t": "set",
+                "p": "undervoltage_ths",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 200,
+        "y": 1420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4e8b176d29e77ba5",
+        "type": "change",
+        "z": "999bc0a47d0df7f6",
+        "g": "2fbd0fbd8f990790",
+        "name": "Set global var",
+        "rules": [
+            {
+                "t": "set",
+                "p": "overcurrent_ths",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 200,
+        "y": 1500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e17627c9227f928e",
+        "type": "change",
+        "z": "999bc0a47d0df7f6",
+        "g": "2fbd0fbd8f990790",
+        "name": "Set global var",
+        "rules": [
+            {
+                "t": "set",
+                "p": "overconsumption_ths",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 200,
+        "y": 1580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9638751ead0f8f73",
+        "type": "function",
+        "z": "999bc0a47d0df7f6",
+        "g": "2fbd0fbd8f990790",
+        "name": "Update Alarms Thresholds DB",
+        "func": "var ths_name = msg.topic;\nvar ths_value = msg.payload;\n\nmsg.topic = `UPDATE db_alarm_settings SET value = ${ths_value} WHERE key = '${ths_name}'`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 1420,
+        "wires": [
+            [
+                "dbcc77638fa8f7ff",
+                "0d138de8154c3978"
+            ]
+        ]
+    },
+    {
+        "id": "6578e0499dea146a",
+        "type": "debug",
+        "z": "999bc0a47d0df7f6",
+        "g": "eaea5e605a485fbb",
+        "name": "Alarm Info",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 1680,
+        "wires": []
+    },
+    {
+        "id": "62a4b6779751e9d3",
+        "type": "change",
+        "z": "999bc0a47d0df7f6",
+        "g": "f8b20ae8640a9fc1",
+        "name": "Activate alarm",
+        "rules": [
+            {
+                "t": "set",
+                "p": "overvoltage_alarm",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "overvoltage",
+                "tot": "str"
+            },
+            {
+                "t": "delete",
+                "p": "enabled",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 720,
+        "y": 460,
+        "wires": [
+            [
+                "ea12c701471b3a3f",
+                "15bba15c2ec7944c"
+            ]
+        ]
+    },
+    {
+        "id": "fd32d8e79fe71e0e",
+        "type": "change",
+        "z": "999bc0a47d0df7f6",
+        "g": "b90b2cc6f056d966",
+        "name": "Activate alarm",
+        "rules": [
+            {
+                "t": "set",
+                "p": "undervoltage_alarm",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "undervoltage",
+                "tot": "str"
+            },
+            {
+                "t": "delete",
+                "p": "enabled",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 720,
+        "y": 680,
+        "wires": [
+            [
+                "0bcb0ed45c8d2664",
+                "3c681ca6b4561a74"
+            ]
+        ]
+    },
+    {
+        "id": "c4bc6f3f7d6b3120",
+        "type": "change",
+        "z": "999bc0a47d0df7f6",
+        "g": "19e98ffbd0844fc9",
+        "name": "Activate alarm",
+        "rules": [
+            {
+                "t": "set",
+                "p": "overcurrent_alarm",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "overcurrent",
+                "tot": "str"
+            },
+            {
+                "t": "delete",
+                "p": "enabled",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 720,
+        "y": 900,
+        "wires": [
+            [
+                "f51133c7d7d9e5f4",
+                "ff9e91a5d091186f"
+            ]
+        ]
+    },
+    {
+        "id": "67ea2498effaed84",
+        "type": "change",
+        "z": "999bc0a47d0df7f6",
+        "g": "b6295e28d8b86c52",
+        "name": "Activate alarm",
+        "rules": [
+            {
+                "t": "set",
+                "p": "overconsumption_alarm",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "overconsumption",
+                "tot": "str"
+            },
+            {
+                "t": "delete",
+                "p": "enabled",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 720,
+        "y": 1120,
+        "wires": [
+            [
+                "3d00bddfcd6a745c",
+                "d344d82b093adf16"
+            ]
+        ]
+    },
+    {
+        "id": "22247cf719379c4c",
+        "type": "ui_text",
+        "z": "999bc0a47d0df7f6",
+        "g": "f8b20ae8640a9fc1",
+        "group": "b56f97102bf0afad",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "name": "Description 1",
+        "label": "",
+        "format": "Alarma de pico de tensión",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 910,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "c228f0505765199f",
+        "type": "ui_text",
+        "z": "999bc0a47d0df7f6",
+        "g": "b90b2cc6f056d966",
+        "group": "b56f97102bf0afad",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "name": "Description 2",
+        "label": "",
+        "format": "Alarma de caída de tensión",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 910,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "ff454f680eb9e5ac",
+        "type": "ui_text",
+        "z": "999bc0a47d0df7f6",
+        "g": "19e98ffbd0844fc9",
+        "group": "b56f97102bf0afad",
+        "order": 16,
+        "width": 6,
+        "height": 1,
+        "name": "Description 3",
+        "label": "",
+        "format": "Alarma de pico de corriente",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 910,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "e69e6066980b15e7",
+        "type": "ui_text",
+        "z": "999bc0a47d0df7f6",
+        "g": "b6295e28d8b86c52",
+        "group": "b56f97102bf0afad",
+        "order": 18,
+        "width": 6,
+        "height": 1,
+        "name": "Description 4",
+        "label": "",
+        "format": "Alarma de sobreconsumo",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 910,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "bdf46ed83973910b",
+        "type": "link out",
+        "z": "999bc0a47d0df7f6",
+        "g": "eaea5e605a485fbb",
+        "name": "Alarm Info Out",
+        "mode": "link",
+        "links": [
+            "aab51cbd69c48b70",
+            "2b9c257870e2496e"
+        ],
+        "x": 625,
+        "y": 1760,
+        "wires": []
+    },
+    {
+        "id": "aab51cbd69c48b70",
+        "type": "link in",
+        "z": "999bc0a47d0df7f6",
+        "g": "f1691c5914160b1b",
+        "name": "Alarm Info In",
+        "links": [
+            "bdf46ed83973910b"
+        ],
+        "x": 55,
+        "y": 2440,
+        "wires": [
+            [
+                "7433e8168f2576ab"
+            ]
+        ]
+    },
+    {
+        "id": "473a76b058a905f6",
+        "type": "e-mail",
+        "z": "999bc0a47d0df7f6",
+        "g": "b191d481f7cd8b4a",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "authtype": "BASIC",
+        "saslformat": true,
+        "token": "oauth2Response.access_token",
+        "secure": true,
+        "tls": true,
+        "name": "",
+        "dname": "Send Email",
+        "x": 1090,
+        "y": 2740,
+        "wires": []
+    },
+    {
+        "id": "883d13997b3b77ca",
+        "type": "debug",
+        "z": "999bc0a47d0df7f6",
+        "g": "f1691c5914160b1b",
+        "name": "SQL Query",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "topic",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 400,
+        "y": 2400,
+        "wires": []
+    },
+    {
+        "id": "e86b7369d042c10f",
+        "type": "delay",
+        "z": "999bc0a47d0df7f6",
+        "g": "f1691c5914160b1b",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "500",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 390,
+        "y": 2480,
+        "wires": [
+            [
+                "c65e88ea024b131f"
+            ]
+        ]
+    },
+    {
+        "id": "7433e8168f2576ab",
+        "type": "function",
+        "z": "999bc0a47d0df7f6",
+        "g": "f1691c5914160b1b",
+        "name": "SQL Insert",
+        "func": "msg.topic = `INSERT INTO db_alarm_historic (datetime, alarmtype, threshold, value) VALUES ('${msg.datetime}', '${msg.alarm}', ${msg.threshold}, ${msg.value})`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 180,
+        "y": 2440,
+        "wires": [
+            [
+                "883d13997b3b77ca",
+                "e86b7369d042c10f",
+                "6314529a303f7e63"
+            ]
+        ]
+    },
+    {
+        "id": "c65e88ea024b131f",
+        "type": "link out",
+        "z": "999bc0a47d0df7f6",
+        "g": "f1691c5914160b1b",
+        "name": "SQL Query Alarms Out",
+        "mode": "link",
+        "links": [
+            "876c099a375d6cc7"
+        ],
+        "x": 505,
+        "y": 2480,
+        "wires": []
+    },
+    {
+        "id": "2b9c257870e2496e",
+        "type": "link in",
+        "z": "999bc0a47d0df7f6",
+        "g": "b191d481f7cd8b4a",
+        "name": "Alarm Info In",
+        "links": [
+            "bdf46ed83973910b"
+        ],
+        "x": 55,
+        "y": 2640,
+        "wires": [
+            [
+                "b64aeb96ae8f9fd2",
+                "80bf1b1e6a3e859f",
+                "dd880fb8bfd7a821",
+                "2e35d729e4594c80"
+            ]
+        ]
+    },
+    {
+        "id": "23829b84677b7c76",
+        "type": "debug",
+        "z": "999bc0a47d0df7f6",
+        "g": "b191d481f7cd8b4a",
+        "name": "Email",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 2700,
+        "wires": []
+    },
+    {
+        "id": "0e790badd828e6a0",
+        "type": "link in",
+        "z": "999bc0a47d0df7f6",
+        "g": "9996a8587542bcf9",
+        "name": "SQL query DB without return",
+        "links": [
+            "6314529a303f7e63",
+            "dbcc77638fa8f7ff",
+            "adcfde493a44c574",
+            "79149befeaf59fa8"
+        ],
+        "x": 935,
+        "y": 2540,
+        "wires": [
+            [
+                "98a6df06f042dc23"
+            ]
+        ]
+    },
+    {
+        "id": "98a6df06f042dc23",
+        "type": "sqlite",
+        "z": "999bc0a47d0df7f6",
+        "g": "9996a8587542bcf9",
+        "mydb": "102f2b0868c8e818",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "EnergyMeter DB",
+        "x": 1050,
+        "y": 2540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6314529a303f7e63",
+        "type": "link out",
+        "z": "999bc0a47d0df7f6",
+        "g": "f1691c5914160b1b",
+        "name": "Insert alarm into DB",
+        "mode": "link",
+        "links": [
+            "0e790badd828e6a0"
+        ],
+        "x": 335,
+        "y": 2440,
+        "wires": []
+    },
+    {
+        "id": "dbcc77638fa8f7ff",
+        "type": "link out",
+        "z": "999bc0a47d0df7f6",
+        "g": "2fbd0fbd8f990790",
+        "name": "Update ths into DB",
+        "mode": "link",
+        "links": [
+            "0e790badd828e6a0"
+        ],
+        "x": 715,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "0d138de8154c3978",
+        "type": "debug",
+        "z": "999bc0a47d0df7f6",
+        "g": "2fbd0fbd8f990790",
+        "name": "Update alarm ths",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "topic",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "d35f9e07f9b786bf",
+        "type": "function",
+        "z": "999bc0a47d0df7f6",
+        "g": "372d6a6ba94b0d06",
+        "name": "Update Alarms State DB",
+        "func": "var ths_name = msg.topic;\nvar ths_state = msg.payload;\n\nmsg.topic = `UPDATE db_alarm_settings SET state = ${ths_state} WHERE key = '${ths_name}'`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 2440,
+        "wires": [
+            [
+                "adcfde493a44c574",
+                "61679f5c3fc57edd"
+            ]
+        ]
+    },
+    {
+        "id": "13f41426b533b5e0",
+        "type": "link in",
+        "z": "999bc0a47d0df7f6",
+        "g": "372d6a6ba94b0d06",
+        "name": "SQL update alarm state",
+        "links": [
+            "15bba15c2ec7944c",
+            "3c681ca6b4561a74",
+            "ff9e91a5d091186f",
+            "d344d82b093adf16"
+        ],
+        "x": 935,
+        "y": 2440,
+        "wires": [
+            [
+                "d35f9e07f9b786bf"
+            ]
+        ]
+    },
+    {
+        "id": "adcfde493a44c574",
+        "type": "link out",
+        "z": "999bc0a47d0df7f6",
+        "g": "372d6a6ba94b0d06",
+        "name": "Update state into DB",
+        "mode": "link",
+        "links": [
+            "0e790badd828e6a0"
+        ],
+        "x": 1255,
+        "y": 2440,
+        "wires": []
+    },
+    {
+        "id": "15bba15c2ec7944c",
+        "type": "link out",
+        "z": "999bc0a47d0df7f6",
+        "g": "f8b20ae8640a9fc1",
+        "name": "Overvoltage alarm state",
+        "mode": "link",
+        "links": [
+            "13f41426b533b5e0"
+        ],
+        "x": 855,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "3c681ca6b4561a74",
+        "type": "link out",
+        "z": "999bc0a47d0df7f6",
+        "g": "b90b2cc6f056d966",
+        "name": "Undervoltage alarm state",
+        "mode": "link",
+        "links": [
+            "13f41426b533b5e0"
+        ],
+        "x": 855,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "ff9e91a5d091186f",
+        "type": "link out",
+        "z": "999bc0a47d0df7f6",
+        "g": "19e98ffbd0844fc9",
+        "name": "Overcurrent alarm state",
+        "mode": "link",
+        "links": [
+            "13f41426b533b5e0"
+        ],
+        "x": 855,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "d344d82b093adf16",
+        "type": "link out",
+        "z": "999bc0a47d0df7f6",
+        "g": "b6295e28d8b86c52",
+        "name": "Overconsumption alarm state",
+        "mode": "link",
+        "links": [
+            "13f41426b533b5e0"
+        ],
+        "x": 855,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "61679f5c3fc57edd",
+        "type": "debug",
+        "z": "999bc0a47d0df7f6",
+        "g": "372d6a6ba94b0d06",
+        "name": "Update alarm state",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "topic",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1330,
+        "y": 2400,
+        "wires": []
+    },
+    {
+        "id": "148199254e0cc55e",
+        "type": "link in",
+        "z": "999bc0a47d0df7f6",
+        "g": "2fbd0fbd8f990790",
+        "name": "Overvoltage alarm settings",
+        "links": [
+            "4688cb13219dbd40",
+            "f2a8eb7241d24f90"
+        ],
+        "x": 55,
+        "y": 1300,
+        "wires": [
+            [
+                "0426487f4ccf5b18",
+                "f5153970f7d46048"
+            ]
+        ]
+    },
+    {
+        "id": "fddb374c7fe31434",
+        "type": "link in",
+        "z": "999bc0a47d0df7f6",
+        "g": "2fbd0fbd8f990790",
+        "name": "Undervoltage alarm settings",
+        "links": [
+            "a4b2bc47e8e0af15",
+            "e256c4df31739493"
+        ],
+        "x": 55,
+        "y": 1380,
+        "wires": [
+            [
+                "6fc32d3239ab4da3",
+                "c7336fa80764f71c"
+            ]
+        ]
+    },
+    {
+        "id": "2559e8c84910d219",
+        "type": "link in",
+        "z": "999bc0a47d0df7f6",
+        "g": "2fbd0fbd8f990790",
+        "name": "Overcurrent alarm settings",
+        "links": [
+            "d2d00b980929e9bc",
+            "ffa3bfe70d422ecc"
+        ],
+        "x": 55,
+        "y": 1460,
+        "wires": [
+            [
+                "07b95302d95ea1ba",
+                "4e8b176d29e77ba5"
+            ]
+        ]
+    },
+    {
+        "id": "1850ef5565c7435a",
+        "type": "link in",
+        "z": "999bc0a47d0df7f6",
+        "g": "2fbd0fbd8f990790",
+        "name": "Overconsumption alarm settings",
+        "links": [
+            "9d16cffe2c80db08"
+        ],
+        "x": 55,
+        "y": 1540,
+        "wires": [
+            [
+                "e1e9d493f4a18e24",
+                "e17627c9227f928e"
+            ]
+        ]
+    },
+    {
+        "id": "a7d3afeeaa62f101",
+        "type": "inject",
+        "z": "999bc0a47d0df7f6",
+        "g": "1d5a30a49e64d027",
+        "name": "Get alarm settings",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "SELECT * FROM db_alarm_settings;",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 80,
+        "wires": [
+            [
+                "a7166432024eefbd"
+            ]
+        ]
+    },
+    {
+        "id": "a7166432024eefbd",
+        "type": "sqlite",
+        "z": "999bc0a47d0df7f6",
+        "g": "1d5a30a49e64d027",
+        "mydb": "102f2b0868c8e818",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "EnergyMeter DB",
+        "x": 260,
+        "y": 120,
+        "wires": [
+            [
+                "63444506723e8328"
+            ]
+        ]
+    },
+    {
+        "id": "63444506723e8328",
+        "type": "function",
+        "z": "999bc0a47d0df7f6",
+        "g": "1d5a30a49e64d027",
+        "name": "Data conversion",
+        "func": "var query_result = msg.payload;\nvar dict = {};\n\n// Iterar sobre cada fila del query_result\nfor (var i = 0; i < query_result.length; i++) {\n    var alarm = query_result[i];\n    \n    var new_msg = {\n        topic : alarm.key,\n        payload : {\n           value : alarm.value,\n           state : Boolean(alarm.state),\n        }\n    };\n\n    node.send(new_msg);\n}\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 160,
+        "wires": [
+            [
+                "3b85289612278ea2",
+                "18a752b213e2dd5e"
+            ]
+        ]
+    },
+    {
+        "id": "71799f604656576d",
+        "type": "switch",
+        "z": "999bc0a47d0df7f6",
+        "g": "1d5a30a49e64d027",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "overvoltage",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "undervoltage",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "overcurrent",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "overconsumption",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 770,
+        "y": 100,
+        "wires": [
+            [
+                "4688cb13219dbd40"
+            ],
+            [
+                "a4b2bc47e8e0af15"
+            ],
+            [
+                "d2d00b980929e9bc"
+            ],
+            [
+                "9d16cffe2c80db08"
+            ]
+        ]
+    },
+    {
+        "id": "4688cb13219dbd40",
+        "type": "link out",
+        "z": "999bc0a47d0df7f6",
+        "g": "1d5a30a49e64d027",
+        "name": "Overvoltage alarm settings",
+        "mode": "link",
+        "links": [
+            "148199254e0cc55e"
+        ],
+        "x": 855,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "a4b2bc47e8e0af15",
+        "type": "link out",
+        "z": "999bc0a47d0df7f6",
+        "g": "1d5a30a49e64d027",
+        "name": "Undervoltage alarm settings",
+        "mode": "link",
+        "links": [
+            "fddb374c7fe31434"
+        ],
+        "x": 895,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "d2d00b980929e9bc",
+        "type": "link out",
+        "z": "999bc0a47d0df7f6",
+        "g": "1d5a30a49e64d027",
+        "name": "Overcurrent alarm settings",
+        "mode": "link",
+        "links": [
+            "2559e8c84910d219"
+        ],
+        "x": 895,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "9d16cffe2c80db08",
+        "type": "link out",
+        "z": "999bc0a47d0df7f6",
+        "g": "1d5a30a49e64d027",
+        "name": "Overconsumption alarm settings",
+        "mode": "link",
+        "links": [
+            "1850ef5565c7435a"
+        ],
+        "x": 855,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "f5153970f7d46048",
+        "type": "change",
+        "z": "999bc0a47d0df7f6",
+        "g": "2fbd0fbd8f990790",
+        "name": "Set global var",
+        "rules": [
+            {
+                "t": "set",
+                "p": "overvoltage_ths",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 200,
+        "y": 1340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3b85289612278ea2",
+        "type": "change",
+        "z": "999bc0a47d0df7f6",
+        "g": "1d5a30a49e64d027",
+        "name": "Get alarms values",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.value",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 610,
+        "y": 100,
+        "wires": [
+            [
+                "71799f604656576d"
+            ]
+        ]
+    },
+    {
+        "id": "18a752b213e2dd5e",
+        "type": "change",
+        "z": "999bc0a47d0df7f6",
+        "g": "1d5a30a49e64d027",
+        "name": "Get alarm states",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "payload.state",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.state",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 220,
+        "wires": [
+            [
+                "b2e18e49460b8ac6"
+            ]
+        ]
+    },
+    {
+        "id": "b2e18e49460b8ac6",
+        "type": "switch",
+        "z": "999bc0a47d0df7f6",
+        "g": "1d5a30a49e64d027",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "overvoltage",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "undervoltage",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "overcurrent",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "overconsumption",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 770,
+        "y": 220,
+        "wires": [
+            [
+                "5bbaa5c1f913bf1b"
+            ],
+            [
+                "54d1cee1061e74a1"
+            ],
+            [
+                "ac9070e265e95f8b"
+            ],
+            [
+                "743c83d183a56b65"
+            ]
+        ]
+    },
+    {
+        "id": "5bbaa5c1f913bf1b",
+        "type": "link out",
+        "z": "999bc0a47d0df7f6",
+        "g": "1d5a30a49e64d027",
+        "name": "Overvoltage alarm state setting",
+        "mode": "link",
+        "links": [
+            "2c22627b96fd09ca"
+        ],
+        "x": 855,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "2c22627b96fd09ca",
+        "type": "link in",
+        "z": "999bc0a47d0df7f6",
+        "g": "f8b20ae8640a9fc1",
+        "name": "Overvoltage alarm state setting",
+        "links": [
+            "5bbaa5c1f913bf1b"
+        ],
+        "x": 55,
+        "y": 460,
+        "wires": [
+            [
+                "62a4b6779751e9d3",
+                "2dc60a325032678c",
+                "411dc7f38c14a2e4"
+            ]
+        ]
+    },
+    {
+        "id": "2dc60a325032678c",
+        "type": "change",
+        "z": "999bc0a47d0df7f6",
+        "g": "f8b20ae8640a9fc1",
+        "name": "NOT enabled",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "$not(msg.enabled)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 230,
+        "y": 440,
+        "wires": [
+            [
+                "9beed1aa2194674b"
+            ]
+        ]
+    },
+    {
+        "id": "54d1cee1061e74a1",
+        "type": "link out",
+        "z": "999bc0a47d0df7f6",
+        "g": "1d5a30a49e64d027",
+        "name": "Undervoltage alarm state setting",
+        "mode": "link",
+        "links": [
+            "9ca28d6980876470"
+        ],
+        "x": 895,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "ac9070e265e95f8b",
+        "type": "link out",
+        "z": "999bc0a47d0df7f6",
+        "g": "1d5a30a49e64d027",
+        "name": "Overcurrent alarm state setting",
+        "mode": "link",
+        "links": [
+            "d4d24181f42a8280"
+        ],
+        "x": 895,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "743c83d183a56b65",
+        "type": "link out",
+        "z": "999bc0a47d0df7f6",
+        "g": "1d5a30a49e64d027",
+        "name": "Overconsumption alarm state setting",
+        "mode": "link",
+        "links": [
+            "0cd17987b9c70caf"
+        ],
+        "x": 855,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "9ca28d6980876470",
+        "type": "link in",
+        "z": "999bc0a47d0df7f6",
+        "g": "b90b2cc6f056d966",
+        "name": "Undervoltage alarm state setting",
+        "links": [
+            "54d1cee1061e74a1"
+        ],
+        "x": 55,
+        "y": 680,
+        "wires": [
+            [
+                "46895f724a52fe88",
+                "16632e81b89ee699",
+                "fd32d8e79fe71e0e"
+            ]
+        ]
+    },
+    {
+        "id": "46895f724a52fe88",
+        "type": "change",
+        "z": "999bc0a47d0df7f6",
+        "g": "b90b2cc6f056d966",
+        "name": "NOT enabled",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "$not(msg.enabled)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 230,
+        "y": 660,
+        "wires": [
+            [
+                "ff79ce1ed4bbfa3c"
+            ]
+        ]
+    },
+    {
+        "id": "d4d24181f42a8280",
+        "type": "link in",
+        "z": "999bc0a47d0df7f6",
+        "g": "19e98ffbd0844fc9",
+        "name": "Overcurrent alarm state setting",
+        "links": [
+            "ac9070e265e95f8b"
+        ],
+        "x": 55,
+        "y": 900,
+        "wires": [
+            [
+                "f19fe9df90aa9314",
+                "a88bf7e7ac37823c",
+                "c4bc6f3f7d6b3120"
+            ]
+        ]
+    },
+    {
+        "id": "f19fe9df90aa9314",
+        "type": "change",
+        "z": "999bc0a47d0df7f6",
+        "g": "19e98ffbd0844fc9",
+        "name": "NOT enabled",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "$not(msg.enabled)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 230,
+        "y": 880,
+        "wires": [
+            [
+                "df353a5c39172caf"
+            ]
+        ]
+    },
+    {
+        "id": "0cd17987b9c70caf",
+        "type": "link in",
+        "z": "999bc0a47d0df7f6",
+        "g": "b6295e28d8b86c52",
+        "name": "Overconsumption alarm state setting",
+        "links": [
+            "743c83d183a56b65"
+        ],
+        "x": 55,
+        "y": 1120,
+        "wires": [
+            [
+                "70bbde10e4faa7d9",
+                "c3aeb147bf96a227",
+                "67ea2498effaed84"
+            ]
+        ]
+    },
+    {
+        "id": "70bbde10e4faa7d9",
+        "type": "change",
+        "z": "999bc0a47d0df7f6",
+        "g": "b6295e28d8b86c52",
+        "name": "NOT enabled",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "$not(msg.enabled)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 230,
+        "y": 1100,
+        "wires": [
+            [
+                "52111ee3d62b7569"
+            ]
+        ]
+    },
+    {
+        "id": "b64aeb96ae8f9fd2",
+        "type": "change",
+        "z": "999bc0a47d0df7f6",
+        "g": "b191d481f7cd8b4a",
+        "name": "SQL Query",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "SELECT email FROM db_mailing_list;",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 210,
+        "y": 2640,
+        "wires": [
+            [
+                "c8cf8966b029e018"
+            ]
+        ]
+    },
+    {
+        "id": "c8cf8966b029e018",
+        "type": "sqlite",
+        "z": "999bc0a47d0df7f6",
+        "g": "b191d481f7cd8b4a",
+        "mydb": "102f2b0868c8e818",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "EnergyMeter DB",
+        "x": 380,
+        "y": 2640,
+        "wires": [
+            [
+                "5ad943333ba368e8"
+            ]
+        ]
+    },
+    {
+        "id": "5ad943333ba368e8",
+        "type": "function",
+        "z": "999bc0a47d0df7f6",
+        "g": "b191d481f7cd8b4a",
+        "name": "Data conversion",
+        "func": "var query_result = msg.payload;\nvar dict = {};\n\n// Iterar sobre cada fila del query_result\nfor (var i = 0; i < query_result.length; i++) {        \n    var user = query_result[i];\n    \n    var new_msg = {\n        topic : \"email_address\" ,        \n        payload : user.email,\n    };\n    node.send(new_msg);\n}\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set('mail_qty', 10);",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 2700,
+        "wires": [
+            [
+                "5a047c9b53637908"
+            ]
+        ]
+    },
+    {
+        "id": "545ca89af81d3639",
+        "type": "join",
+        "z": "999bc0a47d0df7f6",
+        "g": "b191d481f7cd8b4a",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": false,
+        "accumulate": false,
+        "timeout": "",
+        "count": "3",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 750,
+        "y": 2740,
+        "wires": [
+            [
+                "eec5bf87f0cb5280"
+            ]
+        ]
+    },
+    {
+        "id": "eec5bf87f0cb5280",
+        "type": "change",
+        "z": "999bc0a47d0df7f6",
+        "g": "b191d481f7cd8b4a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "to",
+                "pt": "msg",
+                "to": "payload.email_address",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "payload.subject",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.content",
+                "tot": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "time",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "alarm",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "threshold",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "unit",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "value",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 900,
+        "y": 2740,
+        "wires": [
+            [
+                "23829b84677b7c76",
+                "473a76b058a905f6"
+            ]
+        ]
+    },
+    {
+        "id": "7949de239c99a34b",
+        "type": "delay",
+        "z": "999bc0a47d0df7f6",
+        "g": "b191d481f7cd8b4a",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 550,
+        "y": 2740,
+        "wires": [
+            [
+                "545ca89af81d3639"
+            ]
+        ]
+    },
+    {
+        "id": "80bf1b1e6a3e859f",
+        "type": "function",
+        "z": "999bc0a47d0df7f6",
+        "g": "b191d481f7cd8b4a",
+        "name": "Mail subject",
+        "func": "var alarm = msg.topic;\n\nfor (var i = 0; i < global.get('users_qty'); i++) {        \n    msg.payload = \"Alerta de alarma por \" + alarm.toUpperCase();\n    msg.topic = \"subject\"\n    node.send(msg);\n}\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 210,
+        "y": 2740,
+        "wires": [
+            [
+                "7949de239c99a34b"
+            ]
+        ]
+    },
+    {
+        "id": "dd880fb8bfd7a821",
+        "type": "function",
+        "z": "999bc0a47d0df7f6",
+        "d": true,
+        "g": "b191d481f7cd8b4a",
+        "name": "Mail content",
+        "func": "for (var i = 0; i < global.get('users_qty'); i++) {        \n    msg.payload = \n        msg.time + \n        \" - Detección de un valor de \" + \n        msg.value + msg.unit + \" siendo el límite \" + \n        msg.threshold + \n        msg.unit + \n        \".\";\n    msg.topic = \"content\"\n    node.send(msg);\n}\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 210,
+        "y": 2780,
+        "wires": [
+            [
+                "5f1b581f07969449"
+            ]
+        ]
+    },
+    {
+        "id": "5f1b581f07969449",
+        "type": "delay",
+        "z": "999bc0a47d0df7f6",
+        "g": "b191d481f7cd8b4a",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 550,
+        "y": 2780,
+        "wires": [
+            [
+                "545ca89af81d3639"
+            ]
+        ]
+    },
+    {
+        "id": "db6f0f0277716231",
+        "type": "function",
+        "z": "999bc0a47d0df7f6",
+        "g": "eaea5e605a485fbb",
+        "name": "Check Current Alarms",
+        "func": "msg.value = msg.current;\nmsg.time = new Date().toLocaleString(\"es-AR\", { timeZone: \"America/Argentina/Buenos_Aires\" });\n\nif(global.get('overcurrent_alarm') == false){\n    return null;\n} \n\nif(msg.value > global.get('overcurrent_ths')){\n    // Reinicio de alarma\n    if (flow.get('t_overcurrent') != -1 && Date.now() - flow.get('t_overcurrent') < global.get('alarm_cooldown')){\n        return null;\n    }       \n    //flow.set('f_overcurrent', true);\n    flow.set('t_overcurrent', Date.now());\n    \n    // Notificaction\n    msg.topic = \"SOBRECORRIENTE!\";\n    msg.payload = \"Se detectó un pico de corriente de \" + msg.value + \"A\";\n    // Info\n    msg.alarm = \"overcurrent\";\n    msg.threshold = global.get('overcurrent_ths');\n    msg.unit = \"A\";\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set('t_overcurrent', -1);",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 1720,
+        "wires": [
+            [
+                "49f987bfacb35dab"
+            ]
+        ]
+    },
+    {
+        "id": "84d32fe5ee201877",
+        "type": "function",
+        "z": "999bc0a47d0df7f6",
+        "g": "eaea5e605a485fbb",
+        "name": "Check ActivePower Alarms",
+        "func": "msg.value = msg.active_power;\nmsg.time = new Date().toLocaleString(\"es-AR\", { timeZone: \"America/Argentina/Buenos_Aires\" });\n\n// Alarma desactivada ==> no controla nada\nif (global.get('overconsumption_alarm') == false) {\n    return;\n}\n\nif (msg.value < global.get('overconsumption_ths')) {\n    \n    // Valor menor al threshold por primera\n    if (flow.get('ap_alarm_down_flag') == false) {\n        flow.set('ap_alarm_down_flag', true);\n        flow.set('ap_alarm_down_timer', Date.now());\n        return;\n    }\n\n    // Valor menor al threshold por al menos 1 min ==> se desactiva la alarma\n    if (flow.get('ap_alarm_flag') == true && Date.now() - flow.get('ap_alarm_down_timer') > 60000) {\n        flow.set('ap_alarm_flag', false);\n        return;\n    }\n\n    return;\n}\n\n// Valor superior al threshold por primera vez\nif (flow.get('ap_alarm_flag') == false) {\n    flow.set('ap_alarm_flag', true);\n    flow.set('ap_alarm_down_flag', false);\n    flow.set('ap_alarm_timer', Date.now());\n    return;\n}\n\n// Valor superior al threshold por más del tiempo permitido ==> se activa la alarma\nif (flow.get('ap_alarm_flag') == true && Date.now() - flow.get('ap_alarm_timer') > flow.get('active_power_time_ths')){\n    flow.set('ap_alarm_flag', false);\n    // Notificaction\n    msg.topic = \"EXCESO DE CONSUMO!\";\n    msg.payload = \"Se detectó un consumo de \" + msg.value + \"W\";\n    // Info\n    msg.alarm = \"overconsumption\";\n    msg.threshold = global.get('overconsumption_ths');\n    msg.unit = \"W\";\n    return msg;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set('ap_alarm_flag', false);\nflow.set('ap_alarm_down_flag', true);",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 1760,
+        "wires": [
+            [
+                "49f987bfacb35dab"
+            ]
+        ]
+    },
+    {
+        "id": "49f987bfacb35dab",
+        "type": "delay",
+        "z": "999bc0a47d0df7f6",
+        "g": "eaea5e605a485fbb",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "5",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 490,
+        "y": 1720,
+        "wires": [
+            [
+                "bdf46ed83973910b",
+                "1a1c62b470f46324",
+                "6578e0499dea146a"
+            ]
+        ]
+    },
+    {
+        "id": "5a047c9b53637908",
+        "type": "delay",
+        "z": "999bc0a47d0df7f6",
+        "g": "b191d481f7cd8b4a",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 550,
+        "y": 2700,
+        "wires": [
+            [
+                "545ca89af81d3639"
+            ]
+        ]
+    },
+    {
+        "id": "c175c8ce19cfd98d",
+        "type": "comment",
+        "z": "999bc0a47d0df7f6",
+        "g": "eaea5e605a485fbb",
+        "name": "Falta avisar si no se detecta más el dispositivo, es decir, se cae el MQTT",
+        "info": "",
+        "x": 400,
+        "y": 1800,
+        "wires": []
+    },
+    {
+        "id": "3cb950e6de8d7af7",
+        "type": "ui_numeric",
+        "z": "999bc0a47d0df7f6",
+        "g": "8951563d9636cbc7",
+        "name": "Alarm Cooldown",
+        "label": "Tiempo [minutos]",
+        "tooltip": "",
+        "group": "39050940b9ad40f4",
+        "order": 2,
+        "width": 7,
+        "height": 1,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": "1",
+        "max": "30",
+        "step": 1,
+        "className": "",
+        "x": 520,
+        "y": 2140,
+        "wires": [
+            [
+                "e69b68ce76a467cd"
+            ]
+        ]
+    },
+    {
+        "id": "cb11038b5e13ec62",
+        "type": "ui_text",
+        "z": "999bc0a47d0df7f6",
+        "g": "8951563d9636cbc7",
+        "group": "39050940b9ad40f4",
+        "order": 1,
+        "width": 7,
+        "height": 1,
+        "name": "Description 1",
+        "label": "",
+        "format": "Intervalo de repetición de alarma",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 530,
+        "y": 2100,
+        "wires": []
+    },
+    {
+        "id": "39262c5f0ed362c6",
+        "type": "ui_numeric",
+        "z": "999bc0a47d0df7f6",
+        "g": "17df376e8b411382",
+        "name": "ActivePower Time THS",
+        "label": "Tiempo [minutos]",
+        "tooltip": "",
+        "group": "39050940b9ad40f4",
+        "order": 5,
+        "width": 7,
+        "height": 1,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": "1",
+        "max": "30",
+        "step": 1,
+        "className": "",
+        "x": 590,
+        "y": 2280,
+        "wires": [
+            [
+                "a03a27bf7979cb5d"
+            ]
+        ]
+    },
+    {
+        "id": "193d85ec0623b985",
+        "type": "ui_text",
+        "z": "999bc0a47d0df7f6",
+        "g": "17df376e8b411382",
+        "group": "39050940b9ad40f4",
+        "order": 4,
+        "width": 7,
+        "height": 1,
+        "name": "Description 2",
+        "label": "",
+        "format": "Límite de tiempo de exceso de consumo",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 590,
+        "y": 2240,
+        "wires": []
+    },
+    {
+        "id": "43678ee4de192165",
+        "type": "link in",
+        "z": "999bc0a47d0df7f6",
+        "g": "636b94da61ad5308",
+        "name": "Data voltageRMS",
+        "links": [
+            "d9ab1c338283f8b7"
+        ],
+        "x": 65,
+        "y": 1980,
+        "wires": [
+            [
+                "c6357c20e5c0e532"
+            ]
+        ]
+    },
+    {
+        "id": "c6357c20e5c0e532",
+        "type": "function",
+        "z": "999bc0a47d0df7f6",
+        "d": true,
+        "g": "636b94da61ad5308",
+        "name": "Check Voltage Alarms",
+        "func": "msg.value = msg.payload;\nmsg.time = new Date().toLocaleString(\"es-AR\", { timeZone: \"America/Argentina/Buenos_Aires\" });\n\nif(global.get('overvoltage_alarm') == true && msg.payload > global.get('overvoltage_ths')){\n    // Notificaction\n    msg.topic = \"SOBRETENSIÓN!\";\n    msg.payload = \"Se detectó un valor de tensión de \" + msg.payload + \"V\";\n    // Info\n    msg.alarm = \"overvoltage\";\n    msg.threshold = global.get('overvoltage_ths');\n    msg.unit = \"V\";\n    return msg;\n}\n\nif(global.get('undervoltage_alarm') == true && msg.payload < global.get('undervoltage_ths')){\n    // Notificaction\n    msg.topic = \"BAJA DE TENSIÓN!\";\n    msg.payload = \"Se detectó un valor de tensión de \" + msg.payload + \"V\";\n    // Info\n    msg.alarm = \"undervoltage\";\n    msg.threshold = global.get('undervoltage_ths');\n    msg.unit = \"V\";\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 1980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dc4b7f02eafbc6b9",
+        "type": "comment",
+        "z": "999bc0a47d0df7f6",
+        "g": "636b94da61ad5308",
+        "name": "Agregar cuando se reestablece el funcionamiento normal",
+        "info": "Podría ser para el sobreconumo, \npara lo otro no sé si tiene mucho sentido\ndado que son los picos lo que se detecta y\nse avisa. Si sufre picos todo el tiempo\ntiene un problema...\n\nEstá la repetición de alertas cada X tiempo\nigualmente, que hay que ver si está bien o on",
+        "x": 250,
+        "y": 1940,
+        "wires": []
+    },
+    {
+        "id": "c63964db91d2b147",
+        "type": "inject",
+        "z": "999bc0a47d0df7f6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Date.now()",
+        "payloadType": "jsonata",
+        "x": 1270,
+        "y": 1440,
+        "wires": [
+            [
+                "08e8376cacadef05"
+            ]
+        ]
+    },
+    {
+        "id": "3199a10cbc4165d5",
+        "type": "debug",
+        "z": "999bc0a47d0df7f6",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1560,
+        "y": 1440,
+        "wires": []
+    },
+    {
+        "id": "08e8376cacadef05",
+        "type": "function",
+        "z": "999bc0a47d0df7f6",
+        "name": "function 1",
+        "func": "msg.payload = Date.now();\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1400,
+        "y": 1440,
+        "wires": [
+            [
+                "3199a10cbc4165d5"
+            ]
+        ]
+    },
+    {
+        "id": "81f98454a0f1030a",
+        "type": "inject",
+        "z": "999bc0a47d0df7f6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Date.now() - flow.get('t_overvoltage') < global.get('alarm_cooldown')",
+        "payloadType": "jsonata",
+        "x": 1270,
+        "y": 1480,
+        "wires": [
+            [
+                "6ef23e811e0fb99b"
+            ]
+        ]
+    },
+    {
+        "id": "6ef23e811e0fb99b",
+        "type": "function",
+        "z": "999bc0a47d0df7f6",
+        "name": "function 2",
+        "func": "msg.payload = Date.now() - flow.get('t_overvoltage') < global.get('alarm_cooldown');\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1400,
+        "y": 1480,
+        "wires": [
+            [
+                "3199a10cbc4165d5"
+            ]
+        ]
+    },
+    {
+        "id": "8253cd2582fa03a3",
+        "type": "template",
+        "z": "999bc0a47d0df7f6",
+        "g": "b191d481f7cd8b4a",
+        "name": "Mail content",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "mustache",
+        "template": "<!DOCTYPE html>\n<html lang=\"es\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Alerta</title>\n    <style>\n        body {\n            font-family: Arial, sans-serif;\n            background-color: #f4f4f4;\n            margin: 0;\n            padding: 20px;\n        }\n        .container {\n            background-color: white;\n            padding: 20px;\n            border-radius: 8px;\n            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n            max-width: 600px; \n            margin: 0 auto; \n        }\n        .header {\n            background-color: #ff4c4c;\n            color: white;\n            padding: 10px;\n            text-align: center;\n            border-radius: 8px 8px 0 0;\n        }\n        .content {\n            padding: 20px;\n            color: #333;\n            font-size: 20px;\n        }\n        .footer {\n            text-align: center;\n            font-size: 12px;\n            color: #888;\n            margin-top: 20px;\n        }\n        .alert {\n            font-weight: bold;\n            color: #ff4c4c;\n        }\n    </style>\n</head>\n<body>\n    <div class=\"container\">\n        <div class=\"header\">\n            <h1>⚠️ Alerta por {{topic}} ⚠️</h1>\n        </div>\n        <div class=\"content\">\n            <p>Se ha detectado una alerta por <span class=\"alert\">{{topic}}</span>.</p>\n            <p>Valor medido de <strong>{{value}}{{unit}}</strong> siendo el límite <strong>{{threshold}}{{unit}}.</strong></p>\n            <p><strong>Horario:</strong> {{time}}</p>\n            <p>Puede acceder a la mediciones en tiempo real mediante el <a href=\"http://192.168.1.22:1880/ui\" target=\"_blank\">siguiente link</a>.</p>\n        </div>\n        <div class=\"footer\">\n            <p>Este es un mensaje generado automáticamente.</p>\n        </div>\n    </div>\n</body>\n</html>\n",
+        "output": "str",
+        "x": 530,
+        "y": 2920,
+        "wires": [
+            [
+                "b8c04561b45cba3a"
+            ]
+        ]
+    },
+    {
+        "id": "0fab8c05684619c4",
+        "type": "inject",
+        "z": "999bc0a47d0df7f6",
+        "g": "b191d481f7cd8b4a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 2920,
+        "wires": [
+            [
+                "0a5a0c02d3aa7cc2"
+            ]
+        ]
+    },
+    {
+        "id": "0a5a0c02d3aa7cc2",
+        "type": "change",
+        "z": "999bc0a47d0df7f6",
+        "g": "b191d481f7cd8b4a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "PICO DE TENSIÓN",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "time",
+                "pt": "msg",
+                "to": "22/09/2024 - 22:00",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "value",
+                "pt": "msg",
+                "to": "310.5",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "threshold",
+                "pt": "msg",
+                "to": "240",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "unit",
+                "pt": "msg",
+                "to": "V",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 2920,
+        "wires": [
+            [
+                "8253cd2582fa03a3"
+            ]
+        ]
+    },
+    {
+        "id": "b8c04561b45cba3a",
+        "type": "change",
+        "z": "999bc0a47d0df7f6",
+        "g": "b191d481f7cd8b4a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Test mail format",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "to",
+                "pt": "msg",
+                "to": "alejomancinelli98@gmail.com",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 740,
+        "y": 2920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2e35d729e4594c80",
+        "type": "template",
+        "z": "999bc0a47d0df7f6",
+        "g": "b191d481f7cd8b4a",
+        "name": "Mail content",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "mustache",
+        "template": "<!DOCTYPE html>\n<html lang=\"es\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Alerta</title>\n    <style>\n        body {\n            font-family: Arial, sans-serif;\n            background-color: #f4f4f4;\n            margin: 0;\n            padding: 20px;\n        }\n        .container {\n            background-color: white;\n            padding: 20px;\n            border-radius: 8px;\n            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n            max-width: 600px; \n            margin: 0 auto; \n        }\n        .header {\n            background-color: #ff4c4c;\n            color: white;\n            padding: 10px;\n            text-align: center;\n            border-radius: 8px 8px 0 0;\n        }\n        .content {\n            padding: 20px;\n            color: #333;\n            font-size: 20px;\n        }\n        .footer {\n            text-align: center;\n            font-size: 12px;\n            color: #888;\n            margin-top: 20px;\n        }\n        .alert {\n            font-weight: bold;\n            color: #ff4c4c;\n        }\n    </style>\n</head>\n<body>\n    <div class=\"container\">\n        <div class=\"header\">\n            <h1>⚠️ Alerta por {{topic}} ⚠️</h1>\n        </div>\n        <div class=\"content\">\n            <p>Se ha detectado una alerta por <span class=\"alert\">{{topic}}</span>.</p>\n            <p>Valor medido de <strong>{{value}}{{unit}}</strong> siendo el límite <strong>{{threshold}}{{unit}}.</strong></p>\n            <p><strong>Horario:</strong> {{time}}</p>\n            <p>Puede acceder a la mediciones en tiempo real mediante el <a href=\"http://192.168.1.22:1880/ui\" target=\"_blank\">siguiente link</a>.</p>\n        </div>\n        <div class=\"footer\">\n            <p>Este es un mensaje generado automáticamente.</p>\n        </div>\n    </div>\n</body>\n</html>\n",
+        "output": "str",
+        "x": 210,
+        "y": 2820,
+        "wires": [
+            [
+                "0e13beaca899fbf6"
+            ]
+        ]
+    },
+    {
+        "id": "0e13beaca899fbf6",
+        "type": "change",
+        "z": "999bc0a47d0df7f6",
+        "g": "b191d481f7cd8b4a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "content",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 370,
+        "y": 2820,
+        "wires": [
+            [
+                "5f1b581f07969449"
+            ]
+        ]
+    },
+    {
+        "id": "04f0d584c06ab2cf",
+        "type": "link in",
+        "z": "999bc0a47d0df7f6",
+        "g": "eaea5e605a485fbb",
+        "name": "MQTT Data",
+        "links": [
+            "eb7e0a26a78ab06a"
+        ],
+        "x": 65,
+        "y": 1680,
+        "wires": [
+            [
+                "a10d6a22eaf41d85",
+                "db6f0f0277716231",
+                "84d32fe5ee201877"
+            ]
+        ]
+    },
+    {
+        "id": "964330934d79646b",
+        "type": "inject",
+        "z": "999bc0a47d0df7f6",
+        "name": "",
+        "props": [
+            {
+                "p": "topic",
+                "v": "overconsumption_ths",
+                "vt": "global"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 930,
+        "y": 1680,
+        "wires": [
+            [
+                "8e881ca230f5d4cc"
+            ]
+        ]
+    },
+    {
+        "id": "8e881ca230f5d4cc",
+        "type": "debug",
+        "z": "999bc0a47d0df7f6",
+        "name": "overconsumption_ths",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "topic",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1160,
+        "y": 1680,
+        "wires": []
+    },
+    {
+        "id": "a03a27bf7979cb5d",
+        "type": "function",
+        "z": "999bc0a47d0df7f6",
+        "g": "17df376e8b411382",
+        "name": "Save overconsumption time ths",
+        "func": "flow.set('active_power_time_ths', msg.payload * 60000); // stored on disk",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 2280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e69b68ce76a467cd",
+        "type": "function",
+        "z": "999bc0a47d0df7f6",
+        "g": "8951563d9636cbc7",
+        "name": "Save alarm cooldown time",
+        "func": "global.set('alarm_cooldown', msg.payload * 60000); ",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 2140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "67faf5822ea18e12",
+        "type": "inject",
+        "z": "999bc0a47d0df7f6",
+        "name": "",
+        "props": [
+            {
+                "p": "topic",
+                "v": "alarm_cooldown",
+                "vt": "global"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 910,
+        "y": 1720,
+        "wires": [
+            [
+                "8e881ca230f5d4cc"
+            ]
+        ]
+    },
+    {
+        "id": "3fab71b4ace5efcc",
+        "type": "inject",
+        "z": "999bc0a47d0df7f6",
+        "g": "8951563d9636cbc7",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "alarm_cooldown",
+        "payloadType": "global",
+        "x": 170,
+        "y": 2140,
+        "wires": [
+            [
+                "178df268cb435b9a"
+            ]
+        ]
+    },
+    {
+        "id": "178df268cb435b9a",
+        "type": "function",
+        "z": "999bc0a47d0df7f6",
+        "g": "8951563d9636cbc7",
+        "name": "Format",
+        "func": "msg.payload = msg.payload / 60000;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 2140,
+        "wires": [
+            [
+                "3cb950e6de8d7af7"
+            ]
+        ]
+    },
+    {
+        "id": "d5f7e3f3a739697f",
+        "type": "inject",
+        "z": "999bc0a47d0df7f6",
+        "g": "17df376e8b411382",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "active_power_time_ths",
+        "payloadType": "global",
+        "x": 190,
+        "y": 2280,
+        "wires": [
+            [
+                "efdf2c1c43cf7345"
+            ]
+        ]
+    },
+    {
+        "id": "efdf2c1c43cf7345",
+        "type": "function",
+        "z": "999bc0a47d0df7f6",
+        "g": "17df376e8b411382",
+        "name": "Format",
+        "func": "msg.payload = msg.payload / 60000;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 2280,
+        "wires": [
+            [
+                "39262c5f0ed362c6"
+            ]
+        ]
+    },
+    {
+        "id": "d361e9e5d533168e",
+        "type": "comment",
+        "z": "999bc0a47d0df7f6",
+        "g": "b191d481f7cd8b4a",
+        "name": "TODO: Revisar que todo esto ande bien",
+        "info": "",
+        "x": 1110,
+        "y": 2920,
+        "wires": []
+    },
+    {
+        "id": "f0a4f6fb14284a77",
+        "type": "ui_table",
+        "z": "1f43a42441b6f63c",
+        "g": "e813f2f14ced1eb7",
+        "group": "bbd948ee4eae4c1f",
+        "name": "Alarm historic",
+        "order": 0,
+        "width": "10",
+        "height": "11",
+        "columns": [
+            {
+                "field": "currentdate",
+                "title": "Date",
+                "width": "",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "currenttime",
+                "title": "Time",
+                "width": "",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "alarmtype",
+                "title": "Alarm",
+                "width": "150",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "threshold",
+                "title": "Threshold",
+                "width": "100",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "value",
+                "title": "Value",
+                "width": "100",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 600,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "5bdee2bf7accab06",
+        "type": "sqlite",
+        "z": "1f43a42441b6f63c",
+        "g": "e813f2f14ced1eb7",
+        "mydb": "102f2b0868c8e818",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "EnergyMeter DB",
+        "x": 400,
+        "y": 120,
+        "wires": [
+            [
+                "f0a4f6fb14284a77"
+            ]
+        ]
+    },
+    {
+        "id": "876c099a375d6cc7",
+        "type": "link in",
+        "z": "1f43a42441b6f63c",
+        "g": "e813f2f14ced1eb7",
+        "name": "SQL Query Alarms In",
+        "links": [
+            "c65e88ea024b131f"
+        ],
+        "x": 95,
+        "y": 120,
+        "wires": [
+            [
+                "f14de6b435f3f23f"
+            ]
+        ]
+    },
+    {
+        "id": "f14de6b435f3f23f",
+        "type": "change",
+        "z": "1f43a42441b6f63c",
+        "g": "e813f2f14ced1eb7",
+        "name": "SQL Query",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "SELECT * FROM db_alarm_historic ORDER BY datetime DESC LIMIT 50;",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 210,
+        "y": 120,
+        "wires": [
+            [
+                "5bdee2bf7accab06"
+            ]
+        ]
+    },
+    {
+        "id": "9e39cfb912a6dce7",
+        "type": "inject",
+        "z": "1f43a42441b6f63c",
+        "g": "e813f2f14ced1eb7",
+        "name": "SQL Query",
+        "props": [
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "SELECT * FROM db_alarm_historic ORDER BY datetime DESC LIMIT 50;",
+        "x": 210,
+        "y": 80,
+        "wires": [
+            [
+                "5bdee2bf7accab06"
+            ]
+        ]
+    },
+    {
+        "id": "0c3c97dd365ab18c",
+        "type": "comment",
+        "z": "1f43a42441b6f63c",
+        "name": "TODO: Poder moverse y elegir mostrar más alertas",
+        "info": "Flechas para moverse y elegir otras 50 alarmas\no así, o elegir la cantidad que se quiere mostrar,\no las fechas (por ejemplo, alarmas de marzo)",
+        "x": 250,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "273322c83865bde6",
+        "type": "ui_form",
+        "z": "482bde5f7ef38274",
+        "g": "1102123cbc3891e1",
+        "name": "New User",
+        "label": "Añadir nuevo usuario",
+        "group": "1c8c4bf21adf2105",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "options": [
+            {
+                "label": "Nombre",
+                "value": "username",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Dirección de correo",
+                "value": "email",
+                "type": "email",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "username": "",
+            "email": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "payload",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 120,
+        "y": 240,
+        "wires": [
+            [
+                "7f7414539189a065",
+                "f129b36a497407b7"
+            ]
+        ]
+    },
+    {
+        "id": "7f7414539189a065",
+        "type": "function",
+        "z": "482bde5f7ef38274",
+        "g": "1102123cbc3891e1",
+        "name": "SQL query",
+        "func": "msg.topic = `INSERT INTO db_mailing_list(username, email) VALUES ('${msg.payload.username}', '${msg.payload.email}');`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 240,
+        "wires": [
+            [
+                "7e07cb64f4770d81",
+                "3a20b3bd99f04d16"
+            ]
+        ]
+    },
+    {
+        "id": "c8625d2a5063386f",
+        "type": "inject",
+        "z": "482bde5f7ef38274",
+        "g": "036f68430478cdae",
+        "name": "SQL Query",
+        "props": [
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "SELECT * FROM db_mailing_list;",
+        "x": 190,
+        "y": 360,
+        "wires": [
+            [
+                "7a5ef607bed59be3"
+            ]
+        ]
+    },
+    {
+        "id": "7a5ef607bed59be3",
+        "type": "sqlite",
+        "z": "482bde5f7ef38274",
+        "g": "036f68430478cdae",
+        "mydb": "102f2b0868c8e818",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "EnergyMeter DB",
+        "x": 380,
+        "y": 400,
+        "wires": [
+            [
+                "906e5e947ee38712",
+                "9330c1a537b1162c"
+            ]
+        ]
+    },
+    {
+        "id": "906e5e947ee38712",
+        "type": "ui_table",
+        "z": "482bde5f7ef38274",
+        "g": "036f68430478cdae",
+        "group": "1c8c4bf21adf2105",
+        "name": "Users Table",
+        "order": 2,
+        "width": 10,
+        "height": "5",
+        "columns": [
+            {
+                "field": "username",
+                "title": "User",
+                "width": "40%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "email",
+                "title": "Email",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 1,
+        "cts": true,
+        "x": 570,
+        "y": 400,
+        "wires": [
+            [
+                "18a6aa9eb50aefd9"
+            ]
+        ]
+    },
+    {
+        "id": "6a79a671d86edcd9",
+        "type": "ui_toast",
+        "z": "482bde5f7ef38274",
+        "g": "d88b4db3501fe487",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "DELETE",
+        "cancel": "CANCEL",
+        "raw": true,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 530,
+        "y": 520,
+        "wires": [
+            [
+                "2207f1a4c6f5208d"
+            ]
+        ]
+    },
+    {
+        "id": "ea321daf8ad14ebc",
+        "type": "join",
+        "z": "482bde5f7ef38274",
+        "g": "d88b4db3501fe487",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "useparts": false,
+        "accumulate": false,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 390,
+        "y": 600,
+        "wires": [
+            [
+                "d41d17e5ced7d3e1"
+            ]
+        ]
+    },
+    {
+        "id": "e817f941465a3e0a",
+        "type": "function",
+        "z": "482bde5f7ef38274",
+        "g": "d88b4db3501fe487",
+        "name": "SQL Query",
+        "func": "msg.topic = `DELETE FROM db_mailing_list WHERE username = '${msg.payload.user_data.username}'`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 600,
+        "wires": [
+            [
+                "8a837eb8e1da3067",
+                "d710d7ed206a4588"
+            ]
+        ]
+    },
+    {
+        "id": "d41d17e5ced7d3e1",
+        "type": "switch",
+        "z": "482bde5f7ef38274",
+        "g": "d88b4db3501fe487",
+        "name": "",
+        "property": "payload.delete_user",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "DELETE",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 510,
+        "y": 600,
+        "wires": [
+            [
+                "e817f941465a3e0a"
+            ]
+        ]
+    },
+    {
+        "id": "7e07cb64f4770d81",
+        "type": "debug",
+        "z": "482bde5f7ef38274",
+        "g": "1102123cbc3891e1",
+        "name": "SQL Query",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "topic",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 510,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "bff8ddaba624602b",
+        "type": "link in",
+        "z": "482bde5f7ef38274",
+        "g": "036f68430478cdae",
+        "name": "SQL Query Users",
+        "links": [
+            "f38bab9ac0e7d198",
+            "c023858f7988e11b"
+        ],
+        "x": 75,
+        "y": 400,
+        "wires": [
+            [
+                "e9d0bf6fe6b4e4b8"
+            ]
+        ]
+    },
+    {
+        "id": "e9d0bf6fe6b4e4b8",
+        "type": "change",
+        "z": "482bde5f7ef38274",
+        "g": "036f68430478cdae",
+        "name": "SQL Query",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "SELECT * FROM db_mailing_list;",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 190,
+        "y": 400,
+        "wires": [
+            [
+                "7a5ef607bed59be3"
+            ]
+        ]
+    },
+    {
+        "id": "d710d7ed206a4588",
+        "type": "debug",
+        "z": "482bde5f7ef38274",
+        "g": "d88b4db3501fe487",
+        "name": "Delete User Query",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 850,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "7be9f4af7f7adcaf",
+        "type": "function",
+        "z": "482bde5f7ef38274",
+        "g": "d88b4db3501fe487",
+        "name": "Format",
+        "func": "msg.topic = \"¿Está seguro que desea eliminar al siguiente usuario?\";\nmsg.payload = `\n    <p>Usuario: ${msg.payload.username}</p>\n    <p>Email: ${msg.payload.email}</p>`; \nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 520,
+        "wires": [
+            [
+                "6a79a671d86edcd9"
+            ]
+        ]
+    },
+    {
+        "id": "2207f1a4c6f5208d",
+        "type": "change",
+        "z": "482bde5f7ef38274",
+        "g": "d88b4db3501fe487",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "delete_user",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 520,
+        "wires": [
+            [
+                "ea321daf8ad14ebc"
+            ]
+        ]
+    },
+    {
+        "id": "8bd388d4f217e86b",
+        "type": "change",
+        "z": "482bde5f7ef38274",
+        "g": "d88b4db3501fe487",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "user_data",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 190,
+        "y": 520,
+        "wires": [
+            [
+                "ea321daf8ad14ebc",
+                "7be9f4af7f7adcaf"
+            ]
+        ]
+    },
+    {
+        "id": "df6489f2db26559e",
+        "type": "sqlite",
+        "z": "482bde5f7ef38274",
+        "g": "2c8eda0455efa68b",
+        "mydb": "102f2b0868c8e818",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "EnergyMeter DB",
+        "x": 200,
+        "y": 80,
+        "wires": [
+            [
+                "59f358c717560f2f"
+            ]
+        ]
+    },
+    {
+        "id": "59f358c717560f2f",
+        "type": "delay",
+        "z": "482bde5f7ef38274",
+        "g": "2c8eda0455efa68b",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "500",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 370,
+        "y": 80,
+        "wires": [
+            [
+                "c023858f7988e11b"
+            ]
+        ]
+    },
+    {
+        "id": "c023858f7988e11b",
+        "type": "link out",
+        "z": "482bde5f7ef38274",
+        "g": "2c8eda0455efa68b",
+        "name": "SQL Query Users",
+        "mode": "link",
+        "links": [
+            "bff8ddaba624602b"
+        ],
+        "x": 485,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "b08f8b26dea3da57",
+        "type": "link in",
+        "z": "482bde5f7ef38274",
+        "g": "2c8eda0455efa68b",
+        "name": "Update User DB",
+        "links": [
+            "8a837eb8e1da3067",
+            "3a20b3bd99f04d16"
+        ],
+        "x": 75,
+        "y": 80,
+        "wires": [
+            [
+                "df6489f2db26559e"
+            ]
+        ]
+    },
+    {
+        "id": "8a837eb8e1da3067",
+        "type": "link out",
+        "z": "482bde5f7ef38274",
+        "g": "d88b4db3501fe487",
+        "name": "Update User DB",
+        "mode": "link",
+        "links": [
+            "b08f8b26dea3da57"
+        ],
+        "x": 775,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "3a20b3bd99f04d16",
+        "type": "link out",
+        "z": "482bde5f7ef38274",
+        "g": "1102123cbc3891e1",
+        "name": "Update User DB",
+        "mode": "link",
+        "links": [
+            "b08f8b26dea3da57"
+        ],
+        "x": 455,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "f129b36a497407b7",
+        "type": "debug",
+        "z": "482bde5f7ef38274",
+        "g": "1102123cbc3891e1",
+        "name": "Form",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 290,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "9330c1a537b1162c",
+        "type": "function",
+        "z": "482bde5f7ef38274",
+        "g": "036f68430478cdae",
+        "name": "Set Users Qty",
+        "func": "var users = msg.payload;\n\nglobal.set('users_qty', users.length);\nreturn;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "18a6aa9eb50aefd9",
+        "type": "link out",
+        "z": "482bde5f7ef38274",
+        "g": "036f68430478cdae",
+        "name": "Delete user",
+        "mode": "link",
+        "links": [
+            "cb7a58acec2c1a7c"
+        ],
+        "x": 675,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "cb7a58acec2c1a7c",
+        "type": "link in",
+        "z": "482bde5f7ef38274",
+        "g": "d88b4db3501fe487",
+        "name": "Delete user",
+        "links": [
+            "18a6aa9eb50aefd9"
+        ],
+        "x": 75,
+        "y": 520,
+        "wires": [
+            [
+                "8bd388d4f217e86b"
+            ]
+        ]
+    },
+    {
+        "id": "e220639361b63134",
+        "type": "ui_dropdown",
+        "z": "fe72ad617b9a8a48",
+        "d": true,
+        "name": "Chart range",
+        "label": "Select chart range",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "c658951498713792",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "day",
+                "value": "day",
+                "type": "str"
+            },
+            {
+                "label": "week",
+                "value": "week",
+                "type": "str"
+            },
+            {
+                "label": "month",
+                "value": "month",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 130,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5e5a831a6a72db51",
+        "type": "comment",
+        "z": "fe72ad617b9a8a48",
+        "name": "TODO: Historico de consumo",
+        "info": "- Por día, por semana, o por mes nomás",
+        "x": 160,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "ec725baedda36d6c",
+        "type": "sqlite",
+        "z": "fe72ad617b9a8a48",
+        "mydb": "102f2b0868c8e818",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "EnergyMeter DB",
+        "x": 320,
+        "y": 100,
+        "wires": [
+            [
+                "206a6ce39c43d7a6",
+                "6901447ccec2b068"
+            ]
+        ]
+    },
+    {
+        "id": "1ba4316147fde248",
+        "type": "inject",
+        "z": "fe72ad617b9a8a48",
+        "d": true,
+        "name": "SQL Query",
+        "props": [
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "3600",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "SELECT substr(time, 1, 2) AS hour, AVG(active_power) AS energy_per_hour FROM db_raw_data WHERE date = date('now') GROUP BY substr(time, 1, 2) ORDER BY time;",
+        "x": 130,
+        "y": 100,
+        "wires": [
+            [
+                "ec725baedda36d6c"
+            ]
+        ]
+    },
+    {
+        "id": "729e5d5c514befab",
+        "type": "inject",
+        "z": "fe72ad617b9a8a48",
+        "name": "1",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "2024-09-11",
+        "payload": "10000",
+        "payloadType": "num",
+        "x": 530,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b3d6e4838d12cbdc",
+        "type": "inject",
+        "z": "fe72ad617b9a8a48",
+        "name": "2",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "2024-09-12",
+        "payload": "20000",
+        "payloadType": "num",
+        "x": 530,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "206a6ce39c43d7a6",
+        "type": "ui_chart",
+        "z": "fe72ad617b9a8a48",
+        "name": "",
+        "group": "c658951498713792",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "chart",
+        "chartType": "bar",
+        "legend": "true",
+        "xformat": "D/M",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 530,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6901447ccec2b068",
+        "type": "ui_table",
+        "z": "fe72ad617b9a8a48",
+        "group": "c658951498713792",
+        "name": "",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "columns": [
+            {
+                "field": "hour",
+                "title": "hour",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "energy_per_hour",
+                "title": "energy_per_hour",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 550,
+        "y": 40,
+        "wires": []
+    }
+]

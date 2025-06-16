@@ -8,9 +8,9 @@
         "env": []
     },
     {
-        "id": "999bc0a47d0df7f6",
+        "id": "fe72ad617b9a8a48",
         "type": "tab",
-        "label": "Alarms",
+        "label": "Data analysis",
         "disabled": false,
         "info": "",
         "env": []
@@ -24,17 +24,17 @@
         "env": []
     },
     {
-        "id": "482bde5f7ef38274",
+        "id": "999bc0a47d0df7f6",
         "type": "tab",
-        "label": "Users Management",
+        "label": "Alarms",
         "disabled": false,
         "info": "",
         "env": []
     },
     {
-        "id": "fe72ad617b9a8a48",
+        "id": "482bde5f7ef38274",
         "type": "tab",
-        "label": "Data analysis",
+        "label": "Users Management",
         "disabled": false,
         "info": "",
         "env": []
@@ -51,13 +51,13 @@
             "d71276f4c389b10c",
             "155fd0e456750fa5",
             "eb7e0a26a78ab06a",
-            "c6990dfcbb58ec80",
-            "79149befeaf59fa8"
+            "0ccea1b1d23a277c",
+            "d2f1176be2a64f02"
         ],
         "x": 54,
         "y": 39,
-        "w": 672,
-        "h": 122
+        "w": 632,
+        "h": 162
     },
     {
         "id": "f8b20ae8640a9fc1",
@@ -96,18 +96,20 @@
         },
         "nodes": [
             "a10d6a22eaf41d85",
-            "1a1c62b470f46324",
-            "6578e0499dea146a",
-            "bdf46ed83973910b",
             "db6f0f0277716231",
             "84d32fe5ee201877",
             "49f987bfacb35dab",
             "c175c8ce19cfd98d",
-            "04f0d584c06ab2cf"
+            "04f0d584c06ab2cf",
+            "1de45397763731e3",
+            "7433e8168f2576ab",
+            "1a1c62b470f46324",
+            "6314529a303f7e63",
+            "ea7daa7b6dfa439c"
         ],
-        "x": 24,
-        "y": 1639,
-        "w": 792,
+        "x": 164,
+        "y": 1679,
+        "w": 982,
         "h": 202
     },
     {
@@ -209,7 +211,6 @@
             "e17627c9227f928e",
             "9638751ead0f8f73",
             "dbcc77638fa8f7ff",
-            "0d138de8154c3978",
             "148199254e0cc55e",
             "fddb374c7fe31434",
             "2559e8c84910d219",
@@ -218,21 +219,16 @@
         ],
         "x": 14,
         "y": 1259,
-        "w": 912,
+        "w": 742,
         "h": 362
     },
     {
         "id": "c9065a9ed0d57479",
         "type": "group",
         "z": "b0af0ce7369514a3",
+        "name": "Graph data",
         "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
+            "label": true
         },
         "nodes": [
             "f1d0ac2160939dc9",
@@ -240,9 +236,6 @@
             "8745157f0f289caf",
             "d29e6989bec42e21",
             "c3301738deb4e1f1",
-            "6b91cdda79e5e1df",
-            "6d9cd7b8d1ac56cd",
-            "546ff7c105f245a7",
             "3d684a97b057f51d",
             "2262f67bcda5aa03",
             "db768e2b48edeb48",
@@ -250,56 +243,14 @@
             "fe735c7e72db98ec",
             "40a1371555cfd25e",
             "096b1813f91ac182",
-            "72e4ece2f4c10804",
-            "379a38da8aaf6b1f",
-            "47954f663248a36c",
-            "38ed4e5e142361f7"
+            "c33526511ce0d8f6",
+            "1a8d07e822bffc9c",
+            "171a29cb9395adb8"
         ],
         "x": 54,
-        "y": 199,
-        "w": 592,
-        "h": 522
-    },
-    {
-        "id": "e813f2f14ced1eb7",
-        "type": "group",
-        "z": "1f43a42441b6f63c",
-        "name": "Alarm historic table",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "f0a4f6fb14284a77",
-            "5bdee2bf7accab06",
-            "876c099a375d6cc7",
-            "f14de6b435f3f23f",
-            "9e39cfb912a6dce7"
-        ],
-        "x": 54,
-        "y": 39,
-        "w": 652,
-        "h": 122
-    },
-    {
-        "id": "f1691c5914160b1b",
-        "type": "group",
-        "z": "999bc0a47d0df7f6",
-        "name": "Save alarm in DB",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "aab51cbd69c48b70",
-            "883d13997b3b77ca",
-            "e86b7369d042c10f",
-            "7433e8168f2576ab",
-            "c65e88ea024b131f",
-            "6314529a303f7e63"
-        ],
-        "x": 14,
-        "y": 2359,
-        "w": 532,
-        "h": 162
+        "y": 239,
+        "w": 572,
+        "h": 322
     },
     {
         "id": "b191d481f7cd8b4a",
@@ -312,29 +263,15 @@
         "nodes": [
             "473a76b058a905f6",
             "2b9c257870e2496e",
-            "23829b84677b7c76",
             "b64aeb96ae8f9fd2",
             "c8cf8966b029e018",
             "5ad943333ba368e8",
-            "545ca89af81d3639",
-            "eec5bf87f0cb5280",
-            "80bf1b1e6a3e859f",
-            "7949de239c99a34b",
-            "dd880fb8bfd7a821",
-            "5f1b581f07969449",
-            "5a047c9b53637908",
-            "8253cd2582fa03a3",
-            "0fab8c05684619c4",
-            "0a5a0c02d3aa7cc2",
-            "b8c04561b45cba3a",
-            "2e35d729e4594c80",
-            "0e13beaca899fbf6",
-            "d361e9e5d533168e"
+            "6e65b0533267aac0"
         ],
         "x": 14,
-        "y": 2599,
-        "w": 1272,
-        "h": 362
+        "y": 2259,
+        "w": 932,
+        "h": 82
     },
     {
         "id": "1102123cbc3891e1",
@@ -347,14 +284,12 @@
         "nodes": [
             "273322c83865bde6",
             "7f7414539189a065",
-            "7e07cb64f4770d81",
-            "3a20b3bd99f04d16",
-            "f129b36a497407b7"
+            "3a20b3bd99f04d16"
         ],
         "x": 34,
         "y": 159,
-        "w": 592,
-        "h": 122
+        "w": 422,
+        "h": 82
     },
     {
         "id": "2c8eda0455efa68b",
@@ -372,54 +307,26 @@
         ],
         "x": 34,
         "y": 39,
-        "w": 492,
-        "h": 82
-    },
-    {
-        "id": "9996a8587542bcf9",
-        "type": "group",
-        "z": "999bc0a47d0df7f6",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "0e790badd828e6a0",
-            "98a6df06f042dc23"
-        ],
-        "x": 894,
-        "y": 2499,
-        "w": 262,
+        "w": 522,
         "h": 82
     },
     {
         "id": "372d6a6ba94b0d06",
         "type": "group",
         "z": "999bc0a47d0df7f6",
+        "name": "Update alarms states",
         "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
+            "label": true
         },
         "nodes": [
             "d35f9e07f9b786bf",
             "13f41426b533b5e0",
-            "adcfde493a44c574",
-            "61679f5c3fc57edd"
+            "adcfde493a44c574"
         ],
-        "x": 894,
-        "y": 2359,
-        "w": 572,
-        "h": 122
+        "x": 1174,
+        "y": 759,
+        "w": 402,
+        "h": 82
     },
     {
         "id": "1d5a30a49e64d027",
@@ -466,11 +373,12 @@
             "bff8ddaba624602b",
             "e9d0bf6fe6b4e4b8",
             "9330c1a537b1162c",
-            "18a6aa9eb50aefd9"
+            "18a6aa9eb50aefd9",
+            "29e33daa3fb5df8d"
         ],
         "x": 34,
-        "y": 319,
-        "w": 682,
+        "y": 279,
+        "w": 862,
         "h": 122
     },
     {
@@ -482,21 +390,16 @@
             "label": true
         },
         "nodes": [
-            "6a79a671d86edcd9",
-            "ea321daf8ad14ebc",
-            "e817f941465a3e0a",
-            "d41d17e5ced7d3e1",
-            "d710d7ed206a4588",
-            "7be9f4af7f7adcaf",
-            "2207f1a4c6f5208d",
-            "8bd388d4f217e86b",
             "8a837eb8e1da3067",
-            "cb7a58acec2c1a7c"
+            "cb7a58acec2c1a7c",
+            "8c45e33dabc0b9d0",
+            "229644ec547cba8b",
+            "1ebec28e7a36f619"
         ],
         "x": 34,
-        "y": 479,
-        "w": 952,
-        "h": 202
+        "y": 439,
+        "w": 682,
+        "h": 82
     },
     {
         "id": "8951563d9636cbc7",
@@ -514,7 +417,7 @@
             "3fab71b4ace5efcc"
         ],
         "x": 14,
-        "y": 2059,
+        "y": 1939,
         "w": 872,
         "h": 122
     },
@@ -534,32 +437,155 @@
             "efdf2c1c43cf7345"
         ],
         "x": 14,
-        "y": 2199,
+        "y": 2079,
         "w": 992,
         "h": 122
     },
     {
-        "id": "636b94da61ad5308",
+        "id": "4aeb419092df88b3",
         "type": "group",
-        "z": "999bc0a47d0df7f6",
+        "z": "1f43a42441b6f63c",
+        "name": "Alarm historic settings",
         "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
+            "label": true
         },
         "nodes": [
-            "43678ee4de192165",
-            "c6357c20e5c0e532",
-            "dc4b7f02eafbc6b9"
+            "275500053bf46980",
+            "1999f6ed94cc5654",
+            "437b0fafb4ee7953",
+            "8ad5126ea098aa6b",
+            "d48e44cf902f9555",
+            "ed4bf82fbaebbc6a",
+            "062fe62dd1be1beb",
+            "b03ba45cdfbfdbf5",
+            "bd1d730eeead1b13",
+            "eae5919fba2cb6c2"
         ],
-        "x": 14,
-        "y": 1899,
-        "w": 472,
+        "x": 34,
+        "y": 59,
+        "w": 872,
+        "h": 182
+    },
+    {
+        "id": "19bed9717ceed5e0",
+        "type": "group",
+        "z": "fe72ad617b9a8a48",
+        "name": "Settings",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "29265d16b4d1ef7d",
+            "21fc9c5c0d93d48b",
+            "b09c53d8e8e34330",
+            "086345c8caa02802",
+            "0e008285bccde37a",
+            "ee0e8c720ae13081",
+            "6dfab8a6a3a6c087",
+            "f23c2373e4ca2561",
+            "42ee1d734ecf2e9a",
+            "e6fc68df2400440f",
+            "40140164cf3ad288"
+        ],
+        "x": 34,
+        "y": 39,
+        "w": 872,
+        "h": 242
+    },
+    {
+        "id": "c36b78434a89a02c",
+        "type": "group",
+        "z": "fe72ad617b9a8a48",
+        "name": "Show consumption",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "4142ce0932eab763",
+            "9adc59faa7bafbdb",
+            "206a6ce39c43d7a6",
+            "7ffde4ec1de83e8f",
+            "cfd134107c7ca061",
+            "30b7690e880e4770",
+            "3401b32d0ef7043a"
+        ],
+        "x": 34,
+        "y": 339,
+        "w": 952,
+        "h": 222
+    },
+    {
+        "id": "ed44ad4eca26127a",
+        "type": "group",
+        "z": "1f43a42441b6f63c",
+        "name": "Alarm historic table",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "f0a4f6fb14284a77",
+            "5bdee2bf7accab06",
+            "ca20930cea3a7794",
+            "7b5c32ee96921408",
+            "fdb140d30ed5aac8"
+        ],
+        "x": 34,
+        "y": 279,
+        "w": 772,
         "h": 122
+    },
+    {
+        "id": "df0c622be2e676ce",
+        "type": "group",
+        "z": "b0af0ce7369514a3",
+        "name": "Save data config",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "fe99c810687ce07b",
+            "5d4348e7edaedde4",
+            "8aec68e389086744"
+        ],
+        "x": 734,
+        "y": 39,
+        "w": 412,
+        "h": 122
+    },
+    {
+        "id": "677412c45c1cb68c",
+        "type": "group",
+        "z": "b0af0ce7369514a3",
+        "name": "System Status",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "53522f53f48f9aa8",
+            "530196314247f54e",
+            "b40425d6d081f9a0"
+        ],
+        "x": 54,
+        "y": 599,
+        "w": 552,
+        "h": 82
+    },
+    {
+        "id": "9996a8587542bcf9",
+        "type": "group",
+        "z": "999bc0a47d0df7f6",
+        "name": "Save data in DB",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "0e790badd828e6a0",
+            "98a6df06f042dc23"
+        ],
+        "x": 844,
+        "y": 1379,
+        "w": 262,
+        "h": 82
     },
     {
         "id": "56370940d96f10de",
@@ -796,7 +822,7 @@
             }
         },
         "site": {
-            "name": "Node-RED Dashboard",
+            "name": "Energy Meter Monitoring Panel",
             "hideToolbar": "false",
             "allowSwipe": "false",
             "lockMenu": "true",
@@ -834,18 +860,18 @@
         "type": "ui_tab",
         "name": "Users",
         "icon": "dashboard",
-        "order": 3,
+        "order": 5,
         "disabled": false,
         "hidden": false
     },
     {
         "id": "1c8c4bf21adf2105",
         "type": "ui_group",
-        "name": "User",
+        "name": "User List",
         "tab": "147ac8b566301e6c",
-        "order": 1,
-        "disp": false,
-        "width": 16,
+        "order": 2,
+        "disp": true,
+        "width": "16",
         "collapse": false,
         "className": ""
     },
@@ -863,17 +889,17 @@
         "type": "ui_tab",
         "name": "Alarm Historic",
         "icon": "dashboard",
-        "order": 2,
+        "order": 3,
         "disabled": false,
         "hidden": false
     },
     {
         "id": "bbd948ee4eae4c1f",
         "type": "ui_group",
-        "name": "Historic",
+        "name": "Settings",
         "tab": "06bb1ecfe875d51e",
         "order": 1,
-        "disp": false,
+        "disp": true,
         "width": "10",
         "collapse": false,
         "className": ""
@@ -892,19 +918,20 @@
     {
         "id": "c0014e95575a695d",
         "type": "ui_tab",
-        "name": "Charts",
+        "name": "Energy",
         "icon": "dashboard",
+        "order": 2,
         "disabled": false,
         "hidden": false
     },
     {
         "id": "c658951498713792",
         "type": "ui_group",
-        "name": "default",
+        "name": "Settings",
         "tab": "c0014e95575a695d",
         "order": 1,
         "disp": true,
-        "width": "6",
+        "width": 8,
         "collapse": false,
         "className": ""
     },
@@ -920,9 +947,64 @@
         "className": ""
     },
     {
-        "id": "42b8d4c8e0d0a77b",
+        "id": "39050940b9ad40f4",
+        "type": "ui_group",
+        "name": "Time Threshold",
+        "tab": "7e42e3890f16c7cb",
+        "order": 2,
+        "disp": false,
+        "width": 5,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3b615f52c05d9ff0",
+        "type": "ui_group",
+        "name": "Energy Consumption [kWh]",
+        "tab": "c0014e95575a695d",
+        "order": 2,
+        "disp": true,
+        "width": "16",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f1fa4b428c2f1cf0",
+        "type": "ui_group",
+        "name": "Alarm Historic",
+        "tab": "06bb1ecfe875d51e",
+        "order": 2,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "23dd2c25a12ff010",
+        "type": "ui_group",
+        "name": "Add New User",
+        "tab": "147ac8b566301e6c",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a5efa5edc0719406",
+        "type": "ui_group",
+        "name": "General Configuration",
+        "tab": "7e42e3890f16c7cb",
+        "order": 3,
+        "disp": false,
+        "width": 5,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "613a20e97a607c52",
         "type": "ui_spacer",
-        "z": "1f43a42441b6f63c",
+        "z": "b0af0ce7369514a3",
         "name": "spacer",
         "group": "3999f441ae228e70",
         "order": 3,
@@ -930,9 +1012,9 @@
         "height": 1
     },
     {
-        "id": "5d0a94cd44833eef",
+        "id": "ba53f8a2287cf871",
         "type": "ui_spacer",
-        "z": "1f43a42441b6f63c",
+        "z": "b0af0ce7369514a3",
         "name": "spacer",
         "group": "3999f441ae228e70",
         "order": 5,
@@ -940,9 +1022,9 @@
         "height": 1
     },
     {
-        "id": "3d542de418e96344",
+        "id": "7b82699aff84bb7d",
         "type": "ui_spacer",
-        "z": "1f43a42441b6f63c",
+        "z": "b0af0ce7369514a3",
         "name": "spacer",
         "group": "3999f441ae228e70",
         "order": 6,
@@ -950,9 +1032,9 @@
         "height": 1
     },
     {
-        "id": "ac99e4a507062150",
+        "id": "c046e4cc0d62108b",
         "type": "ui_spacer",
-        "z": "1f43a42441b6f63c",
+        "z": "b0af0ce7369514a3",
         "name": "spacer",
         "group": "3999f441ae228e70",
         "order": 7,
@@ -960,9 +1042,9 @@
         "height": 1
     },
     {
-        "id": "98b8f9db8209c505",
+        "id": "3563f5c30c364bda",
         "type": "ui_spacer",
-        "z": "1f43a42441b6f63c",
+        "z": "b0af0ce7369514a3",
         "name": "spacer",
         "group": "3999f441ae228e70",
         "order": 8,
@@ -970,9 +1052,9 @@
         "height": 1
     },
     {
-        "id": "0ab4dfb3db163466",
+        "id": "455528e12b726795",
         "type": "ui_spacer",
-        "z": "1f43a42441b6f63c",
+        "z": "b0af0ce7369514a3",
         "name": "spacer",
         "group": "3999f441ae228e70",
         "order": 9,
@@ -980,9 +1062,9 @@
         "height": 1
     },
     {
-        "id": "5739dabbd35c6284",
+        "id": "74d2d87bad584def",
         "type": "ui_spacer",
-        "z": "1f43a42441b6f63c",
+        "z": "b0af0ce7369514a3",
         "name": "spacer",
         "group": "3999f441ae228e70",
         "order": 10,
@@ -990,9 +1072,9 @@
         "height": 1
     },
     {
-        "id": "5a4b40827199b439",
+        "id": "b3ecc7ac1ea5ecd8",
         "type": "ui_spacer",
-        "z": "1f43a42441b6f63c",
+        "z": "b0af0ce7369514a3",
         "name": "spacer",
         "group": "3999f441ae228e70",
         "order": 11,
@@ -1000,9 +1082,9 @@
         "height": 1
     },
     {
-        "id": "b5e48e7f3a8b3961",
+        "id": "44a83193b1eec1f3",
         "type": "ui_spacer",
-        "z": "1f43a42441b6f63c",
+        "z": "b0af0ce7369514a3",
         "name": "spacer",
         "group": "3999f441ae228e70",
         "order": 12,
@@ -1010,9 +1092,9 @@
         "height": 1
     },
     {
-        "id": "5436aa3d9be40e1e",
+        "id": "e1fe767a50e2ccbd",
         "type": "ui_spacer",
-        "z": "1f43a42441b6f63c",
+        "z": "b0af0ce7369514a3",
         "name": "spacer",
         "group": "3999f441ae228e70",
         "order": 13,
@@ -1020,9 +1102,9 @@
         "height": 1
     },
     {
-        "id": "3327b567ed226806",
+        "id": "934353877a366ad8",
         "type": "ui_spacer",
-        "z": "1f43a42441b6f63c",
+        "z": "b0af0ce7369514a3",
         "name": "spacer",
         "group": "3999f441ae228e70",
         "order": 14,
@@ -1030,29 +1112,19 @@
         "height": 1
     },
     {
-        "id": "22545259534d2817",
+        "id": "d9377b05f7ea93de",
         "type": "ui_spacer",
-        "z": "1f43a42441b6f63c",
+        "z": "b0af0ce7369514a3",
         "name": "spacer",
         "group": "3999f441ae228e70",
         "order": 15,
-        "width": 6,
+        "width": 2,
         "height": 1
     },
     {
-        "id": "1e701e29f07af043",
+        "id": "e620d4d35f222229",
         "type": "ui_spacer",
-        "z": "1f43a42441b6f63c",
-        "name": "spacer",
-        "group": "3999f441ae228e70",
-        "order": 16,
-        "width": 6,
-        "height": 1
-    },
-    {
-        "id": "fb7753a51fd6ab3c",
-        "type": "ui_spacer",
-        "z": "1f43a42441b6f63c",
+        "z": "b0af0ce7369514a3",
         "name": "spacer",
         "group": "3999f441ae228e70",
         "order": 17,
@@ -1060,18 +1132,17 @@
         "height": 1
     },
     {
-        "id": "39050940b9ad40f4",
-        "type": "ui_group",
-        "name": "Time Threshold",
-        "tab": "7e42e3890f16c7cb",
-        "order": 2,
-        "disp": false,
-        "width": 7,
-        "collapse": false,
-        "className": ""
+        "id": "83ef1506916af715",
+        "type": "ui_spacer",
+        "z": "b0af0ce7369514a3",
+        "name": "spacer",
+        "group": "3999f441ae228e70",
+        "order": 18,
+        "width": 2,
+        "height": 1
     },
     {
-        "id": "34095c6ea2409c70",
+        "id": "856c53a782055833",
         "type": "ui_spacer",
         "z": "999bc0a47d0df7f6",
         "name": "spacer",
@@ -1081,7 +1152,7 @@
         "height": 1
     },
     {
-        "id": "8499ba27feb601ec",
+        "id": "27c9fc41ee18cd81",
         "type": "ui_spacer",
         "z": "999bc0a47d0df7f6",
         "name": "spacer",
@@ -1091,7 +1162,7 @@
         "height": 1
     },
     {
-        "id": "17be4adf9aaac296",
+        "id": "565a1debc7b30066",
         "type": "ui_spacer",
         "z": "999bc0a47d0df7f6",
         "name": "spacer",
@@ -1101,7 +1172,7 @@
         "height": 1
     },
     {
-        "id": "4fcc7e4cfcc93ae8",
+        "id": "0fe280512eb0c27e",
         "type": "ui_spacer",
         "z": "999bc0a47d0df7f6",
         "name": "spacer",
@@ -1111,7 +1182,7 @@
         "height": 1
     },
     {
-        "id": "7170279b790d8ab7",
+        "id": "07ec0c60c9a38222",
         "type": "ui_spacer",
         "z": "999bc0a47d0df7f6",
         "name": "spacer",
@@ -1121,7 +1192,7 @@
         "height": 1
     },
     {
-        "id": "52892342d135e8c8",
+        "id": "87b4b4f16e3f8c05",
         "type": "ui_spacer",
         "z": "999bc0a47d0df7f6",
         "name": "spacer",
@@ -1131,7 +1202,7 @@
         "height": 1
     },
     {
-        "id": "46f8d3a253770022",
+        "id": "799ec68b3118fd15",
         "type": "ui_spacer",
         "z": "999bc0a47d0df7f6",
         "name": "spacer",
@@ -1141,7 +1212,7 @@
         "height": 1
     },
     {
-        "id": "a0db34b3be815223",
+        "id": "fa15dc3d0e90f16f",
         "type": "ui_spacer",
         "z": "999bc0a47d0df7f6",
         "name": "spacer",
@@ -1151,7 +1222,7 @@
         "height": 1
     },
     {
-        "id": "0db3b189f5846bb6",
+        "id": "2d51a5d1db2b656f",
         "type": "ui_spacer",
         "z": "999bc0a47d0df7f6",
         "name": "spacer",
@@ -1161,13 +1232,13 @@
         "height": 1
     },
     {
-        "id": "49b4a4617c661cd3",
+        "id": "c99f34e86a9a75cb",
         "type": "ui_spacer",
         "z": "999bc0a47d0df7f6",
         "name": "spacer",
         "group": "39050940b9ad40f4",
         "order": 3,
-        "width": 7,
+        "width": 5,
         "height": 1
     },
     {
@@ -1187,7 +1258,7 @@
         "interpolate": "linear",
         "nodata": "",
         "dot": false,
-        "ymin": "",
+        "ymin": "0",
         "ymax": "",
         "removeOlder": "5",
         "removeOlderPoints": "",
@@ -1209,8 +1280,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 510,
-        "y": 240,
+        "x": 490,
+        "y": 280,
         "wires": [
             []
         ]
@@ -1254,8 +1325,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 510,
-        "y": 400,
+        "x": 490,
+        "y": 340,
         "wires": [
             []
         ]
@@ -1299,8 +1370,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 510,
-        "y": 520,
+        "x": 490,
+        "y": 400,
         "wires": [
             []
         ]
@@ -1367,8 +1438,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 520,
-        "y": 620,
+        "x": 500,
+        "y": 460,
         "wires": [
             []
         ]
@@ -1413,115 +1484,10 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 510,
-        "y": 680,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "6b91cdda79e5e1df",
-        "type": "change",
-        "z": "b0af0ce7369514a3",
-        "g": "c9065a9ed0d57479",
-        "name": "Voltage RMS",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "voltage",
-                "tot": "msg"
-            },
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "Voltage RMS",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 250,
-        "y": 240,
-        "wires": [
-            [
-                "f1d0ac2160939dc9"
-            ]
-        ]
-    },
-    {
-        "id": "6d9cd7b8d1ac56cd",
-        "type": "change",
-        "z": "b0af0ce7369514a3",
-        "g": "c9065a9ed0d57479",
-        "name": "Current RMS",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "current",
-                "tot": "msg"
-            },
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "Current RMS",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 250,
-        "y": 400,
-        "wires": [
-            [
-                "7f7ee486550e364a"
-            ]
-        ]
-    },
-    {
-        "id": "546ff7c105f245a7",
-        "type": "change",
-        "z": "b0af0ce7369514a3",
-        "g": "c9065a9ed0d57479",
-        "name": "Active Power RMS",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "active_power",
-                "tot": "msg"
-            },
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "Active Power",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 270,
+        "x": 490,
         "y": 520,
         "wires": [
-            [
-                "8745157f0f289caf"
-            ]
+            []
         ]
     },
     {
@@ -1530,7 +1496,7 @@
         "z": "b0af0ce7369514a3",
         "g": "6f0143a3bde4efa8",
         "name": "parseData",
-        "func": "// Obtener el payload (el mensaje completo en este caso)\nvar data = msg.payload;\n\n// Separar la cadena por el delimitador '|'\nvar values = data.split('|');\n\n// Asignar cada valor a una propiedad diferente\nmsg.datetime = values[0]; \nmsg.voltage = parseFloat(values[1]); \nmsg.current = parseFloat(values[2]); \nmsg.active_power = parseFloat(values[3]); \nmsg.active_energy = parseFloat(values[4]); \nmsg.power_factor = parseFloat(values[5]); \n\n// Devolver el mensaje con los valores individuales\nreturn msg;",
+        "func": "// Update the timestamp for next check\nconst now = Date.now();\nglobal.set(\"lastMessageTime\", now);\n\n// Obtener el payload (el mensaje completo en este caso)\nvar data = msg.payload;\n\n// Separar la cadena por el delimitador '|'\nvar values = data.split('|');\n\n// Asignar cada valor a una propiedad diferente\nmsg.datetime = values[0]; \nmsg.voltage = parseFloat(values[1]); \nmsg.current = parseFloat(values[2]); \nmsg.active_power = parseFloat(values[3]); \nmsg.active_energy = parseFloat(values[4]); \nmsg.power_factor = parseFloat(values[5]); \n\n// Devolver el mensaje con los valores individuales\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -1542,7 +1508,7 @@
         "wires": [
             [
                 "eb7e0a26a78ab06a",
-                "c6990dfcbb58ec80"
+                "0ccea1b1d23a277c"
             ]
         ]
     },
@@ -1561,7 +1527,7 @@
             "40a1371555cfd25e",
             "04f0d584c06ab2cf"
         ],
-        "x": 475,
+        "x": 555,
         "y": 80,
         "wires": []
     },
@@ -1575,12 +1541,10 @@
             "eb7e0a26a78ab06a"
         ],
         "x": 95,
-        "y": 240,
+        "y": 280,
         "wires": [
             [
-                "6b91cdda79e5e1df",
-                "72e4ece2f4c10804",
-                "379a38da8aaf6b1f"
+                "c33526511ce0d8f6"
             ]
         ]
     },
@@ -1594,11 +1558,10 @@
             "eb7e0a26a78ab06a"
         ],
         "x": 95,
-        "y": 400,
+        "y": 340,
         "wires": [
             [
-                "6d9cd7b8d1ac56cd",
-                "47954f663248a36c"
+                "1a8d07e822bffc9c"
             ]
         ]
     },
@@ -1612,11 +1575,10 @@
             "eb7e0a26a78ab06a"
         ],
         "x": 95,
-        "y": 520,
+        "y": 400,
         "wires": [
             [
-                "546ff7c105f245a7",
-                "38ed4e5e142361f7"
+                "171a29cb9395adb8"
             ]
         ]
     },
@@ -1630,7 +1592,7 @@
             "eb7e0a26a78ab06a"
         ],
         "x": 95,
-        "y": 620,
+        "y": 460,
         "wires": [
             [
                 "fe735c7e72db98ec"
@@ -1664,8 +1626,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 260,
-        "y": 620,
+        "x": 220,
+        "y": 460,
         "wires": [
             [
                 "d29e6989bec42e21"
@@ -1682,7 +1644,7 @@
             "eb7e0a26a78ab06a"
         ],
         "x": 95,
-        "y": 680,
+        "y": 520,
         "wires": [
             [
                 "096b1813f91ac182"
@@ -1716,8 +1678,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 250,
-        "y": 680,
+        "x": 210,
+        "y": 520,
         "wires": [
             [
                 "c3301738deb4e1f1"
@@ -1725,54 +1687,190 @@
         ]
     },
     {
-        "id": "c6990dfcbb58ec80",
-        "type": "function",
+        "id": "fe99c810687ce07b",
+        "type": "ui_numeric",
         "z": "b0af0ce7369514a3",
-        "g": "6f0143a3bde4efa8",
-        "name": "Insert data into DB",
-        "func": "msg.topic = `INSERT INTO db_raw_data (datetime, voltage_rms, current_rms, active_power, active_energy, power_factor) VALUES ('${msg.datetime}', '${msg.voltage}', ${msg.current}, ${msg.active_power}, ${msg.active_energy}, ${msg.power_factor})`;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 550,
+        "g": "df0c622be2e676ce",
+        "name": "Save Data THS",
+        "label": "[minutes]",
+        "tooltip": "",
+        "group": "a5efa5edc0719406",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": "1",
+        "max": "30",
+        "step": 1,
+        "className": "",
+        "x": 840,
         "y": 120,
         "wires": [
             [
-                "79149befeaf59fa8"
+                "8aec68e389086744"
             ]
         ]
     },
     {
-        "id": "79149befeaf59fa8",
-        "type": "link out",
+        "id": "5d4348e7edaedde4",
+        "type": "ui_text",
         "z": "b0af0ce7369514a3",
-        "g": "6f0143a3bde4efa8",
-        "name": "Insert data in DB",
-        "mode": "link",
-        "links": [
-            "0e790badd828e6a0"
-        ],
-        "x": 685,
-        "y": 120,
+        "g": "df0c622be2e676ce",
+        "group": "a5efa5edc0719406",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Save data every",
+        "label": "",
+        "format": "Save data every:",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 840,
+        "y": 80,
         "wires": []
     },
     {
-        "id": "72e4ece2f4c10804",
+        "id": "0ccea1b1d23a277c",
         "type": "function",
         "z": "b0af0ce7369514a3",
-        "g": "c9065a9ed0d57479",
-        "name": "Overvoltage THS",
-        "func": "if (global.get(\"overvoltage_alarm\") == true) {\n    msg.payload = global.get(\"overvoltage_ths\");\n}\nelse {\n    msg.payload = null;\n}\n\nmsg.topic = \"Overvoltage THS\";\n\nreturn msg;",
+        "g": "6f0143a3bde4efa8",
+        "name": "Insert data into DB",
+        "func": "const datetime = new Date(msg.datetime).getTime();\n\nconst saveInterval = (global.get(\"save_interval\") * 60 * 1000) || (1 * 60 * 1000); // default 1 minutes\nconst lastInsert = global.get(\"lastInsert\") || 0;\n\nlet timeDiff = datetime - lastInsert;\n\n// Check if interval has passed\nif ((datetime - lastInsert) >= saveInterval) {\n    global.set(\"lastInsert\", datetime); // update timestamp\n    msg.topic = `\n        INSERT INTO db_raw_data(\n            datetime, \n            voltage_rms, \n            current_rms, \n            active_power, \n            active_energy, \n            power_factor) \n        VALUES (\n            '${msg.datetime}', \n            '${msg.voltage}', \n            ${msg.current}, \n            ${msg.active_power}, \n            ${msg.active_energy}, \n            ${msg.power_factor})\n        `;\n    return msg;\n} else {\n    return null; // do not insert yet\n}",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 270,
+        "x": 450,
+        "y": 120,
+        "wires": [
+            [
+                "d2f1176be2a64f02"
+            ]
+        ]
+    },
+    {
+        "id": "8aec68e389086744",
+        "type": "change",
+        "z": "b0af0ce7369514a3",
+        "g": "df0c622be2e676ce",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "save_interval",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1040,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "53522f53f48f9aa8",
+        "type": "ui_led",
+        "z": "b0af0ce7369514a3",
+        "g": "677412c45c1cb68c",
+        "order": 16,
+        "group": "3999f441ae228e70",
+        "width": "4",
+        "height": "2",
+        "label": "Status",
+        "labelPlacement": "left",
+        "labelAlignment": "right",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "inactive",
+                "valueType": "str"
+            },
+            {
+                "color": "#008000",
+                "value": "active",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": false,
+        "name": "System Status",
+        "x": 500,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "530196314247f54e",
+        "type": "inject",
+        "z": "b0af0ce7369514a3",
+        "g": "677412c45c1cb68c",
+        "name": "Every 1 min",
+        "props": [],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 170,
+        "y": 640,
+        "wires": [
+            [
+                "b40425d6d081f9a0"
+            ]
+        ]
+    },
+    {
+        "id": "b40425d6d081f9a0",
+        "type": "function",
+        "z": "b0af0ce7369514a3",
+        "g": "677412c45c1cb68c",
+        "name": "Check Status",
+        "func": "const lastMessage = global.get(\"lastMessageTime\") || 0;\nconst now = Date.now();\n\n// Check if more than 1 minute has passed since last message\nif ((now - lastMessage) > 60 * 1000) {\n    msg.payload = \"inactive\";\n} else {\n    msg.payload = \"active\";\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 640,
+        "wires": [
+            [
+                "53522f53f48f9aa8"
+            ]
+        ]
+    },
+    {
+        "id": "c33526511ce0d8f6",
+        "type": "function",
+        "z": "b0af0ce7369514a3",
+        "g": "c9065a9ed0d57479",
+        "name": "Voltage RMS chart data",
+        "func": "let messages = [];\n\nmessages.push({\n    topic: \"Overvoltage THS\",\n    payload: global.get(\"overvoltage_alarm\") ? global.get(\"overvoltage_ths\") : null\n});\n\nmessages.push({\n    topic: \"Undervoltage THS\",\n    payload: global.get(\"undervoltage_alarm\") ? global.get(\"undervoltage_ths\") : null\n});\n\nmessages.push({\n    topic: \"Voltage RMS\",\n    payload: msg.voltage\n});\n\nreturn [[...messages]];\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
         "y": 280,
         "wires": [
             [
@@ -1781,41 +1879,20 @@
         ]
     },
     {
-        "id": "379a38da8aaf6b1f",
+        "id": "1a8d07e822bffc9c",
         "type": "function",
         "z": "b0af0ce7369514a3",
         "g": "c9065a9ed0d57479",
-        "name": "Undervoltage THS",
-        "func": "if (global.get(\"undervoltage_alarm\") == true) {\n    msg.payload = global.get(\"undervoltage_ths\");\n}\nelse {\n    msg.payload = null;\n}\n\nmsg.topic = \"Undervoltage THS\";\n\nreturn msg;",
+        "name": "Current RMS chart data",
+        "func": "let messages = [];\n\nmessages.push({\n    topic: \"Overcurrent THS\",\n    payload: global.get(\"overcurrent_alarm\") ? global.get(\"overcurrent_ths\") : null\n});\n\nmessages.push({\n    topic: \"Current RMS\",\n    payload: msg.current,\n});\n\nreturn [[...messages]];\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 270,
-        "y": 320,
-        "wires": [
-            [
-                "f1d0ac2160939dc9"
-            ]
-        ]
-    },
-    {
-        "id": "47954f663248a36c",
-        "type": "function",
-        "z": "b0af0ce7369514a3",
-        "g": "c9065a9ed0d57479",
-        "name": "Overcurrent THS",
-        "func": "if (global.get(\"overcurrent_alarm\") == true) {\n    msg.payload = global.get(\"overcurrent_ths\");\n}\nelse {\n    msg.payload = null;\n}\n\nmsg.topic = \"Overcurrent THS\";\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 270,
-        "y": 440,
+        "x": 250,
+        "y": 340,
         "wires": [
             [
                 "7f7ee486550e364a"
@@ -1823,20 +1900,20 @@
         ]
     },
     {
-        "id": "38ed4e5e142361f7",
+        "id": "171a29cb9395adb8",
         "type": "function",
         "z": "b0af0ce7369514a3",
         "g": "c9065a9ed0d57479",
-        "name": "Overconsumption",
-        "func": "if (global.get(\"overconsumption_alarm\") == true) {\n    msg.payload = global.get(\"overconsumption_ths\");\n}\nelse {\n    msg.payload = null;\n}\n\nmsg.topic = \"Overconsumption THS\";\n\nreturn msg;",
+        "name": "Active power chart data",
+        "func": "let messages = [];\n\nmessages.push({\n    topic: \"Overconsumption THS\",\n    payload: global.get(\"overconsumption_alarm\") ? global.get(\"overconsumption_ths\") : null\n});\n\nmessages.push({\n    topic: \"Active Power\",\n    payload: msg.active_power,\n});\n\nreturn [[...messages]];\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 270,
-        "y": 560,
+        "x": 250,
+        "y": 400,
         "wires": [
             [
                 "8745157f0f289caf"
@@ -1844,14 +1921,865 @@
         ]
     },
     {
-        "id": "040b2048d7682f01",
-        "type": "comment",
+        "id": "d2f1176be2a64f02",
+        "type": "sqlite",
         "z": "b0af0ce7369514a3",
-        "name": "TODO: Qué pasa si se cae el ESP?",
-        "info": "No mandaría más datos, por lo que no se \nactualizaría el gráfico. Se pueden enviar\n0 desde el Node-RED o algo así?\nPor el momento vamos a finjir demencia",
+        "g": "6f0143a3bde4efa8",
+        "mydb": "102f2b0868c8e818",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "EnergyMeter DB",
+        "x": 580,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "29265d16b4d1ef7d",
+        "type": "ui_dropdown",
+        "z": "fe72ad617b9a8a48",
+        "g": "19bed9717ceed5e0",
+        "name": "",
+        "label": "Time Frame",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "c658951498713792",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Day",
+                "value": "day",
+                "type": "str"
+            },
+            {
+                "label": "Week",
+                "value": "week",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 410,
+        "y": 80,
+        "wires": [
+            [
+                "b09c53d8e8e34330"
+            ]
+        ]
+    },
+    {
+        "id": "21fc9c5c0d93d48b",
+        "type": "ui_date_picker",
+        "z": "fe72ad617b9a8a48",
+        "g": "19bed9717ceed5e0",
+        "name": "",
+        "label": "Start",
+        "group": "c658951498713792",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 590,
+        "y": 140,
+        "wires": [
+            [
+                "42ee1d734ecf2e9a"
+            ]
+        ]
+    },
+    {
+        "id": "b09c53d8e8e34330",
+        "type": "change",
+        "z": "fe72ad617b9a8a48",
+        "g": "19bed9717ceed5e0",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "time_frame",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 790,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "086345c8caa02802",
+        "type": "ui_button",
+        "z": "fe72ad617b9a8a48",
+        "g": "19bed9717ceed5e0",
+        "name": "Update data",
+        "group": "c658951498713792",
+        "order": 2,
+        "width": 2,
+        "height": 2,
+        "passthru": false,
+        "label": "Update",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 210,
+        "y": 200,
+        "wires": [
+            [
+                "ee0e8c720ae13081"
+            ]
+        ]
+    },
+    {
+        "id": "0e008285bccde37a",
+        "type": "sqlite",
+        "z": "fe72ad617b9a8a48",
+        "g": "19bed9717ceed5e0",
+        "mydb": "102f2b0868c8e818",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "EnergyMeter DB",
+        "x": 780,
+        "y": 200,
+        "wires": [
+            [
+                "cfd134107c7ca061"
+            ]
+        ]
+    },
+    {
+        "id": "ee0e8c720ae13081",
+        "type": "function",
+        "z": "fe72ad617b9a8a48",
+        "g": "19bed9717ceed5e0",
+        "name": "Data query",
+        "func": "const startDateRaw = flow.get(\"start_date\");  // \"08/06/2025, 01:46:06\"\nconst timeFrame = flow.get(\"time_frame\") || \"day\";\n\n// Parse \"DD/MM/YYYY, HH:mm:ss\"\nfunction parseCustomDate(str) {\n    const [datePart, timePart] = str.split(', ');\n    const [day, month, year] = datePart.split('/').map(Number);\n    const [hours, minutes, seconds] = timePart.split(':').map(Number);\n    return new Date(year, month - 1, day, hours, minutes, seconds);\n}\n\n// Format date to \"YYYY-MM-DD HH:mm:ss\"\nfunction toSQLDatetime(date) {\n    const pad = (n) => n.toString().padStart(2, '0');\n    return `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())} ${pad(date.getHours())}:${pad(date.getMinutes())}:${pad(date.getSeconds())}`;\n}\n\nconst startTime = parseCustomDate(startDateRaw);\nstartTime.setHours(0, 0, 0, 0);\n\nlet endTime = new Date(startTime);\n\nswitch (timeFrame) {\n    case \"day\":\n        endTime.setHours(23, 59, 59, 999);\n        break;\n    case \"week\":\n        endTime.setDate(endTime.getDate() + 6);\n        endTime.setHours(23, 59, 59, 999);\n        break;\n    default:\n        node.error(\"Unknown time frame: \" + timeFrame);\n        return null;\n}\n\nconst startStr = toSQLDatetime(startTime);\nconst endStr = toSQLDatetime(endTime);\n\nmsg.topic = `\n    SELECT datetime, active_energy\n    FROM db_raw_data\n    WHERE datetime BETWEEN '${startStr}' AND '${endStr}'\n    ORDER BY datetime ASC\n`;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 200,
+        "wires": [
+            [
+                "0e008285bccde37a"
+            ]
+        ]
+    },
+    {
+        "id": "4142ce0932eab763",
+        "type": "switch",
+        "z": "fe72ad617b9a8a48",
+        "g": "c36b78434a89a02c",
+        "name": "Swith time frame",
+        "property": "time_frame",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "day",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "week",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 330,
+        "y": 420,
+        "wires": [
+            [
+                "9adc59faa7bafbdb"
+            ],
+            [
+                "7ffde4ec1de83e8f"
+            ]
+        ]
+    },
+    {
+        "id": "9adc59faa7bafbdb",
+        "type": "function",
+        "z": "fe72ad617b9a8a48",
+        "g": "c36b78434a89a02c",
+        "name": "Hourly Consumption",
+        "func": "// Clear chart\nlet clearMsg = {\n    payload: [],\n    topic: \"\"\n};\n\n// Step 1: Initialize a map of 24 hours with default value 0\nlet hourlyData = {};\nfor (let i = 0; i < 24; i++) {\n    hourlyData[i.toString()] = 0;\n}\n\n// Step 2: Update values from incoming payload\nmsg.payload.forEach(item => {\n    hourlyData[item.label] = item.value;\n});\n\n// Step 3: Build an array of messages\nlet messages = [];\nfor (let i = 0; i < 24; i++) {\n    messages.push({\n        topic: i.toString(),\n        payload: hourlyData[i.toString()],\n    });\n}\n\n// Step 4: Return all as individual messages\nreturn [[clearMsg, ...messages]];",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 380,
+        "wires": [
+            [
+                "206a6ce39c43d7a6"
+            ]
+        ]
+    },
+    {
+        "id": "206a6ce39c43d7a6",
+        "type": "ui_chart",
+        "z": "fe72ad617b9a8a48",
+        "g": "c36b78434a89a02c",
+        "name": "Energy Consumption",
+        "group": "3b615f52c05d9ff0",
+        "order": 1,
+        "width": 16,
+        "height": 10,
+        "label": "",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "D/M",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
         "x": 860,
-        "y": 260,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7ffde4ec1de83e8f",
+        "type": "function",
+        "z": "fe72ad617b9a8a48",
+        "g": "c36b78434a89a02c",
+        "name": "Daily Consumption",
+        "func": "// Clear chart\nlet clearMsg = {\n    payload: [],\n    topic: \"\"\n};\n\nlet startDateStr = flow.get(\"start_date\"); // e.g. \"15/06/2025, 21:49:53\"\n\n// Extract date part and split by '/'\nlet dateOnly = startDateStr.split(',')[0].trim(); // \"15/06/2025\"\nlet parts = dateOnly.split('/');\n\n// Rearrange to YYYY, MM, DD\nlet day = parseInt(parts[0], 10);\nlet month = parseInt(parts[1], 10) - 1; // JavaScript months are 0-based\nlet year = parseInt(parts[2], 10);\n\nlet startDate = new Date(year, month, day);\n\n// Step 1: Build 7-day map starting from startDate\nlet dailyData = {};\nfor (let i = 0; i < 7; i++) {\n    let d = new Date(startDate);\n    d.setDate(d.getDate() + i);\n    let dateStr = d.toISOString().split('T')[0]; // YYYY-MM-DD\n    dailyData[dateStr] = 0;\n}\n\n// Step 2: Fill in known values from msg.payload\nmsg.payload.forEach(item => {\n    if (dailyData.hasOwnProperty(item.label)) {\n        dailyData[item.label] = item.value;\n    }\n});\n\n// Step 3: Create output messages\nlet messages = [];\nfor (let date in dailyData) {\n    messages.push({\n        topic: date,\n        payload: dailyData[date]\n    });\n}\n\nreturn [[clearMsg, ...messages]];\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 460,
+        "wires": [
+            [
+                "206a6ce39c43d7a6"
+            ]
+        ]
+    },
+    {
+        "id": "6dfab8a6a3a6c087",
+        "type": "inject",
+        "z": "fe72ad617b9a8a48",
+        "g": "19bed9717ceed5e0",
+        "name": "Load Today's Graph",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.5",
+        "topic": "",
+        "x": 180,
+        "y": 240,
+        "wires": [
+            [
+                "ee0e8c720ae13081"
+            ]
+        ]
+    },
+    {
+        "id": "cfd134107c7ca061",
+        "type": "function",
+        "z": "fe72ad617b9a8a48",
+        "g": "c36b78434a89a02c",
+        "name": "Process data",
+        "func": "const timeFrame = flow.get(\"time_frame\");\nconst results = msg.payload;\n\nlet lastEnergy = null;\nlet lastTime = null;\nlet consumption = {};\n\nfunction formatDateLocal(date) {\n    let y = date.getFullYear();\n    let m = (date.getMonth() + 1).toString().padStart(2, '0');\n    let d = date.getDate().toString().padStart(2, '0');\n    return `${y}-${m}-${d}`;\n}\n\nfunction getKey(date) {\n    const d = new Date(date);\n    switch (timeFrame) {\n        case \"day\":\n            return d.getHours(); // 0-23\n        case \"week\":\n            return formatDateLocal(d);\n    }\n}\n\nfor (const row of results) {\n    const currentEnergy = row.active_energy;\n    const currentTime = row.datetime;\n\n    if (lastEnergy !== null && currentEnergy >= lastEnergy) {\n        const delta = currentEnergy - lastEnergy;\n        const key = getKey(currentTime);\n        consumption[key] = (consumption[key] || 0) + delta;\n    }\n\n    lastEnergy = currentEnergy;\n    lastTime = currentTime;\n}\n\n// Convert to array for chart\nmsg.payload = Object.entries(consumption).map(([label, value]) => ({\n    label,\n    value\n}));\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 130,
+        "y": 420,
+        "wires": [
+            [
+                "4142ce0932eab763",
+                "3401b32d0ef7043a"
+            ]
+        ]
+    },
+    {
+        "id": "f23c2373e4ca2561",
+        "type": "function",
+        "z": "fe72ad617b9a8a48",
+        "g": "19bed9717ceed5e0",
+        "name": "Now (GTM-3)",
+        "func": "let now = new Date();\n\n// Create a new Date adjusted to GMT-3\nlet gmt3Time = new Date(now.getTime() - 3 * 60 * 60 * 1000);\n\n// Extract components in UTC (since we shifted manually)\nlet yyyy = gmt3Time.getUTCFullYear();\nlet mm = String(gmt3Time.getUTCMonth() + 1).padStart(2, '0');\nlet dd = String(gmt3Time.getUTCDate()).padStart(2, '0');\nlet hh = String(gmt3Time.getUTCHours()).padStart(2, '0');\nlet min = String(gmt3Time.getUTCMinutes()).padStart(2, '0');\nlet ss = String(gmt3Time.getUTCSeconds()).padStart(2, '0');\nlet ms = String(gmt3Time.getUTCMilliseconds()).padStart(3, '0');\n\n// Build ISO-like string with fixed GMT-3 offset (no 'Z' because it's not UTC)\nmsg.payload = `${yyyy}-${mm}-${dd}T${hh}:${min}:${ss}.${ms}-03:00`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 140,
+        "wires": [
+            [
+                "21fc9c5c0d93d48b"
+            ]
+        ]
+    },
+    {
+        "id": "42ee1d734ecf2e9a",
+        "type": "function",
+        "z": "fe72ad617b9a8a48",
+        "g": "19bed9717ceed5e0",
+        "name": "Format GTM-3",
+        "func": "// Get the timestamp from the incoming message\nlet timestamp = msg.payload;\n\n// Convert to Date object\nlet date = new Date(timestamp);\n\n// Alternatively, use local string:\nlet localString = date.toLocaleString(); // e.g., \"6/8/2025, 2:30:00 PM\"\n\nflow.set(\"start_date\", localString);",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e6fc68df2400440f",
+        "type": "inject",
+        "z": "fe72ad617b9a8a48",
+        "g": "19bed9717ceed5e0",
+        "name": "Update",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 220,
+        "y": 140,
+        "wires": [
+            [
+                "f23c2373e4ca2561"
+            ]
+        ]
+    },
+    {
+        "id": "40140164cf3ad288",
+        "type": "inject",
+        "z": "fe72ad617b9a8a48",
+        "g": "19bed9717ceed5e0",
+        "name": "Update",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "day",
+        "payloadType": "str",
+        "x": 220,
+        "y": 80,
+        "wires": [
+            [
+                "29265d16b4d1ef7d"
+            ]
+        ]
+    },
+    {
+        "id": "30b7690e880e4770",
+        "type": "ui_template",
+        "z": "fe72ad617b9a8a48",
+        "g": "c36b78434a89a02c",
+        "group": "3b615f52c05d9ff0",
+        "name": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<p style=\"text-align: center; margin-top: -5px;\">{{msg.timeframe}}</p>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 860,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3401b32d0ef7043a",
+        "type": "function",
+        "z": "fe72ad617b9a8a48",
+        "g": "c36b78434a89a02c",
+        "name": "Graph X-axis label",
+        "func": "const startDateRaw = flow.get(\"start_date\"); \nconst timeFrame = flow.get(\"time_frame\") || \"day\";\n\n// Parse \"DD/MM/YYYY, HH:mm:ss\"\nfunction parseCustomDate(str) {\n    const [datePart, timePart] = str.split(', ');\n    const [day, month, year] = datePart.split('/').map(Number);\n    const [hours, minutes, seconds] = timePart.split(':').map(Number);\n    return new Date(year, month - 1, day, hours, minutes, seconds);\n}\n\n// Parse the date\nlet date = parseCustomDate(startDateRaw);\n\n// Create label\nlet label = \"\";\nif (timeFrame === \"day\") {\n    label = \"Data for \" + date.toLocaleDateString(\"en-US\", {month: \"long\", day: \"numeric\"}); // e.g., \"Data for June 14\"\n} else if (timeFrame === \"week\") {\n    let end = new Date(date);\n    end.setDate(date.getDate() + 6);\n    let startStr = date.toLocaleDateString(\"en-US\", {month: \"long\", day: \"numeric\"});\n    let endStr = end.toLocaleDateString(\"en-US\", {month: \"long\", day: \"numeric\"});\n    label = `Data from ${startStr} to ${endStr}`; // e.g., \"Data from June 10 to June 16\"\n}\n\nmsg.timeframe = label;\nreturn msg;\n\ntimeFrame == \"day\" ? msg.timeframe = \"Hour\" : msg.timeframe = \"Day\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 520,
+        "wires": [
+            [
+                "30b7690e880e4770"
+            ]
+        ]
+    },
+    {
+        "id": "275500053bf46980",
+        "type": "ui_date_picker",
+        "z": "1f43a42441b6f63c",
+        "g": "4aeb419092df88b3",
+        "name": "Start date",
+        "label": "Start",
+        "group": "bbd948ee4eae4c1f",
+        "order": 1,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 560,
+        "y": 100,
+        "wires": [
+            [
+                "062fe62dd1be1beb"
+            ]
+        ]
+    },
+    {
+        "id": "1999f6ed94cc5654",
+        "type": "ui_date_picker",
+        "z": "1f43a42441b6f63c",
+        "g": "4aeb419092df88b3",
+        "name": "End date",
+        "label": "End",
+        "group": "bbd948ee4eae4c1f",
+        "order": 2,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 560,
+        "y": 140,
+        "wires": [
+            [
+                "b03ba45cdfbfdbf5"
+            ]
+        ]
+    },
+    {
+        "id": "437b0fafb4ee7953",
+        "type": "ui_dropdown",
+        "z": "1f43a42441b6f63c",
+        "g": "4aeb419092df88b3",
+        "name": "",
+        "label": "Alarm Type",
+        "tooltip": "Select an alarm type to filter the results",
+        "place": "Select option",
+        "group": "bbd948ee4eae4c1f",
+        "order": 4,
+        "width": 8,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "All alarms",
+                "value": "all_alarms",
+                "type": "str"
+            },
+            {
+                "label": "Overvoltage",
+                "value": "overvoltage",
+                "type": "str"
+            },
+            {
+                "label": "Undervoltage",
+                "value": "undervoltage",
+                "type": "str"
+            },
+            {
+                "label": "Overcurrent",
+                "value": "overcurrent",
+                "type": "str"
+            },
+            {
+                "label": "Overconsumption",
+                "value": "overconsumption",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 570,
+        "y": 200,
+        "wires": [
+            [
+                "8ad5126ea098aa6b"
+            ]
+        ]
+    },
+    {
+        "id": "8ad5126ea098aa6b",
+        "type": "change",
+        "z": "1f43a42441b6f63c",
+        "g": "4aeb419092df88b3",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "alarm_type",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 790,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f0a4f6fb14284a77",
+        "type": "ui_table",
+        "z": "1f43a42441b6f63c",
+        "g": "ed44ad4eca26127a",
+        "group": "f1fa4b428c2f1cf0",
+        "name": "Alarm historic",
+        "order": 1,
+        "width": 12,
+        "height": 12,
+        "columns": [
+            {
+                "field": "datetime",
+                "title": "Date",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "alarmtype",
+                "title": "Alarm",
+                "width": "150",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "threshold",
+                "title": "Threshold",
+                "width": "100",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "value",
+                "title": "Value",
+                "width": "100",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 700,
+        "y": 320,
         "wires": []
+    },
+    {
+        "id": "5bdee2bf7accab06",
+        "type": "sqlite",
+        "z": "1f43a42441b6f63c",
+        "g": "ed44ad4eca26127a",
+        "mydb": "102f2b0868c8e818",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "EnergyMeter DB",
+        "x": 500,
+        "y": 320,
+        "wires": [
+            [
+                "f0a4f6fb14284a77"
+            ]
+        ]
+    },
+    {
+        "id": "ca20930cea3a7794",
+        "type": "ui_button",
+        "z": "1f43a42441b6f63c",
+        "g": "ed44ad4eca26127a",
+        "name": "Update table",
+        "group": "bbd948ee4eae4c1f",
+        "order": 3,
+        "width": 2,
+        "height": 2,
+        "passthru": false,
+        "label": "Update",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 150,
+        "y": 360,
+        "wires": [
+            [
+                "fdb140d30ed5aac8"
+            ]
+        ]
+    },
+    {
+        "id": "7b5c32ee96921408",
+        "type": "inject",
+        "z": "1f43a42441b6f63c",
+        "g": "ed44ad4eca26127a",
+        "name": "Update table",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "x": 150,
+        "y": 320,
+        "wires": [
+            [
+                "fdb140d30ed5aac8"
+            ]
+        ]
+    },
+    {
+        "id": "d48e44cf902f9555",
+        "type": "function",
+        "z": "1f43a42441b6f63c",
+        "g": "4aeb419092df88b3",
+        "name": "Now (GTM-3)",
+        "func": "let now = new Date();\n\n// Create a new Date adjusted to GMT-3\nlet gmt3Time = new Date(now.getTime() - 3 * 60 * 60 * 1000);\n\n// Extract components in UTC (since we shifted manually)\nlet yyyy = gmt3Time.getUTCFullYear();\nlet mm = String(gmt3Time.getUTCMonth() + 1).padStart(2, '0');\nlet dd = String(gmt3Time.getUTCDate()).padStart(2, '0');\nlet hh = String(gmt3Time.getUTCHours()).padStart(2, '0');\nlet min = String(gmt3Time.getUTCMinutes()).padStart(2, '0');\nlet ss = String(gmt3Time.getUTCSeconds()).padStart(2, '0');\nlet ms = String(gmt3Time.getUTCMilliseconds()).padStart(3, '0');\n\n// Build ISO-like string with fixed GMT-3 offset (no 'Z' because it's not UTC)\nmsg.payload = `${yyyy}-${mm}-${dd}T${hh}:${min}:${ss}.${ms}-03:00`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 140,
+        "wires": [
+            [
+                "1999f6ed94cc5654"
+            ]
+        ]
+    },
+    {
+        "id": "ed4bf82fbaebbc6a",
+        "type": "function",
+        "z": "1f43a42441b6f63c",
+        "g": "4aeb419092df88b3",
+        "name": "One Week Ago (GTM-3)",
+        "func": "let now = new Date();\n\n// Subtract 7 days (in ms)\nlet oneWeekAgo = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);\n\n// Adjust to GMT-3 by subtracting 3 hours\nlet gmt3Time = new Date(oneWeekAgo.getTime() - 3 * 60 * 60 * 1000);\n\n// Extract components in UTC (after manual shift)\nlet yyyy = gmt3Time.getUTCFullYear();\nlet mm = String(gmt3Time.getUTCMonth() + 1).padStart(2, '0');\nlet dd = String(gmt3Time.getUTCDate()).padStart(2, '0');\nlet hh = String(gmt3Time.getUTCHours()).padStart(2, '0');\nlet min = String(gmt3Time.getUTCMinutes()).padStart(2, '0');\nlet ss = String(gmt3Time.getUTCSeconds()).padStart(2, '0');\nlet ms = String(gmt3Time.getUTCMilliseconds()).padStart(3, '0');\n\n// Final ISO-like string with GMT-3 offset\nmsg.payload = `${yyyy}-${mm}-${dd}T${hh}:${min}:${ss}.${ms}-03:00`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 100,
+        "wires": [
+            [
+                "275500053bf46980"
+            ]
+        ]
+    },
+    {
+        "id": "062fe62dd1be1beb",
+        "type": "function",
+        "z": "1f43a42441b6f63c",
+        "g": "4aeb419092df88b3",
+        "name": "Format GTM-3",
+        "func": "// Get the timestamp from the incoming message\nlet timestamp = msg.payload;\n\n// Convert to Date object\nlet date = new Date(timestamp);\n\n// Alternatively, use local string:\nlet localString = date.toLocaleString(); // e.g., \"6/8/2025, 2:30:00 PM\"\n\nflow.set(\"datetime_start\", localString);\n// msg.payload = localString;\n\n// return msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b03ba45cdfbfdbf5",
+        "type": "function",
+        "z": "1f43a42441b6f63c",
+        "g": "4aeb419092df88b3",
+        "name": "Format GTM-3",
+        "func": "// Get the timestamp from the incoming message\nlet timestamp = msg.payload;\n\n// Convert to Date object\nlet date = new Date(timestamp);\n\n// Alternatively, use local string:\nlet localString = date.toLocaleString(); // e.g., \"6/8/2025, 2:30:00 PM\"\n\nflow.set(\"datetime_end\", localString);\n// msg.payload = localString;\n\n// return msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fdb140d30ed5aac8",
+        "type": "function",
+        "z": "1f43a42441b6f63c",
+        "g": "ed44ad4eca26127a",
+        "name": "Query",
+        "func": "// Parse \"DD/MM/YYYY, HH:mm:ss\"\nfunction parseCustomDate(str) {\n    const [datePart, timePart] = str.split(', ');\n    const [day, month, year] = datePart.split('/').map(Number);\n    const [hours, minutes, seconds] = timePart.split(':').map(Number);\n    return new Date(year, month - 1, day, hours, minutes, seconds);\n}\n\n// Format date to \"YYYY-MM-DD HH:mm:ss\"\nfunction toSQLDatetime(date) {\n    const pad = (n) => n.toString().padStart(2, '0');\n    return `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())} ${pad(date.getHours())}:${pad(date.getMinutes())}:${pad(date.getSeconds())}`;\n}\n\nlet startTs = flow.get('datetime_start'); \nlet endTs = flow.get('datetime_end');     \nlet alarmType = flow.get('alarm_type') || \"all_alarms\";\n\nconst startTime = parseCustomDate(startTs);\nstartTime.setHours(0, 0, 0, 0);\nconst endTime = parseCustomDate(endTs);\nendTime.setHours(23, 59, 59, 999);\n\nconst startStr = toSQLDatetime(startTime);\nconst endStr = toSQLDatetime(endTime);\n\nlet query = `\n  SELECT * FROM db_alarm_historic \n  WHERE datetime BETWEEN '${startStr}' AND '${endStr}'\n`;\n\nif (alarmType && alarmType.trim() !== 'all_alarms') {\n  query += ` AND alarmtype = '${alarmType.replace(/'/g, \"''\")}'`;\n}\n\nquery += ` ORDER BY datetime DESC;`;\n\nmsg.topic = query;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 320,
+        "wires": [
+            [
+                "5bdee2bf7accab06"
+            ]
+        ]
+    },
+    {
+        "id": "bd1d730eeead1b13",
+        "type": "inject",
+        "z": "1f43a42441b6f63c",
+        "g": "4aeb419092df88b3",
+        "name": "Update",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 140,
+        "y": 100,
+        "wires": [
+            [
+                "ed4bf82fbaebbc6a",
+                "d48e44cf902f9555"
+            ]
+        ]
+    },
+    {
+        "id": "eae5919fba2cb6c2",
+        "type": "inject",
+        "z": "1f43a42441b6f63c",
+        "g": "4aeb419092df88b3",
+        "name": "Update",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "all_alarms",
+        "payloadType": "str",
+        "x": 140,
+        "y": 200,
+        "wires": [
+            [
+                "437b0fafb4ee7953"
+            ]
+        ]
     },
     {
         "id": "a10d6a22eaf41d85",
@@ -1859,40 +2787,20 @@
         "z": "999bc0a47d0df7f6",
         "g": "eaea5e605a485fbb",
         "name": "Check Voltage Alarms",
-        "func": "msg.value = msg.voltage;\nmsg.time = new Date().toLocaleString(\"es-AR\", { timeZone: \"America/Argentina/Buenos_Aires\" });\n\nif (global.get('overvoltage_alarm') == true && msg.value > global.get('overvoltage_ths')){\n    // Reinicio de alarma\n    if (flow.get('t_overvoltage')  != -1 && Date.now() - flow.get('t_overvoltage') < global.get('alarm_cooldown')){\n        return null;\n    }       \n    //flow.set('f_overvoltage', true);\n    flow.set('t_overvoltage', Date.now());\n    \n    // Notificaction\n    msg.topic = \"SOBRETENSIÓN!\";\n    msg.payload = \"Se detectó un valor de tensión de \" + msg.value + \"V\";\n    // Info\n    msg.alarm = \"overvoltage\";\n    msg.threshold = global.get('overvoltage_ths');\n    msg.unit = \"V\";\n    return msg;\n}\n\nif (global.get('undervoltage_alarm') == true && msg.value < global.get('undervoltage_ths')){\n    // Reinicio de alarma\n    if (flow.get('t_undervoltage') != -1 && Date.now() - flow.get('t_undervoltage') < global.get('alarm_cooldown')) {\n        return null;\n    }\n    // flow.set('f_undervoltage', true);\n    flow.set('t_undervoltage', Date.now());\n    \n    // Notificaction\n    msg.topic = \"BAJA DE TENSIÓN!\";\n    msg.payload = \"Se detectó un valor de tensión de \" + msg.payload + \"V\";\n    // Info\n    msg.alarm = \"undervoltage\";\n    msg.threshold = global.get('undervoltage_ths');\n    msg.unit = \"V\";\n    return msg;\n}",
+        "func": "if (global.get('overvoltage_alarm') == true && msg.voltage > global.get('overvoltage_ths')){\n    // Reinicio de alarma\n    if (flow.get('t_overvoltage')  != -1 && Date.now() - flow.get('t_overvoltage') < global.get('alarm_cooldown')){\n        return null;\n    }       \n    //flow.set('f_overvoltage', true);\n    flow.set('t_overvoltage', Date.now());\n\n    let newMsg = {\n        alarm_data: {\n            // Notificaction\n            alert: \"SOBRETENSIÓN!\",\n            notification_msg: \"Se detectó un valor de tensión de \" + msg.voltage + \"V\",\n            // Info\n            alarm: \"overvoltage\",\n            value: msg.voltage,\n            threshold: global.get('overvoltage_ths'),\n            unit: \"V\",\n            time: msg.datetime,\n        },\n        __msgid__: msg._msgid,\n    };\n\n    return newMsg;\n}\n\nif (global.get('undervoltage_alarm') == true && msg.voltage < global.get('undervoltage_ths')){\n    // Reinicio de alarma\n    if (flow.get('t_undervoltage') != -1 && Date.now() - flow.get('t_undervoltage') < global.get('alarm_cooldown')) {\n        return null;\n    }\n    // flow.set('f_undervoltage', true);\n    flow.set('t_undervoltage', Date.now());\n\n    let newMsg = {\n        alarm_data: {\n            // Notificaction\n            alert: \"CAÍDA DE TENSIÓN!\",\n            notification_msg: \"Se detectó un valor de tensión de \" +  msg.voltage + \"V\",\n            // Info\n            alarm: \"undervoltage\",\n            value: msg.voltage,\n            threshold: global.get('undervoltage_ths'),\n            unit: \"V\",\n            time: msg.datetime,\n        },\n        __msgid__: msg._msgid,\n    };\n    \n    return newMsg;\n}",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set('t_overvoltage', -1);\nflow.set('t_undervoltage', -1);",
         "finalize": "",
         "libs": [],
-        "x": 240,
-        "y": 1680,
+        "x": 380,
+        "y": 1720,
         "wires": [
             [
                 "49f987bfacb35dab"
             ]
         ]
-    },
-    {
-        "id": "1a1c62b470f46324",
-        "type": "ui_toast",
-        "z": "999bc0a47d0df7f6",
-        "g": "eaea5e605a485fbb",
-        "position": "bottom right",
-        "displayTime": "5",
-        "highlight": "red",
-        "sendall": true,
-        "outputs": 0,
-        "ok": "OK",
-        "cancel": "",
-        "raw": false,
-        "className": "",
-        "topic": "",
-        "name": "Alarm Notification",
-        "x": 700,
-        "y": 1720,
-        "wires": []
     },
     {
         "id": "9beed1aa2194674b",
@@ -2724,7 +3632,7 @@
         "z": "999bc0a47d0df7f6",
         "g": "2fbd0fbd8f990790",
         "name": "Min Voltage Value",
-        "label": "Límite inferior de tensión [V]",
+        "label": "Undervoltage threshold [V]",
         "tooltip": "",
         "group": "b56f97102bf0afad",
         "order": 8,
@@ -2752,7 +3660,7 @@
         "z": "999bc0a47d0df7f6",
         "g": "2fbd0fbd8f990790",
         "name": "Max Voltage Value",
-        "label": "Límite máximo de tensión [V]",
+        "label": "Overvoltage threshold [V]",
         "tooltip": "",
         "group": "b56f97102bf0afad",
         "order": 5,
@@ -2780,7 +3688,7 @@
         "z": "999bc0a47d0df7f6",
         "g": "2fbd0fbd8f990790",
         "name": "Max Current Value",
-        "label": "Límite máximo de corriente [A]",
+        "label": "Overcurrent threshold [A]",
         "tooltip": "",
         "group": "b56f97102bf0afad",
         "order": 20,
@@ -2808,7 +3716,7 @@
         "z": "999bc0a47d0df7f6",
         "g": "2fbd0fbd8f990790",
         "name": "Max Active Power Value",
-        "label": "Límite máximo de potencia [W]",
+        "label": "Overconsumption threshold [W]",
         "tooltip": "",
         "group": "b56f97102bf0afad",
         "order": 23,
@@ -2914,7 +3822,7 @@
         "z": "999bc0a47d0df7f6",
         "g": "2fbd0fbd8f990790",
         "name": "Update Alarms Thresholds DB",
-        "func": "var ths_name = msg.topic;\nvar ths_value = msg.payload;\n\nmsg.topic = `UPDATE db_alarm_settings SET value = ${ths_value} WHERE key = '${ths_name}'`;\nreturn msg;",
+        "func": "var ths_name = msg.topic;\nvar ths_value = msg.payload;\n\nmsg.topic = `\n    UPDATE db_alarm_settings \n    SET value = ${ths_value} \n    WHERE key = '${ths_name}';\n`;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -2925,28 +3833,9 @@
         "y": 1420,
         "wires": [
             [
-                "dbcc77638fa8f7ff",
-                "0d138de8154c3978"
+                "dbcc77638fa8f7ff"
             ]
         ]
-    },
-    {
-        "id": "6578e0499dea146a",
-        "type": "debug",
-        "z": "999bc0a47d0df7f6",
-        "g": "eaea5e605a485fbb",
-        "name": "Alarm Info",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 680,
-        "y": 1680,
-        "wires": []
     },
     {
         "id": "62a4b6779751e9d3",
@@ -3123,7 +4012,7 @@
         "height": 1,
         "name": "Description 1",
         "label": "",
-        "format": "Alarma de pico de tensión",
+        "format": "Overvoltage Alarm",
         "layout": "row-left",
         "className": "",
         "style": false,
@@ -3145,7 +4034,7 @@
         "height": 1,
         "name": "Description 2",
         "label": "",
-        "format": "Alarma de caída de tensión",
+        "format": "Undervoltage Alarm",
         "layout": "row-left",
         "className": "",
         "style": false,
@@ -3167,7 +4056,7 @@
         "height": 1,
         "name": "Description 3",
         "label": "",
-        "format": "Alarma de pico de corriente",
+        "format": "Overcurrent Alarm",
         "layout": "row-left",
         "className": "",
         "style": false,
@@ -3189,7 +4078,7 @@
         "height": 1,
         "name": "Description 4",
         "label": "",
-        "format": "Alarma de sobreconsumo",
+        "format": "Overconsumption Alarm",
         "layout": "row-left",
         "className": "",
         "style": false,
@@ -3199,38 +4088,6 @@
         "x": 910,
         "y": 1080,
         "wires": []
-    },
-    {
-        "id": "bdf46ed83973910b",
-        "type": "link out",
-        "z": "999bc0a47d0df7f6",
-        "g": "eaea5e605a485fbb",
-        "name": "Alarm Info Out",
-        "mode": "link",
-        "links": [
-            "aab51cbd69c48b70",
-            "2b9c257870e2496e"
-        ],
-        "x": 625,
-        "y": 1760,
-        "wires": []
-    },
-    {
-        "id": "aab51cbd69c48b70",
-        "type": "link in",
-        "z": "999bc0a47d0df7f6",
-        "g": "f1691c5914160b1b",
-        "name": "Alarm Info In",
-        "links": [
-            "bdf46ed83973910b"
-        ],
-        "x": 55,
-        "y": 2440,
-        "wires": [
-            [
-                "7433e8168f2576ab"
-            ]
-        ]
     },
     {
         "id": "473a76b058a905f6",
@@ -3246,89 +4103,8 @@
         "tls": true,
         "name": "",
         "dname": "Send Email",
-        "x": 1090,
-        "y": 2740,
-        "wires": []
-    },
-    {
-        "id": "883d13997b3b77ca",
-        "type": "debug",
-        "z": "999bc0a47d0df7f6",
-        "g": "f1691c5914160b1b",
-        "name": "SQL Query",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "topic",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 400,
-        "y": 2400,
-        "wires": []
-    },
-    {
-        "id": "e86b7369d042c10f",
-        "type": "delay",
-        "z": "999bc0a47d0df7f6",
-        "g": "f1691c5914160b1b",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "500",
-        "timeoutUnits": "milliseconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 390,
-        "y": 2480,
-        "wires": [
-            [
-                "c65e88ea024b131f"
-            ]
-        ]
-    },
-    {
-        "id": "7433e8168f2576ab",
-        "type": "function",
-        "z": "999bc0a47d0df7f6",
-        "g": "f1691c5914160b1b",
-        "name": "SQL Insert",
-        "func": "msg.topic = `INSERT INTO db_alarm_historic (datetime, alarmtype, threshold, value) VALUES ('${msg.datetime}', '${msg.alarm}', ${msg.threshold}, ${msg.value})`;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 180,
-        "y": 2440,
-        "wires": [
-            [
-                "883d13997b3b77ca",
-                "e86b7369d042c10f",
-                "6314529a303f7e63"
-            ]
-        ]
-    },
-    {
-        "id": "c65e88ea024b131f",
-        "type": "link out",
-        "z": "999bc0a47d0df7f6",
-        "g": "f1691c5914160b1b",
-        "name": "SQL Query Alarms Out",
-        "mode": "link",
-        "links": [
-            "876c099a375d6cc7"
-        ],
-        "x": 505,
-        "y": 2480,
+        "x": 850,
+        "y": 2300,
         "wires": []
     },
     {
@@ -3338,85 +4114,16 @@
         "g": "b191d481f7cd8b4a",
         "name": "Alarm Info In",
         "links": [
-            "bdf46ed83973910b"
+            "bdf46ed83973910b",
+            "ea7daa7b6dfa439c"
         ],
         "x": 55,
-        "y": 2640,
+        "y": 2300,
         "wires": [
             [
-                "b64aeb96ae8f9fd2",
-                "80bf1b1e6a3e859f",
-                "dd880fb8bfd7a821",
-                "2e35d729e4594c80"
+                "b64aeb96ae8f9fd2"
             ]
         ]
-    },
-    {
-        "id": "23829b84677b7c76",
-        "type": "debug",
-        "z": "999bc0a47d0df7f6",
-        "g": "b191d481f7cd8b4a",
-        "name": "Email",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1070,
-        "y": 2700,
-        "wires": []
-    },
-    {
-        "id": "0e790badd828e6a0",
-        "type": "link in",
-        "z": "999bc0a47d0df7f6",
-        "g": "9996a8587542bcf9",
-        "name": "SQL query DB without return",
-        "links": [
-            "6314529a303f7e63",
-            "dbcc77638fa8f7ff",
-            "adcfde493a44c574",
-            "79149befeaf59fa8"
-        ],
-        "x": 935,
-        "y": 2540,
-        "wires": [
-            [
-                "98a6df06f042dc23"
-            ]
-        ]
-    },
-    {
-        "id": "98a6df06f042dc23",
-        "type": "sqlite",
-        "z": "999bc0a47d0df7f6",
-        "g": "9996a8587542bcf9",
-        "mydb": "102f2b0868c8e818",
-        "sqlquery": "msg.topic",
-        "sql": "",
-        "name": "EnergyMeter DB",
-        "x": 1050,
-        "y": 2540,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "6314529a303f7e63",
-        "type": "link out",
-        "z": "999bc0a47d0df7f6",
-        "g": "f1691c5914160b1b",
-        "name": "Insert alarm into DB",
-        "mode": "link",
-        "links": [
-            "0e790badd828e6a0"
-        ],
-        "x": 335,
-        "y": 2440,
-        "wires": []
     },
     {
         "id": "dbcc77638fa8f7ff",
@@ -3433,42 +4140,23 @@
         "wires": []
     },
     {
-        "id": "0d138de8154c3978",
-        "type": "debug",
-        "z": "999bc0a47d0df7f6",
-        "g": "2fbd0fbd8f990790",
-        "name": "Update alarm ths",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "topic",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 790,
-        "y": 1380,
-        "wires": []
-    },
-    {
         "id": "d35f9e07f9b786bf",
         "type": "function",
         "z": "999bc0a47d0df7f6",
         "g": "372d6a6ba94b0d06",
         "name": "Update Alarms State DB",
-        "func": "var ths_name = msg.topic;\nvar ths_state = msg.payload;\n\nmsg.topic = `UPDATE db_alarm_settings SET state = ${ths_state} WHERE key = '${ths_name}'`;\nreturn msg;",
+        "func": "var ths_name = msg.topic;\nvar ths_state = msg.payload;\n\nmsg.topic = `\n    UPDATE db_alarm_settings \n    SET state = ${ths_state} \n    WHERE key = '${ths_name}';\n`;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1090,
-        "y": 2440,
+        "x": 1370,
+        "y": 800,
         "wires": [
             [
-                "adcfde493a44c574",
-                "61679f5c3fc57edd"
+                "adcfde493a44c574"
             ]
         ]
     },
@@ -3484,8 +4172,8 @@
             "ff9e91a5d091186f",
             "d344d82b093adf16"
         ],
-        "x": 935,
-        "y": 2440,
+        "x": 1215,
+        "y": 800,
         "wires": [
             [
                 "d35f9e07f9b786bf"
@@ -3502,8 +4190,8 @@
         "links": [
             "0e790badd828e6a0"
         ],
-        "x": 1255,
-        "y": 2440,
+        "x": 1535,
+        "y": 800,
         "wires": []
     },
     {
@@ -3560,24 +4248,6 @@
         ],
         "x": 855,
         "y": 1160,
-        "wires": []
-    },
-    {
-        "id": "61679f5c3fc57edd",
-        "type": "debug",
-        "z": "999bc0a47d0df7f6",
-        "g": "372d6a6ba94b0d06",
-        "name": "Update alarm state",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "topic",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1330,
-        "y": 2400,
         "wires": []
     },
     {
@@ -3663,9 +4333,6 @@
         "name": "Get alarm settings",
         "props": [
             {
-                "p": "payload"
-            },
-            {
                 "p": "topic",
                 "vt": "str"
             }
@@ -3675,8 +4342,6 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "SELECT * FROM db_alarm_settings;",
-        "payload": "",
-        "payloadType": "date",
         "x": 150,
         "y": 80,
         "wires": [
@@ -3708,7 +4373,7 @@
         "z": "999bc0a47d0df7f6",
         "g": "1d5a30a49e64d027",
         "name": "Data conversion",
-        "func": "var query_result = msg.payload;\nvar dict = {};\n\n// Iterar sobre cada fila del query_result\nfor (var i = 0; i < query_result.length; i++) {\n    var alarm = query_result[i];\n    \n    var new_msg = {\n        topic : alarm.key,\n        payload : {\n           value : alarm.value,\n           state : Boolean(alarm.state),\n        }\n    };\n\n    node.send(new_msg);\n}\n\nreturn null;",
+        "func": "var query_result = msg.payload;\nvar dict = {};\n\nlet messages = [];\n\n// Iterar sobre cada fila del query_result\nfor (var i = 0; i < query_result.length; i++) {\n    var alarm = query_result[i];\n\n    messages.push({\n        topic : alarm.key,\n        payload : {\n           value : alarm.value,\n           state : Boolean(alarm.state),\n        }\n    });\n}\n\nreturn [[...messages]];",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -4233,8 +4898,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 210,
-        "y": 2640,
+        "x": 170,
+        "y": 2300,
         "wires": [
             [
                 "c8cf8966b029e018"
@@ -4250,225 +4915,11 @@
         "sqlquery": "msg.topic",
         "sql": "",
         "name": "EnergyMeter DB",
-        "x": 380,
-        "y": 2640,
+        "x": 340,
+        "y": 2300,
         "wires": [
             [
                 "5ad943333ba368e8"
-            ]
-        ]
-    },
-    {
-        "id": "5ad943333ba368e8",
-        "type": "function",
-        "z": "999bc0a47d0df7f6",
-        "g": "b191d481f7cd8b4a",
-        "name": "Data conversion",
-        "func": "var query_result = msg.payload;\nvar dict = {};\n\n// Iterar sobre cada fila del query_result\nfor (var i = 0; i < query_result.length; i++) {        \n    var user = query_result[i];\n    \n    var new_msg = {\n        topic : \"email_address\" ,        \n        payload : user.email,\n    };\n    node.send(new_msg);\n}\n\nreturn null;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set('mail_qty', 10);",
-        "finalize": "",
-        "libs": [],
-        "x": 220,
-        "y": 2700,
-        "wires": [
-            [
-                "5a047c9b53637908"
-            ]
-        ]
-    },
-    {
-        "id": "545ca89af81d3639",
-        "type": "join",
-        "z": "999bc0a47d0df7f6",
-        "g": "b191d481f7cd8b4a",
-        "name": "",
-        "mode": "custom",
-        "build": "object",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": "\\n",
-        "joinerType": "str",
-        "useparts": false,
-        "accumulate": false,
-        "timeout": "",
-        "count": "3",
-        "reduceRight": false,
-        "reduceExp": "",
-        "reduceInit": "",
-        "reduceInitType": "",
-        "reduceFixup": "",
-        "x": 750,
-        "y": 2740,
-        "wires": [
-            [
-                "eec5bf87f0cb5280"
-            ]
-        ]
-    },
-    {
-        "id": "eec5bf87f0cb5280",
-        "type": "change",
-        "z": "999bc0a47d0df7f6",
-        "g": "b191d481f7cd8b4a",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "to",
-                "pt": "msg",
-                "to": "payload.email_address",
-                "tot": "msg"
-            },
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "payload.subject",
-                "tot": "msg"
-            },
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "payload.content",
-                "tot": "msg"
-            },
-            {
-                "t": "delete",
-                "p": "time",
-                "pt": "msg"
-            },
-            {
-                "t": "delete",
-                "p": "alarm",
-                "pt": "msg"
-            },
-            {
-                "t": "delete",
-                "p": "threshold",
-                "pt": "msg"
-            },
-            {
-                "t": "delete",
-                "p": "unit",
-                "pt": "msg"
-            },
-            {
-                "t": "delete",
-                "p": "value",
-                "pt": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 900,
-        "y": 2740,
-        "wires": [
-            [
-                "23829b84677b7c76",
-                "473a76b058a905f6"
-            ]
-        ]
-    },
-    {
-        "id": "7949de239c99a34b",
-        "type": "delay",
-        "z": "999bc0a47d0df7f6",
-        "g": "b191d481f7cd8b4a",
-        "name": "",
-        "pauseType": "rate",
-        "timeout": "5",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 550,
-        "y": 2740,
-        "wires": [
-            [
-                "545ca89af81d3639"
-            ]
-        ]
-    },
-    {
-        "id": "80bf1b1e6a3e859f",
-        "type": "function",
-        "z": "999bc0a47d0df7f6",
-        "g": "b191d481f7cd8b4a",
-        "name": "Mail subject",
-        "func": "var alarm = msg.topic;\n\nfor (var i = 0; i < global.get('users_qty'); i++) {        \n    msg.payload = \"Alerta de alarma por \" + alarm.toUpperCase();\n    msg.topic = \"subject\"\n    node.send(msg);\n}\n\nreturn null;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 210,
-        "y": 2740,
-        "wires": [
-            [
-                "7949de239c99a34b"
-            ]
-        ]
-    },
-    {
-        "id": "dd880fb8bfd7a821",
-        "type": "function",
-        "z": "999bc0a47d0df7f6",
-        "d": true,
-        "g": "b191d481f7cd8b4a",
-        "name": "Mail content",
-        "func": "for (var i = 0; i < global.get('users_qty'); i++) {        \n    msg.payload = \n        msg.time + \n        \" - Detección de un valor de \" + \n        msg.value + msg.unit + \" siendo el límite \" + \n        msg.threshold + \n        msg.unit + \n        \".\";\n    msg.topic = \"content\"\n    node.send(msg);\n}\n\nreturn null;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 210,
-        "y": 2780,
-        "wires": [
-            [
-                "5f1b581f07969449"
-            ]
-        ]
-    },
-    {
-        "id": "5f1b581f07969449",
-        "type": "delay",
-        "z": "999bc0a47d0df7f6",
-        "g": "b191d481f7cd8b4a",
-        "name": "",
-        "pauseType": "rate",
-        "timeout": "5",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 550,
-        "y": 2780,
-        "wires": [
-            [
-                "545ca89af81d3639"
             ]
         ]
     },
@@ -4478,15 +4929,15 @@
         "z": "999bc0a47d0df7f6",
         "g": "eaea5e605a485fbb",
         "name": "Check Current Alarms",
-        "func": "msg.value = msg.current;\nmsg.time = new Date().toLocaleString(\"es-AR\", { timeZone: \"America/Argentina/Buenos_Aires\" });\n\nif(global.get('overcurrent_alarm') == false){\n    return null;\n} \n\nif(msg.value > global.get('overcurrent_ths')){\n    // Reinicio de alarma\n    if (flow.get('t_overcurrent') != -1 && Date.now() - flow.get('t_overcurrent') < global.get('alarm_cooldown')){\n        return null;\n    }       \n    //flow.set('f_overcurrent', true);\n    flow.set('t_overcurrent', Date.now());\n    \n    // Notificaction\n    msg.topic = \"SOBRECORRIENTE!\";\n    msg.payload = \"Se detectó un pico de corriente de \" + msg.value + \"A\";\n    // Info\n    msg.alarm = \"overcurrent\";\n    msg.threshold = global.get('overcurrent_ths');\n    msg.unit = \"A\";\n    return msg;\n}",
+        "func": "if(global.get('overcurrent_alarm') == false){\n    return null;\n} \n\nif(msg.value > global.get('overcurrent_ths')){\n    // Reinicio de alarma\n    if (flow.get('t_overcurrent') != -1 && Date.now() - flow.get('t_overcurrent') < global.get('alarm_cooldown')){\n        return null;\n    }       \n    //flow.set('f_overcurrent', true);\n    flow.set('t_overcurrent', Date.now());\n    \n    let newMsg = {\n        alarm_data: {\n            // Notificaction\n            alert: \"SOBRECORRIENTE!\",\n            notification_msg: \"Se detectó un pico de corriente de \" + msg.current + \"A\",\n            // Info\n            alarm: \"overcurrent\",\n            value: msg.current,\n            threshold: global.get('overcurrent_ths'),\n            unit: \"A\",\n            time: msg.datetime,\n        },\n        __msgid__: msg._msgid,\n    };\n\n    return newMsg;\n}",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set('t_overcurrent', -1);",
         "finalize": "",
         "libs": [],
-        "x": 240,
-        "y": 1720,
+        "x": 380,
+        "y": 1760,
         "wires": [
             [
                 "49f987bfacb35dab"
@@ -4499,15 +4950,15 @@
         "z": "999bc0a47d0df7f6",
         "g": "eaea5e605a485fbb",
         "name": "Check ActivePower Alarms",
-        "func": "msg.value = msg.active_power;\nmsg.time = new Date().toLocaleString(\"es-AR\", { timeZone: \"America/Argentina/Buenos_Aires\" });\n\n// Alarma desactivada ==> no controla nada\nif (global.get('overconsumption_alarm') == false) {\n    return;\n}\n\nif (msg.value < global.get('overconsumption_ths')) {\n    \n    // Valor menor al threshold por primera\n    if (flow.get('ap_alarm_down_flag') == false) {\n        flow.set('ap_alarm_down_flag', true);\n        flow.set('ap_alarm_down_timer', Date.now());\n        return;\n    }\n\n    // Valor menor al threshold por al menos 1 min ==> se desactiva la alarma\n    if (flow.get('ap_alarm_flag') == true && Date.now() - flow.get('ap_alarm_down_timer') > 60000) {\n        flow.set('ap_alarm_flag', false);\n        return;\n    }\n\n    return;\n}\n\n// Valor superior al threshold por primera vez\nif (flow.get('ap_alarm_flag') == false) {\n    flow.set('ap_alarm_flag', true);\n    flow.set('ap_alarm_down_flag', false);\n    flow.set('ap_alarm_timer', Date.now());\n    return;\n}\n\n// Valor superior al threshold por más del tiempo permitido ==> se activa la alarma\nif (flow.get('ap_alarm_flag') == true && Date.now() - flow.get('ap_alarm_timer') > flow.get('active_power_time_ths')){\n    flow.set('ap_alarm_flag', false);\n    // Notificaction\n    msg.topic = \"EXCESO DE CONSUMO!\";\n    msg.payload = \"Se detectó un consumo de \" + msg.value + \"W\";\n    // Info\n    msg.alarm = \"overconsumption\";\n    msg.threshold = global.get('overconsumption_ths');\n    msg.unit = \"W\";\n    return msg;\n}\n",
+        "func": "// Alarma desactivada ==> no controla nada\nif (global.get('overconsumption_alarm') == false) {\n    return;\n}\n\nif (msg.active_power < global.get('overconsumption_ths')) {\n    \n    // Valor menor al threshold por primera\n    if (flow.get('ap_alarm_down_flag') == false) {\n        flow.set('ap_alarm_down_flag', true);\n        flow.set('ap_alarm_down_timer', Date.now());\n        return;\n    }\n\n    // Valor menor al threshold por al menos 1 min ==> se desactiva la alarma\n    if (flow.get('ap_alarm_flag') == true && Date.now() - flow.get('ap_alarm_down_timer') > 60000) {\n        flow.set('ap_alarm_flag', false);\n        return;\n    }\n\n    return;\n}\n\n// Valor superior al threshold por primera vez\nif (flow.get('ap_alarm_flag') == false) {\n    flow.set('ap_alarm_flag', true);\n    flow.set('ap_alarm_down_flag', false);\n    flow.set('ap_alarm_timer', Date.now());\n    return;\n}\n\n// Valor superior al threshold por más del tiempo permitido ==> se activa la alarma\nif (flow.get('ap_alarm_flag') == true && Date.now() - flow.get('ap_alarm_timer') > flow.get('active_power_time_ths')){\n    flow.set('ap_alarm_flag', false);\n    \n    let newMsg = {\n        alarm_data: {\n            // Notificaction\n            alert: \"EXCESO DE CONSUMO!\",\n            notification_msg: \"Se detectó un consumo de \" + msg.active_power + \"W\",\n            // Info\n            alarm: \"overconsumption\",\n            value: msg.active_power,\n            threshold: global.get('overconsumption_ths'),\n            unit: \"W\",\n            time: msg.datetime,\n        },\n        __msgid__: msg._msgid,\n    };\n    \n    return newMsg;\n}\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set('ap_alarm_flag', false);\nflow.set('ap_alarm_down_flag', true);",
         "finalize": "",
         "libs": [],
-        "x": 260,
-        "y": 1760,
+        "x": 400,
+        "y": 1800,
         "wires": [
             [
                 "49f987bfacb35dab"
@@ -4532,39 +4983,13 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 490,
-        "y": 1720,
+        "x": 630,
+        "y": 1760,
         "wires": [
             [
-                "bdf46ed83973910b",
-                "1a1c62b470f46324",
-                "6578e0499dea146a"
-            ]
-        ]
-    },
-    {
-        "id": "5a047c9b53637908",
-        "type": "delay",
-        "z": "999bc0a47d0df7f6",
-        "g": "b191d481f7cd8b4a",
-        "name": "",
-        "pauseType": "rate",
-        "timeout": "5",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 550,
-        "y": 2700,
-        "wires": [
-            [
-                "545ca89af81d3639"
+                "1de45397763731e3",
+                "7433e8168f2576ab",
+                "ea7daa7b6dfa439c"
             ]
         ]
     },
@@ -4575,8 +5000,8 @@
         "g": "eaea5e605a485fbb",
         "name": "Falta avisar si no se detecta más el dispositivo, es decir, se cae el MQTT",
         "info": "",
-        "x": 400,
-        "y": 1800,
+        "x": 540,
+        "y": 1840,
         "wires": []
     },
     {
@@ -4585,12 +5010,12 @@
         "z": "999bc0a47d0df7f6",
         "g": "8951563d9636cbc7",
         "name": "Alarm Cooldown",
-        "label": "Tiempo [minutos]",
+        "label": "[minutes]",
         "tooltip": "",
         "group": "39050940b9ad40f4",
         "order": 2,
-        "width": 7,
-        "height": 1,
+        "width": 0,
+        "height": 0,
         "wrap": false,
         "passthru": true,
         "topic": "topic",
@@ -4601,7 +5026,7 @@
         "step": 1,
         "className": "",
         "x": 520,
-        "y": 2140,
+        "y": 2020,
         "wires": [
             [
                 "e69b68ce76a467cd"
@@ -4615,11 +5040,11 @@
         "g": "8951563d9636cbc7",
         "group": "39050940b9ad40f4",
         "order": 1,
-        "width": 7,
-        "height": 1,
+        "width": 0,
+        "height": 0,
         "name": "Description 1",
         "label": "",
-        "format": "Intervalo de repetición de alarma",
+        "format": "Alarm cooldown",
         "layout": "row-left",
         "className": "",
         "style": false,
@@ -4627,7 +5052,7 @@
         "fontSize": 16,
         "color": "#000000",
         "x": 530,
-        "y": 2100,
+        "y": 1980,
         "wires": []
     },
     {
@@ -4636,12 +5061,12 @@
         "z": "999bc0a47d0df7f6",
         "g": "17df376e8b411382",
         "name": "ActivePower Time THS",
-        "label": "Tiempo [minutos]",
+        "label": "[minutes]",
         "tooltip": "",
         "group": "39050940b9ad40f4",
         "order": 5,
-        "width": 7,
-        "height": 1,
+        "width": 0,
+        "height": 0,
         "wrap": false,
         "passthru": true,
         "topic": "topic",
@@ -4652,7 +5077,7 @@
         "step": 1,
         "className": "",
         "x": 590,
-        "y": 2280,
+        "y": 2160,
         "wires": [
             [
                 "a03a27bf7979cb5d"
@@ -4666,11 +5091,11 @@
         "g": "17df376e8b411382",
         "group": "39050940b9ad40f4",
         "order": 4,
-        "width": 7,
-        "height": 1,
+        "width": 0,
+        "height": 0,
         "name": "Description 2",
         "label": "",
-        "format": "Límite de tiempo de exceso de consumo",
+        "format": "Time limit before overconsumption alarm",
         "layout": "row-left",
         "className": "",
         "style": false,
@@ -4678,350 +5103,8 @@
         "fontSize": 16,
         "color": "#000000",
         "x": 590,
-        "y": 2240,
+        "y": 2120,
         "wires": []
-    },
-    {
-        "id": "43678ee4de192165",
-        "type": "link in",
-        "z": "999bc0a47d0df7f6",
-        "g": "636b94da61ad5308",
-        "name": "Data voltageRMS",
-        "links": [
-            "d9ab1c338283f8b7"
-        ],
-        "x": 65,
-        "y": 1980,
-        "wires": [
-            [
-                "c6357c20e5c0e532"
-            ]
-        ]
-    },
-    {
-        "id": "c6357c20e5c0e532",
-        "type": "function",
-        "z": "999bc0a47d0df7f6",
-        "d": true,
-        "g": "636b94da61ad5308",
-        "name": "Check Voltage Alarms",
-        "func": "msg.value = msg.payload;\nmsg.time = new Date().toLocaleString(\"es-AR\", { timeZone: \"America/Argentina/Buenos_Aires\" });\n\nif(global.get('overvoltage_alarm') == true && msg.payload > global.get('overvoltage_ths')){\n    // Notificaction\n    msg.topic = \"SOBRETENSIÓN!\";\n    msg.payload = \"Se detectó un valor de tensión de \" + msg.payload + \"V\";\n    // Info\n    msg.alarm = \"overvoltage\";\n    msg.threshold = global.get('overvoltage_ths');\n    msg.unit = \"V\";\n    return msg;\n}\n\nif(global.get('undervoltage_alarm') == true && msg.payload < global.get('undervoltage_ths')){\n    // Notificaction\n    msg.topic = \"BAJA DE TENSIÓN!\";\n    msg.payload = \"Se detectó un valor de tensión de \" + msg.payload + \"V\";\n    // Info\n    msg.alarm = \"undervoltage\";\n    msg.threshold = global.get('undervoltage_ths');\n    msg.unit = \"V\";\n    return msg;\n}",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 220,
-        "y": 1980,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "dc4b7f02eafbc6b9",
-        "type": "comment",
-        "z": "999bc0a47d0df7f6",
-        "g": "636b94da61ad5308",
-        "name": "Agregar cuando se reestablece el funcionamiento normal",
-        "info": "Podría ser para el sobreconumo, \npara lo otro no sé si tiene mucho sentido\ndado que son los picos lo que se detecta y\nse avisa. Si sufre picos todo el tiempo\ntiene un problema...\n\nEstá la repetición de alertas cada X tiempo\nigualmente, que hay que ver si está bien o on",
-        "x": 250,
-        "y": 1940,
-        "wires": []
-    },
-    {
-        "id": "c63964db91d2b147",
-        "type": "inject",
-        "z": "999bc0a47d0df7f6",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "Date.now()",
-        "payloadType": "jsonata",
-        "x": 1270,
-        "y": 1440,
-        "wires": [
-            [
-                "08e8376cacadef05"
-            ]
-        ]
-    },
-    {
-        "id": "3199a10cbc4165d5",
-        "type": "debug",
-        "z": "999bc0a47d0df7f6",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1560,
-        "y": 1440,
-        "wires": []
-    },
-    {
-        "id": "08e8376cacadef05",
-        "type": "function",
-        "z": "999bc0a47d0df7f6",
-        "name": "function 1",
-        "func": "msg.payload = Date.now();\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1400,
-        "y": 1440,
-        "wires": [
-            [
-                "3199a10cbc4165d5"
-            ]
-        ]
-    },
-    {
-        "id": "81f98454a0f1030a",
-        "type": "inject",
-        "z": "999bc0a47d0df7f6",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "Date.now() - flow.get('t_overvoltage') < global.get('alarm_cooldown')",
-        "payloadType": "jsonata",
-        "x": 1270,
-        "y": 1480,
-        "wires": [
-            [
-                "6ef23e811e0fb99b"
-            ]
-        ]
-    },
-    {
-        "id": "6ef23e811e0fb99b",
-        "type": "function",
-        "z": "999bc0a47d0df7f6",
-        "name": "function 2",
-        "func": "msg.payload = Date.now() - flow.get('t_overvoltage') < global.get('alarm_cooldown');\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1400,
-        "y": 1480,
-        "wires": [
-            [
-                "3199a10cbc4165d5"
-            ]
-        ]
-    },
-    {
-        "id": "8253cd2582fa03a3",
-        "type": "template",
-        "z": "999bc0a47d0df7f6",
-        "g": "b191d481f7cd8b4a",
-        "name": "Mail content",
-        "field": "payload",
-        "fieldType": "msg",
-        "format": "html",
-        "syntax": "mustache",
-        "template": "<!DOCTYPE html>\n<html lang=\"es\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Alerta</title>\n    <style>\n        body {\n            font-family: Arial, sans-serif;\n            background-color: #f4f4f4;\n            margin: 0;\n            padding: 20px;\n        }\n        .container {\n            background-color: white;\n            padding: 20px;\n            border-radius: 8px;\n            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n            max-width: 600px; \n            margin: 0 auto; \n        }\n        .header {\n            background-color: #ff4c4c;\n            color: white;\n            padding: 10px;\n            text-align: center;\n            border-radius: 8px 8px 0 0;\n        }\n        .content {\n            padding: 20px;\n            color: #333;\n            font-size: 20px;\n        }\n        .footer {\n            text-align: center;\n            font-size: 12px;\n            color: #888;\n            margin-top: 20px;\n        }\n        .alert {\n            font-weight: bold;\n            color: #ff4c4c;\n        }\n    </style>\n</head>\n<body>\n    <div class=\"container\">\n        <div class=\"header\">\n            <h1>⚠️ Alerta por {{topic}} ⚠️</h1>\n        </div>\n        <div class=\"content\">\n            <p>Se ha detectado una alerta por <span class=\"alert\">{{topic}}</span>.</p>\n            <p>Valor medido de <strong>{{value}}{{unit}}</strong> siendo el límite <strong>{{threshold}}{{unit}}.</strong></p>\n            <p><strong>Horario:</strong> {{time}}</p>\n            <p>Puede acceder a la mediciones en tiempo real mediante el <a href=\"http://192.168.1.22:1880/ui\" target=\"_blank\">siguiente link</a>.</p>\n        </div>\n        <div class=\"footer\">\n            <p>Este es un mensaje generado automáticamente.</p>\n        </div>\n    </div>\n</body>\n</html>\n",
-        "output": "str",
-        "x": 530,
-        "y": 2920,
-        "wires": [
-            [
-                "b8c04561b45cba3a"
-            ]
-        ]
-    },
-    {
-        "id": "0fab8c05684619c4",
-        "type": "inject",
-        "z": "999bc0a47d0df7f6",
-        "g": "b191d481f7cd8b4a",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 200,
-        "y": 2920,
-        "wires": [
-            [
-                "0a5a0c02d3aa7cc2"
-            ]
-        ]
-    },
-    {
-        "id": "0a5a0c02d3aa7cc2",
-        "type": "change",
-        "z": "999bc0a47d0df7f6",
-        "g": "b191d481f7cd8b4a",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "PICO DE TENSIÓN",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "time",
-                "pt": "msg",
-                "to": "22/09/2024 - 22:00",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "value",
-                "pt": "msg",
-                "to": "310.5",
-                "tot": "num"
-            },
-            {
-                "t": "set",
-                "p": "threshold",
-                "pt": "msg",
-                "to": "240",
-                "tot": "num"
-            },
-            {
-                "t": "set",
-                "p": "unit",
-                "pt": "msg",
-                "to": "V",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 360,
-        "y": 2920,
-        "wires": [
-            [
-                "8253cd2582fa03a3"
-            ]
-        ]
-    },
-    {
-        "id": "b8c04561b45cba3a",
-        "type": "change",
-        "z": "999bc0a47d0df7f6",
-        "g": "b191d481f7cd8b4a",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "Test mail format",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "to",
-                "pt": "msg",
-                "to": "alejomancinelli98@gmail.com",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 740,
-        "y": 2920,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "2e35d729e4594c80",
-        "type": "template",
-        "z": "999bc0a47d0df7f6",
-        "g": "b191d481f7cd8b4a",
-        "name": "Mail content",
-        "field": "payload",
-        "fieldType": "msg",
-        "format": "html",
-        "syntax": "mustache",
-        "template": "<!DOCTYPE html>\n<html lang=\"es\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Alerta</title>\n    <style>\n        body {\n            font-family: Arial, sans-serif;\n            background-color: #f4f4f4;\n            margin: 0;\n            padding: 20px;\n        }\n        .container {\n            background-color: white;\n            padding: 20px;\n            border-radius: 8px;\n            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n            max-width: 600px; \n            margin: 0 auto; \n        }\n        .header {\n            background-color: #ff4c4c;\n            color: white;\n            padding: 10px;\n            text-align: center;\n            border-radius: 8px 8px 0 0;\n        }\n        .content {\n            padding: 20px;\n            color: #333;\n            font-size: 20px;\n        }\n        .footer {\n            text-align: center;\n            font-size: 12px;\n            color: #888;\n            margin-top: 20px;\n        }\n        .alert {\n            font-weight: bold;\n            color: #ff4c4c;\n        }\n    </style>\n</head>\n<body>\n    <div class=\"container\">\n        <div class=\"header\">\n            <h1>⚠️ Alerta por {{topic}} ⚠️</h1>\n        </div>\n        <div class=\"content\">\n            <p>Se ha detectado una alerta por <span class=\"alert\">{{topic}}</span>.</p>\n            <p>Valor medido de <strong>{{value}}{{unit}}</strong> siendo el límite <strong>{{threshold}}{{unit}}.</strong></p>\n            <p><strong>Horario:</strong> {{time}}</p>\n            <p>Puede acceder a la mediciones en tiempo real mediante el <a href=\"http://192.168.1.22:1880/ui\" target=\"_blank\">siguiente link</a>.</p>\n        </div>\n        <div class=\"footer\">\n            <p>Este es un mensaje generado automáticamente.</p>\n        </div>\n    </div>\n</body>\n</html>\n",
-        "output": "str",
-        "x": 210,
-        "y": 2820,
-        "wires": [
-            [
-                "0e13beaca899fbf6"
-            ]
-        ]
-    },
-    {
-        "id": "0e13beaca899fbf6",
-        "type": "change",
-        "z": "999bc0a47d0df7f6",
-        "g": "b191d481f7cd8b4a",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "content",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 370,
-        "y": 2820,
-        "wires": [
-            [
-                "5f1b581f07969449"
-            ]
-        ]
     },
     {
         "id": "04f0d584c06ab2cf",
@@ -5032,8 +5115,8 @@
         "links": [
             "eb7e0a26a78ab06a"
         ],
-        "x": 65,
-        "y": 1680,
+        "x": 205,
+        "y": 1720,
         "wires": [
             [
                 "a10d6a22eaf41d85",
@@ -5041,48 +5124,6 @@
                 "84d32fe5ee201877"
             ]
         ]
-    },
-    {
-        "id": "964330934d79646b",
-        "type": "inject",
-        "z": "999bc0a47d0df7f6",
-        "name": "",
-        "props": [
-            {
-                "p": "topic",
-                "v": "overconsumption_ths",
-                "vt": "global"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 930,
-        "y": 1680,
-        "wires": [
-            [
-                "8e881ca230f5d4cc"
-            ]
-        ]
-    },
-    {
-        "id": "8e881ca230f5d4cc",
-        "type": "debug",
-        "z": "999bc0a47d0df7f6",
-        "name": "overconsumption_ths",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "topic",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1160,
-        "y": 1680,
-        "wires": []
     },
     {
         "id": "a03a27bf7979cb5d",
@@ -5098,7 +5139,7 @@
         "finalize": "",
         "libs": [],
         "x": 850,
-        "y": 2280,
+        "y": 2160,
         "wires": [
             []
         ]
@@ -5117,34 +5158,9 @@
         "finalize": "",
         "libs": [],
         "x": 740,
-        "y": 2140,
+        "y": 2020,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "67faf5822ea18e12",
-        "type": "inject",
-        "z": "999bc0a47d0df7f6",
-        "name": "",
-        "props": [
-            {
-                "p": "topic",
-                "v": "alarm_cooldown",
-                "vt": "global"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 910,
-        "y": 1720,
-        "wires": [
-            [
-                "8e881ca230f5d4cc"
-            ]
         ]
     },
     {
@@ -5166,7 +5182,7 @@
         "payload": "alarm_cooldown",
         "payloadType": "global",
         "x": 170,
-        "y": 2140,
+        "y": 2020,
         "wires": [
             [
                 "178df268cb435b9a"
@@ -5187,7 +5203,7 @@
         "finalize": "",
         "libs": [],
         "x": 360,
-        "y": 2140,
+        "y": 2020,
         "wires": [
             [
                 "3cb950e6de8d7af7"
@@ -5213,7 +5229,7 @@
         "payload": "active_power_time_ths",
         "payloadType": "global",
         "x": 190,
-        "y": 2280,
+        "y": 2160,
         "wires": [
             [
                 "efdf2c1c43cf7345"
@@ -5234,7 +5250,7 @@
         "finalize": "",
         "libs": [],
         "x": 400,
-        "y": 2280,
+        "y": 2160,
         "wires": [
             [
                 "39262c5f0ed362c6"
@@ -5242,131 +5258,25 @@
         ]
     },
     {
-        "id": "d361e9e5d533168e",
-        "type": "comment",
-        "z": "999bc0a47d0df7f6",
-        "g": "b191d481f7cd8b4a",
-        "name": "TODO: Revisar que todo esto ande bien",
-        "info": "",
-        "x": 1110,
-        "y": 2920,
-        "wires": []
-    },
-    {
-        "id": "f0a4f6fb14284a77",
-        "type": "ui_table",
-        "z": "1f43a42441b6f63c",
-        "g": "e813f2f14ced1eb7",
-        "group": "bbd948ee4eae4c1f",
-        "name": "Alarm historic",
-        "order": 0,
-        "width": "10",
-        "height": "11",
-        "columns": [
-            {
-                "field": "currentdate",
-                "title": "Date",
-                "width": "",
-                "align": "center",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "currenttime",
-                "title": "Time",
-                "width": "",
-                "align": "center",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "alarmtype",
-                "title": "Alarm",
-                "width": "150",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "threshold",
-                "title": "Threshold",
-                "width": "100",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "value",
-                "title": "Value",
-                "width": "100",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            }
-        ],
-        "outputs": 0,
-        "cts": false,
-        "x": 600,
-        "y": 120,
-        "wires": []
-    },
-    {
-        "id": "5bdee2bf7accab06",
-        "type": "sqlite",
-        "z": "1f43a42441b6f63c",
-        "g": "e813f2f14ced1eb7",
-        "mydb": "102f2b0868c8e818",
-        "sqlquery": "msg.topic",
-        "sql": "",
-        "name": "EnergyMeter DB",
-        "x": 400,
-        "y": 120,
-        "wires": [
-            [
-                "f0a4f6fb14284a77"
-            ]
-        ]
-    },
-    {
-        "id": "876c099a375d6cc7",
-        "type": "link in",
-        "z": "1f43a42441b6f63c",
-        "g": "e813f2f14ced1eb7",
-        "name": "SQL Query Alarms In",
-        "links": [
-            "c65e88ea024b131f"
-        ],
-        "x": 95,
-        "y": 120,
-        "wires": [
-            [
-                "f14de6b435f3f23f"
-            ]
-        ]
-    },
-    {
-        "id": "f14de6b435f3f23f",
+        "id": "1de45397763731e3",
         "type": "change",
-        "z": "1f43a42441b6f63c",
-        "g": "e813f2f14ced1eb7",
-        "name": "SQL Query",
+        "z": "999bc0a47d0df7f6",
+        "g": "eaea5e605a485fbb",
+        "name": "Set notification",
         "rules": [
             {
                 "t": "set",
                 "p": "topic",
                 "pt": "msg",
-                "to": "SELECT * FROM db_alarm_historic ORDER BY datetime DESC LIMIT 50;",
-                "tot": "str"
+                "to": "alarm_data.alert",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "alarm_data.notification_msg",
+                "tot": "msg"
             }
         ],
         "action": "",
@@ -5374,48 +5284,158 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 210,
-        "y": 120,
+        "x": 840,
+        "y": 1720,
         "wires": [
             [
-                "5bdee2bf7accab06"
+                "1a1c62b470f46324"
             ]
         ]
     },
     {
-        "id": "9e39cfb912a6dce7",
-        "type": "inject",
-        "z": "1f43a42441b6f63c",
-        "g": "e813f2f14ced1eb7",
-        "name": "SQL Query",
-        "props": [
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "SELECT * FROM db_alarm_historic ORDER BY datetime DESC LIMIT 50;",
-        "x": 210,
-        "y": 80,
+        "id": "5ad943333ba368e8",
+        "type": "function",
+        "z": "999bc0a47d0df7f6",
+        "g": "b191d481f7cd8b4a",
+        "name": "Users emails",
+        "func": "let messages = [];\n\nconst query_result = msg.payload;\nlet dict = {};\n\nlet mailSubject = \"Alerta de alarma por \" + msg.alarm_data.alert.toUpperCase();\n\n// Iterar sobre cada fila del query_result\nfor (var i = 0; i < query_result.length; i++) {        \n    let user = query_result[i];\n    \n    messages.push({\n        topic: mailSubject,\n        to: user.email,\n        alarm_data: msg.alarm_data,\n    });\n}\n\nreturn [[...messages]];",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set('mail_qty', 10);",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 2300,
         "wires": [
             [
-                "5bdee2bf7accab06"
+                "6e65b0533267aac0"
             ]
         ]
     },
     {
-        "id": "0c3c97dd365ab18c",
-        "type": "comment",
-        "z": "1f43a42441b6f63c",
-        "name": "TODO: Poder moverse y elegir mostrar más alertas",
-        "info": "Flechas para moverse y elegir otras 50 alarmas\no así, o elegir la cantidad que se quiere mostrar,\no las fechas (por ejemplo, alarmas de marzo)",
-        "x": 250,
-        "y": 200,
+        "id": "6e65b0533267aac0",
+        "type": "template",
+        "z": "999bc0a47d0df7f6",
+        "g": "b191d481f7cd8b4a",
+        "name": "Email content",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "mustache",
+        "template": "<!DOCTYPE html>\n<html lang=\"es\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Alerta</title>\n    <style>\n        body {\n            font-family: Arial, sans-serif;\n            background-color: #f4f4f4;\n            margin: 0;\n            padding: 20px;\n        }\n        .container {\n            background-color: white;\n            padding: 20px;\n            border-radius: 8px;\n            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n            max-width: 600px; \n            margin: 0 auto; \n        }\n        .header {\n            background-color: #ff4c4c;\n            color: white;\n            padding: 10px;\n            text-align: center;\n            border-radius: 8px 8px 0 0;\n        }\n        .content {\n            padding: 20px;\n            color: #333;\n            font-size: 20px;\n        }\n        .footer {\n            text-align: center;\n            font-size: 12px;\n            color: #888;\n            margin-top: 20px;\n        }\n        .alert {\n            font-weight: bold;\n            color: #ff4c4c;\n        }\n    </style>\n</head>\n<body>\n    <div class=\"container\">\n        <div class=\"header\">\n            <h1>⚠️ Alerta por {{alarm_data.alert}} ⚠️</h1>\n        </div>\n        <div class=\"content\" style=\"font-family: sans-serif; line-height: 1.6;\">\n            <p>Se ha detectado una <span class=\"alert\" style=\"font-weight: bold; color: red;\">alerta por {{alarm_data.alert}}</span>.</p>\n            <p>El valor medido fue de <strong>{{alarm_data.value}}{{alarm_data.unit}}</strong>, superando el umbral establecido de <strong>{{alarm_data.threshold}}{{alarm_data.unit}}</strong>.</p>\n            <p><strong>Horario de la medición:</strong> {{alarm_data.time}}</p>\n            <p>Puede acceder a las mediciones en tiempo real mediante el <a href=\"http://192.168.1.22:1880/ui\" target=\"_blank\">siguiente enlace</a>.</p>\n        </div>\n        <div class=\"footer\">\n            <p>Este es un mensaje generado automáticamente.</p>\n        </div>\n    </div>\n</body>\n</html>\n",
+        "output": "str",
+        "x": 680,
+        "y": 2300,
+        "wires": [
+            [
+                "473a76b058a905f6"
+            ]
+        ]
+    },
+    {
+        "id": "7433e8168f2576ab",
+        "type": "function",
+        "z": "999bc0a47d0df7f6",
+        "g": "eaea5e605a485fbb",
+        "name": "SQL Insert",
+        "func": "msg.topic = `\n    INSERT INTO db_alarm_historic (\n        datetime, \n        alarmtype, \n        threshold, \n        value) \n    VALUES (\n        '${msg.alarm_data.time}', \n        '${msg.alarm_data.alarm}', \n        ${msg.alarm_data.threshold}, \n        ${msg.alarm_data.value});\n    `;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 1760,
+        "wires": [
+            [
+                "6314529a303f7e63"
+            ]
+        ]
+    },
+    {
+        "id": "1a1c62b470f46324",
+        "type": "ui_toast",
+        "z": "999bc0a47d0df7f6",
+        "g": "eaea5e605a485fbb",
+        "position": "bottom right",
+        "displayTime": "5",
+        "highlight": "red",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "Alarm Notification",
+        "x": 1030,
+        "y": 1720,
         "wires": []
+    },
+    {
+        "id": "6314529a303f7e63",
+        "type": "link out",
+        "z": "999bc0a47d0df7f6",
+        "g": "eaea5e605a485fbb",
+        "name": "Insert alarm into DB",
+        "mode": "link",
+        "links": [
+            "0e790badd828e6a0"
+        ],
+        "x": 935,
+        "y": 1760,
+        "wires": []
+    },
+    {
+        "id": "ea7daa7b6dfa439c",
+        "type": "link out",
+        "z": "999bc0a47d0df7f6",
+        "g": "eaea5e605a485fbb",
+        "name": "Alarm Info Out",
+        "mode": "link",
+        "links": [
+            "2b9c257870e2496e"
+        ],
+        "x": 775,
+        "y": 1800,
+        "wires": []
+    },
+    {
+        "id": "0e790badd828e6a0",
+        "type": "link in",
+        "z": "999bc0a47d0df7f6",
+        "g": "9996a8587542bcf9",
+        "name": "SQL query DB without return",
+        "links": [
+            "6314529a303f7e63",
+            "dbcc77638fa8f7ff",
+            "adcfde493a44c574",
+            "79149befeaf59fa8"
+        ],
+        "x": 885,
+        "y": 1420,
+        "wires": [
+            [
+                "98a6df06f042dc23"
+            ]
+        ]
+    },
+    {
+        "id": "98a6df06f042dc23",
+        "type": "sqlite",
+        "z": "999bc0a47d0df7f6",
+        "g": "9996a8587542bcf9",
+        "mydb": "102f2b0868c8e818",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "EnergyMeter DB",
+        "x": 1000,
+        "y": 1420,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "273322c83865bde6",
@@ -5424,7 +5444,7 @@
         "g": "1102123cbc3891e1",
         "name": "New User",
         "label": "Añadir nuevo usuario",
-        "group": "1c8c4bf21adf2105",
+        "group": "23dd2c25a12ff010",
         "order": 1,
         "width": 6,
         "height": 1,
@@ -5456,11 +5476,10 @@
         "splitLayout": "",
         "className": "",
         "x": 120,
-        "y": 240,
+        "y": 200,
         "wires": [
             [
-                "7f7414539189a065",
-                "f129b36a497407b7"
+                "7f7414539189a065"
             ]
         ]
     },
@@ -5470,18 +5489,17 @@
         "z": "482bde5f7ef38274",
         "g": "1102123cbc3891e1",
         "name": "SQL query",
-        "func": "msg.topic = `INSERT INTO db_mailing_list(username, email) VALUES ('${msg.payload.username}', '${msg.payload.email}');`;\nreturn msg;",
+        "func": "msg.topic = `\n    INSERT INTO db_mailing_list(\n        username, \n        email) \n    VALUES (\n        '${msg.payload.username}', \n        '${msg.payload.email}');\n    `;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 310,
-        "y": 240,
+        "x": 290,
+        "y": 200,
         "wires": [
             [
-                "7e07cb64f4770d81",
                 "3a20b3bd99f04d16"
             ]
         ]
@@ -5491,23 +5509,18 @@
         "type": "inject",
         "z": "482bde5f7ef38274",
         "g": "036f68430478cdae",
-        "name": "SQL Query",
-        "props": [
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
+        "name": "Update",
+        "props": [],
         "repeat": "",
         "crontab": "",
         "once": true,
         "onceDelay": 0.1,
-        "topic": "SELECT * FROM db_mailing_list;",
-        "x": 190,
-        "y": 360,
+        "topic": "",
+        "x": 140,
+        "y": 320,
         "wires": [
             [
-                "7a5ef607bed59be3"
+                "e9d0bf6fe6b4e4b8"
             ]
         ]
     },
@@ -5520,8 +5533,8 @@
         "sqlquery": "msg.topic",
         "sql": "",
         "name": "EnergyMeter DB",
-        "x": 380,
-        "y": 400,
+        "x": 540,
+        "y": 360,
         "wires": [
             [
                 "906e5e947ee38712",
@@ -5536,9 +5549,9 @@
         "g": "036f68430478cdae",
         "group": "1c8c4bf21adf2105",
         "name": "Users Table",
-        "order": 2,
-        "width": 10,
-        "height": "5",
+        "order": 1,
+        "width": 16,
+        "height": 5,
         "columns": [
             {
                 "field": "username",
@@ -5563,133 +5576,13 @@
         ],
         "outputs": 1,
         "cts": true,
-        "x": 570,
-        "y": 400,
+        "x": 750,
+        "y": 360,
         "wires": [
             [
                 "18a6aa9eb50aefd9"
             ]
         ]
-    },
-    {
-        "id": "6a79a671d86edcd9",
-        "type": "ui_toast",
-        "z": "482bde5f7ef38274",
-        "g": "d88b4db3501fe487",
-        "position": "dialog",
-        "displayTime": "3",
-        "highlight": "",
-        "sendall": false,
-        "outputs": 1,
-        "ok": "DELETE",
-        "cancel": "CANCEL",
-        "raw": true,
-        "className": "",
-        "topic": "",
-        "name": "",
-        "x": 530,
-        "y": 520,
-        "wires": [
-            [
-                "2207f1a4c6f5208d"
-            ]
-        ]
-    },
-    {
-        "id": "ea321daf8ad14ebc",
-        "type": "join",
-        "z": "482bde5f7ef38274",
-        "g": "d88b4db3501fe487",
-        "name": "",
-        "mode": "custom",
-        "build": "object",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": "\\n",
-        "joinerType": "str",
-        "useparts": false,
-        "accumulate": false,
-        "timeout": "",
-        "count": "2",
-        "reduceRight": false,
-        "reduceExp": "",
-        "reduceInit": "",
-        "reduceInitType": "",
-        "reduceFixup": "",
-        "x": 390,
-        "y": 600,
-        "wires": [
-            [
-                "d41d17e5ced7d3e1"
-            ]
-        ]
-    },
-    {
-        "id": "e817f941465a3e0a",
-        "type": "function",
-        "z": "482bde5f7ef38274",
-        "g": "d88b4db3501fe487",
-        "name": "SQL Query",
-        "func": "msg.topic = `DELETE FROM db_mailing_list WHERE username = '${msg.payload.user_data.username}'`;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 650,
-        "y": 600,
-        "wires": [
-            [
-                "8a837eb8e1da3067",
-                "d710d7ed206a4588"
-            ]
-        ]
-    },
-    {
-        "id": "d41d17e5ced7d3e1",
-        "type": "switch",
-        "z": "482bde5f7ef38274",
-        "g": "d88b4db3501fe487",
-        "name": "",
-        "property": "payload.delete_user",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "DELETE",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 510,
-        "y": 600,
-        "wires": [
-            [
-                "e817f941465a3e0a"
-            ]
-        ]
-    },
-    {
-        "id": "7e07cb64f4770d81",
-        "type": "debug",
-        "z": "482bde5f7ef38274",
-        "g": "1102123cbc3891e1",
-        "name": "SQL Query",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "topic",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 510,
-        "y": 200,
-        "wires": []
     },
     {
         "id": "bff8ddaba624602b",
@@ -5701,8 +5594,8 @@
             "f38bab9ac0e7d198",
             "c023858f7988e11b"
         ],
-        "x": 75,
-        "y": 400,
+        "x": 185,
+        "y": 360,
         "wires": [
             [
                 "e9d0bf6fe6b4e4b8"
@@ -5729,107 +5622,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 190,
-        "y": 400,
+        "x": 330,
+        "y": 360,
         "wires": [
             [
                 "7a5ef607bed59be3"
-            ]
-        ]
-    },
-    {
-        "id": "d710d7ed206a4588",
-        "type": "debug",
-        "z": "482bde5f7ef38274",
-        "g": "d88b4db3501fe487",
-        "name": "Delete User Query",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 850,
-        "y": 640,
-        "wires": []
-    },
-    {
-        "id": "7be9f4af7f7adcaf",
-        "type": "function",
-        "z": "482bde5f7ef38274",
-        "g": "d88b4db3501fe487",
-        "name": "Format",
-        "func": "msg.topic = \"¿Está seguro que desea eliminar al siguiente usuario?\";\nmsg.payload = `\n    <p>Usuario: ${msg.payload.username}</p>\n    <p>Email: ${msg.payload.email}</p>`; \nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 380,
-        "y": 520,
-        "wires": [
-            [
-                "6a79a671d86edcd9"
-            ]
-        ]
-    },
-    {
-        "id": "2207f1a4c6f5208d",
-        "type": "change",
-        "z": "482bde5f7ef38274",
-        "g": "d88b4db3501fe487",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "delete_user",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 690,
-        "y": 520,
-        "wires": [
-            [
-                "ea321daf8ad14ebc"
-            ]
-        ]
-    },
-    {
-        "id": "8bd388d4f217e86b",
-        "type": "change",
-        "z": "482bde5f7ef38274",
-        "g": "d88b4db3501fe487",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "user_data",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 190,
-        "y": 520,
-        "wires": [
-            [
-                "ea321daf8ad14ebc",
-                "7be9f4af7f7adcaf"
             ]
         ]
     },
@@ -5868,7 +5665,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 370,
+        "x": 390,
         "y": 80,
         "wires": [
             [
@@ -5886,7 +5683,7 @@
         "links": [
             "bff8ddaba624602b"
         ],
-        "x": 485,
+        "x": 515,
         "y": 80,
         "wires": []
     },
@@ -5918,8 +5715,8 @@
         "links": [
             "b08f8b26dea3da57"
         ],
-        "x": 775,
-        "y": 600,
+        "x": 675,
+        "y": 480,
         "wires": []
     },
     {
@@ -5932,25 +5729,7 @@
         "links": [
             "b08f8b26dea3da57"
         ],
-        "x": 455,
-        "y": 240,
-        "wires": []
-    },
-    {
-        "id": "f129b36a497407b7",
-        "type": "debug",
-        "z": "482bde5f7ef38274",
-        "g": "1102123cbc3891e1",
-        "name": "Form",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 290,
+        "x": 415,
         "y": 200,
         "wires": []
     },
@@ -5967,8 +5746,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 580,
-        "y": 360,
+        "x": 760,
+        "y": 320,
         "wires": [
             []
         ]
@@ -5983,8 +5762,8 @@
         "links": [
             "cb7a58acec2c1a7c"
         ],
-        "x": 675,
-        "y": 400,
+        "x": 855,
+        "y": 360,
         "wires": []
     },
     {
@@ -5997,240 +5776,99 @@
             "18a6aa9eb50aefd9"
         ],
         "x": 75,
-        "y": 520,
+        "y": 480,
         "wires": [
             [
-                "8bd388d4f217e86b"
+                "229644ec547cba8b"
             ]
         ]
     },
     {
-        "id": "e220639361b63134",
-        "type": "ui_dropdown",
-        "z": "fe72ad617b9a8a48",
-        "d": true,
-        "name": "Chart range",
-        "label": "Select chart range",
-        "tooltip": "",
-        "place": "Select option",
-        "group": "c658951498713792",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "day",
-                "value": "day",
-                "type": "str"
-            },
-            {
-                "label": "week",
-                "value": "week",
-                "type": "str"
-            },
-            {
-                "label": "month",
-                "value": "month",
-                "type": "str"
-            }
-        ],
-        "payload": "",
-        "topic": "topic",
-        "topicType": "msg",
-        "className": "",
-        "x": 130,
-        "y": 260,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5e5a831a6a72db51",
-        "type": "comment",
-        "z": "fe72ad617b9a8a48",
-        "name": "TODO: Historico de consumo",
-        "info": "- Por día, por semana, o por mes nomás",
-        "x": 160,
-        "y": 60,
-        "wires": []
-    },
-    {
-        "id": "ec725baedda36d6c",
-        "type": "sqlite",
-        "z": "fe72ad617b9a8a48",
-        "mydb": "102f2b0868c8e818",
-        "sqlquery": "msg.topic",
-        "sql": "",
-        "name": "EnergyMeter DB",
-        "x": 320,
-        "y": 100,
-        "wires": [
-            [
-                "206a6ce39c43d7a6",
-                "6901447ccec2b068"
-            ]
-        ]
-    },
-    {
-        "id": "1ba4316147fde248",
-        "type": "inject",
-        "z": "fe72ad617b9a8a48",
-        "d": true,
-        "name": "SQL Query",
-        "props": [
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "3600",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "SELECT substr(time, 1, 2) AS hour, AVG(active_power) AS energy_per_hour FROM db_raw_data WHERE date = date('now') GROUP BY substr(time, 1, 2) ORDER BY time;",
-        "x": 130,
-        "y": 100,
-        "wires": [
-            [
-                "ec725baedda36d6c"
-            ]
-        ]
-    },
-    {
-        "id": "729e5d5c514befab",
-        "type": "inject",
-        "z": "fe72ad617b9a8a48",
-        "name": "1",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "2024-09-11",
-        "payload": "10000",
-        "payloadType": "num",
-        "x": 530,
-        "y": 160,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "b3d6e4838d12cbdc",
-        "type": "inject",
-        "z": "fe72ad617b9a8a48",
-        "name": "2",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "2024-09-12",
-        "payload": "20000",
-        "payloadType": "num",
-        "x": 530,
-        "y": 200,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "206a6ce39c43d7a6",
-        "type": "ui_chart",
-        "z": "fe72ad617b9a8a48",
-        "name": "",
-        "group": "c658951498713792",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "label": "chart",
-        "chartType": "bar",
-        "legend": "true",
-        "xformat": "D/M",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "",
-        "ymax": "",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "className": "",
-        "x": 530,
-        "y": 100,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "6901447ccec2b068",
-        "type": "ui_table",
-        "z": "fe72ad617b9a8a48",
-        "group": "c658951498713792",
+        "id": "29e33daa3fb5df8d",
+        "type": "ui_template",
+        "z": "482bde5f7ef38274",
+        "g": "036f68430478cdae",
+        "group": "1c8c4bf21adf2105",
         "name": "",
         "order": 2,
         "width": 0,
         "height": 0,
-        "columns": [
-            {
-                "field": "hour",
-                "title": "hour",
-                "width": "",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "energy_per_hour",
-                "title": "energy_per_hour",
-                "width": "",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            }
-        ],
-        "outputs": 0,
-        "cts": false,
+        "format": "<style>\n    .tabulator {\n        font-size: 16px !important;\n    }\n</style>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 540,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "229644ec547cba8b",
+        "type": "function",
+        "z": "482bde5f7ef38274",
+        "g": "d88b4db3501fe487",
+        "name": "Format",
+        "func": "// Get user data\nmsg.user_data = {\n    id: msg.payload.id,\n    username: msg.payload.username,\n    email: msg.payload.email, \n};\n\n// Notification popup message\nmsg.topic = \"¿Está seguro que desea eliminar al siguiente usuario?\";\nmsg.payload = `\n    <p>Usuario: ${msg.payload.username}</p>\n    <p>Email: ${msg.payload.email}</p>`; \n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 480,
+        "wires": [
+            [
+                "1ebec28e7a36f619"
+            ]
+        ]
+    },
+    {
+        "id": "1ebec28e7a36f619",
+        "type": "ui_toast",
+        "z": "482bde5f7ef38274",
+        "g": "d88b4db3501fe487",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "DELETE",
+        "cancel": "CANCEL",
+        "raw": true,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 370,
+        "y": 480,
+        "wires": [
+            [
+                "8c45e33dabc0b9d0"
+            ]
+        ]
+    },
+    {
+        "id": "8c45e33dabc0b9d0",
+        "type": "function",
+        "z": "482bde5f7ef38274",
+        "g": "d88b4db3501fe487",
+        "name": "SQL Query",
+        "func": "if (msg.payload == \"DELETE\") {\n    msg.topic = `\n        DELETE FROM db_mailing_list \n        WHERE username = '${msg.user_data.username}';\n    `;\n    return msg;\n}\n\n\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
         "x": 550,
-        "y": 40,
-        "wires": []
+        "y": 480,
+        "wires": [
+            [
+                "8a837eb8e1da3067"
+            ]
+        ]
     }
 ]
