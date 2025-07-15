@@ -185,7 +185,7 @@ bool BL0940_SPI::getVoltageRMS(float *voltage) {
     return false;
   }
 
-  *voltage = ((float)data * Vref * (R8 + R9 + R10 + R11 + R12)) / (79931.0 * R7);
+  *voltage = ((float)data * Vref * (R8 + R9 + R10 + R11 + R12)) / (79931.0 * R7 * 1000);
   return true;
 }
 
@@ -199,7 +199,7 @@ bool BL0940_SPI::getActivePower(float *activePower) {
   int32_t rawActivePower = (int32_t)(data << 8) / 256;
   if (rawActivePower < 0)
     rawActivePower = -rawActivePower;
-  *activePower = ((float)rawActivePower * Vref * Vref * (R8 + R9 + R10 + R11 + R12)) / (4046.0 * (R5 * 1000.0 / Rt) * R7);
+  *activePower = ((float)rawActivePower * Vref * Vref * (R8 + R9 + R10 + R11 + R12)) / (4046.0 * (R5 * 1000.0 / Rt) * R7 * 1000);
   return true;
 }
 
@@ -213,7 +213,8 @@ bool BL0940_SPI::getActiveEnergy(float *activeEnergy) {
   int32_t rawCF_CNT = (int32_t)(data << 8) / 256;
   if (rawCF_CNT < 0)
     rawCF_CNT = -rawCF_CNT;
-  *activeEnergy = ((float)rawCF_CNT * 1638.4 * 256.0 * Vref * Vref * (R8 + R9 + R10 + R11 + R12)) / (3600000.0 * 4046.0 * (R5 * 1000.0 / Rt) * R7);
+  // Si en lugar de 3600000 se utiliza 3600 se obtiene el valor en Wh
+  *activeEnergy = ((float)rawCF_CNT * 1638.4 * 256.0 * Vref * Vref * (R8 + R9 + R10 + R11 + R12)) / (3600000.0 * 4046.0 * (R5 * 1000.0 / Rt) * R7 * 1000);
   return true;
 }
 

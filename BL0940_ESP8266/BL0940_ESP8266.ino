@@ -24,7 +24,9 @@ typedef struct {
 
 energyMeterConfigParams energyMeterConfig;
 
-bool apRunning = false;
+// -------------------------------------------------------------- //
+// ------------------------- [ BL0940 ] ------------------------- //
+// -------------------------------------------------------------- //
 
 BL0940_SPI bl0940(SS);
 
@@ -130,6 +132,7 @@ void loadConfig(energyMeterConfigParams& config)
 // -------------------------------------------------------------- //
 
 WiFiUDP ntpUDP;
+
 // Configuración del cliente NTP para la Argentina (UTC-3)
 NTPClient timeClient(ntpUDP, "pool.ntp.org", -3 * 3600, 60000);  // Último parámetro: actualización cada 60 seg
 
@@ -139,7 +142,7 @@ unsigned long lastNTPUpdate = 0;              // Última sincronización con NTP
 const unsigned long syncInterval = 3600000;   // 1 hora en milisegundos
 
 long prevNtpRetryTime = 0;
-#define NTP_RETRY_TIME 2000
+#define NTP_RETRY_TIME 2000   // 2 seg
 
 bool ntpStarted = false;
 bool ntpSync = false;
@@ -174,20 +177,28 @@ bool updateLocalTime(void)
   return true;
 }
 
-/**
- * @brief Updates local time with millis() if there is no internet connection
- */
 void updateTimeWithoutNTP(void) 
 {
-  unsigned long elapsedMillis = millis() - lastMillisSync;
-  currentTime += elapsedMillis / 1000;  // Suma los segundos transcurridos
-  lastMillisSync = millis();  // Reinicia el contador
+  static unsigned long leftoverMillis;
+  
+  unsigned long now = millis();
+  unsigned long elapsedMillis = now - lastMillisSync;
+  lastMillisSync = now;
+
+  leftoverMillis += elapsedMillis;
+
+  if (leftoverMillis >= 1000) {
+    unsigned long secondsPassed = leftoverMillis / 1000;
+    currentTime += secondsPassed;
+    leftoverMillis %= 1000; // Keep the leftover milliseconds
+  }
 }
+
 
 /**
  * @brief Gets local time formatted
  *
- * @return String with the formatted local time (DD/MM/YYYY HH:MM:SS)
+ * @return String with the formatted local time (YYYY-MM-DD HH:MM:SS)
  */
 String getFormattedTime(void) 
 {
@@ -200,7 +211,7 @@ String getFormattedTime(void)
   Serial.println(currentTime);
 
   char buffer[20];  
-  strftime(buffer, 20, "%Y-%m-%d %H:%M:%S", timeInfo); // Formato DD/MM/YYYY HH:MM:SS
+  strftime(buffer, 20, "%Y-%m-%d %H:%M:%S", timeInfo); // Formato YYYY-MM-DD HH:MM:SS
 
   return String(buffer);
 }
@@ -376,6 +387,7 @@ enum WIFI_ERROR_CODES {
 #define RETRY_THRESHOLD 5000 // 5 seg
 long prevWifiRetryTime = 0;
 bool wifiStarted = false;
+bool apRunning = false;
 
 // Initialize WiFi
 int initWiFi(const energyMeterConfigParams& config) 
@@ -536,10 +548,8 @@ enum mefStates {
 int state = 0;
 bool stateEntry = true;
 
-// #define READING_THS           500     // 0.5 seg
-#define READING_THS              5000    // 5 seg
-// #define SAVE_DATA_THS         300000  // 5.0 min
-#define SAVE_DATA_THS            30000    // 30 seg
+#define READING_THS           500     // 0.5 seg
+#define SAVE_DATA_THS         60000   // 1 min
 
 unsigned long prevReading = 0;
 unsigned long prevSaveData = 0;
@@ -556,7 +566,7 @@ void setup() {
   // Serial port for debugging purposes
   Serial.begin(9600);
   
-  pinMode(WIFI_RESET_BUTTON, INPUT_PULLUP);
+  pinMode(WIFI_RESET_BUTTON, INPUT_PULLUP);  // TODO: Por qué input pullup? Está cableado como pull-down
   pinMode(LED_WEB_SERVER, OUTPUT);
 
   initFS();
@@ -752,6 +762,8 @@ void loop() {
 
       static bool savedData = false;
 
+      // TODO: Se podría revisar para que envíe primero toda la data guardada
+      // Como Node-Red guarda datos que difieran +1 min, tengo miedo que se pierda algo de información
       if (mqttActive) {
         if (mqttClient.publish(MQTT_TOPIC, message.c_str())) {
           Serial.println("Mensaje publicado! Mensaje: ");
