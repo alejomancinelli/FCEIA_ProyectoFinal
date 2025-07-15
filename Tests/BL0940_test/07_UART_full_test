@@ -1,0 +1,128 @@
+import serial
+import time
+import math
+
+# --- Constants ---
+Vref = 1.218
+R5 = 3.3
+Rt = 2000.0
+R8 = R9 = R10 = R11 = R12 = 20.0  # kOhm
+R7 = 24.9  # Ohm
+Hz = 60
+
+# --- Communication ---
+COM_PORT = 'COM3'
+BAUD_RATE = 4800
+
+def signed24(value):
+    if value & 0x800000:  # Check if bit 23 is set
+        return value - 0x1000000  # Apply two's complement
+    return value
+
+def calc_checksum(frame):
+    return (~sum(frame) & 0xFF)
+
+def write_register(ser, addr, value):
+    data_l = value & 0xFF
+    data_m = (value >> 8) & 0xFF
+    data_h = (value >> 16) & 0xFF
+    checksum = calc_checksum([0xA8, addr, data_l, data_m, data_h])
+    frame = bytes([0xA8, addr, data_l, data_m, data_h, checksum])
+    ser.reset_input_buffer()
+    ser.write(frame)
+    print("Sent write frame:", [hex(b) for b in frame])
+    time.sleep(0.1)
+
+def read_register(ser, addr):
+    frame = bytes([0x58, addr])
+    ser.reset_input_buffer()
+    ser.write(frame)
+    time.sleep(0.05)
+    if ser.in_waiting >= 4:
+        response = ser.read(4)
+        data_l, data_m, data_h, checksum = response
+        expected = calc_checksum([0x58, addr, data_l, data_m, data_h])
+        if expected != checksum:
+            print(f"Checksum mismatch: expected {hex(expected)}, got {hex(checksum)}")
+            return None
+        return data_l | (data_m << 8) | (data_h << 16)
+    return None
+
+def get_temperature(ser):
+    data = read_register(ser, 0x0E)
+    if data is None:
+        return None
+    raw = (data << 6) // 64
+    return (170.0 / 448.0) * (raw / 2.0 - 32.0) - 45
+
+def get_voltage(ser):
+    data = read_register(ser, 0x06)
+    if data is None:
+        return None
+    return data * Vref * (R8 + R9 + R10 + R11 + R12) / (79931.0 * R7)
+
+def get_current(ser):
+    data = read_register(ser, 0x04)
+    if data is None:
+        return None
+    return data * Vref / ((324004.0 * R5 * 1000.0) / Rt)
+
+def get_active_power(ser):
+    data = read_register(ser, 0x08)
+    if data is None:
+        return None
+    signed_power = signed24(data)
+    
+    raw = (signed_power << 8) // 256
+    raw = abs(raw)
+    return raw * Vref * Vref * (R8 + R9 + R10 + R11 + R12) / (4046.0 * (R5 * 1000.0 / Rt) * R7)
+
+def get_active_energy(ser):
+    data = read_register(ser, 0x0A)
+    if data is None:
+        return None
+    signed_energy = signed24(data)
+    raw = abs(signed_energy)
+
+    return raw * 1638.4 * 256.0 * Vref * Vref * (R8 + R9 + R10 + R11 + R12) / (3600000.0 * 4046.0 * (R5 * 1000.0 / Rt) * R7)
+
+def get_power_factor(ser):
+    data = read_register(ser, 0x0C)
+    if data is None:
+        return None
+    phase = 2.0 * math.pi * data * Hz / 1_000_000.0
+    pf = abs(math.cos(phase)) * 100.0
+    return pf
+
+# --- MAIN ---
+try:
+    ser = serial.Serial(COM_PORT, BAUD_RATE, timeout=0.2)
+    if ser.is_open:
+        print(f"Opened {COM_PORT}")
+        
+        # Enable writes by unlocking the user register area
+        write_register(ser, 0x1A, 0x000055)
+
+        while True:
+            voltage = get_voltage(ser)
+            current = get_current(ser)
+            power = get_active_power(ser)
+            energy = get_active_energy(ser)
+            pf = get_power_factor(ser)
+            temp = get_temperature(ser)
+
+            print("\n--- BL0940 Readings ---")
+            print(f"Voltage:       {voltage:.2f} V" if voltage else "Voltage:       Error")
+            print(f"Current:       {current:.3f} A" if current else "Current:       Error")
+            print(f"Active Power:  {power:.2f} W" if power else "Active Power:  Error")
+            print(f"Energy:        {energy:.4f} kWh" if energy else "Energy:        Error")
+            print(f"Power Factor:  {pf:.1f} %" if pf else "Power Factor:  Error")
+            print(f"Temperature:   {temp:.2f} °C" if temp else "Temperature:   Error")
+
+            time.sleep(1)
+
+    else:
+        print("Failed to open serial port.")
+
+except serial.SerialException as e:
+    print(f"Serial error: {e}")
