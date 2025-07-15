@@ -12,7 +12,7 @@ public:
     int amountOfSavedData() const;
 
 private:
-    static const int MAX_DATA = 10; // TODO: Cambiar este valor
+    static const int MAX_DATA = 1440;
     String dataQueue[MAX_DATA];
     int writeIndex;
     int readIndex;
