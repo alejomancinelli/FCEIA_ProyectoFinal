@@ -40,6 +40,10 @@ Antes de continuar, es necesario tener instalado el complemento ESP8266 Uploader
 - [ArduinoIDE 1.8.x](https://randomnerdtutorials.com/install-esp8266-nodemcu-littlefs-arduino/)
 - [ArduinoIDE 2.1.1 or higher](https://randomnerdtutorials.com/arduino-ide-2-install-esp8266-littlefs/)
 
+### MEF
+
+![MEF utilizada](Docs/Imagenes/ESP8266_MEF.jpg)
+
 ## Raspberry Pi Model 3 B+
 
 La Raspberry Pi Model 3 B+ es una computadora de placa reducida con conectividad WiFi y Ethernet que se utilizará como servidor en este proyecto. Se utiliza la versión Raspbian 11 (bullseye), la cual debe cargarse en una tarjeta microSD mediante la herramienta Raspberry Pi Imager.
