@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Alejo\Kicad\Projects\adaptador_bl0940\adaptador_bl0940.kicad_sch</source>
+    <date>2024-08-25T17:03:51-0300</date>
+    <tool>Eeschema 8.0.0</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>adaptador_bl0940.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="BL1">
+      <value>~</value>
+      <footprint>Package_SO:TSSOP-14_4.4x5mm_P0.65mm</footprint>
+      <description>High accuracy electrical energy measurement IC</description>
+      <fields>
+        <field name="LCSC">C691894</field>
+        <field name="Footprint">Package_SO:TSSOP-14_4.4x5mm_P0.65mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">High accuracy electrical energy measurement IC</field>
+      </fields>
+      <libsource lib="Custom_Library_Symbols" part="BL0940" description="High accuracy electrical energy measurement IC"/>
+      <property name="LCSC" value="C691894"/>
+      <property name="Sheetname" value="Raíz"/>
+      <property name="Sheetfile" value="adaptador_bl0940.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d4fd7f29-2453-4e96-b2e6-2289d1b81527</tstamps>
+    </comp>
+    <comp ref="C1">
+      <value>33nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="LCSC">C107150</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C107150"/>
+      <property name="Sheetname" value="Raíz"/>
+      <property name="Sheetfile" value="adaptador_bl0940.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0c37fccc-a31b-441a-96a4-d67ad20a2a59</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>33nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="LCSC">C107150</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C107150"/>
+      <property name="Sheetname" value="Raíz"/>
+      <property name="Sheetfile" value="adaptador_bl0940.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3e6e6320-85b8-4e2f-b94b-e6c78aaca9c9</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>33nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="LCSC">C107150</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C107150"/>
+      <property name="Sheetname" value="Raíz"/>
+      <property name="Sheetfile" value="adaptador_bl0940.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>013fe531-5d90-4272-b618-f448785bbc08</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>33nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="LCSC">C107150</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C107150"/>
+      <property name="Sheetname" value="Raíz"/>
+      <property name="Sheetfile" value="adaptador_bl0940.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bf6e0afa-2bd4-49b4-ada2-c77d4f862e2b</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>~</value>
+      <footprint>1_Custom_Library:1x2P_5.00_Screw_Terminal_Block</footprint>
+      <description>Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <fields>
+        <field name="LCSC">C8269</field>
+        <field name="Footprint">1_Custom_Library:1x2P_5.00_Screw_Terminal_Block</field>
+        <field name="Datasheet"/>
+        <field name="Description">Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <libsource lib="Connector" part="Screw_Terminal_01x02" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="LCSC" value="C8269"/>
+      <property name="Sheetname" value="Raíz"/>
+      <property name="Sheetfile" value="adaptador_bl0940.kicad_sch"/>
+      <property name="ki_keywords" value="screw terminal"/>
+      <property name="ki_fp_filters" value="TerminalBlock*:*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6baf6714-c1b9-4121-9faa-aaec57a22e11</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>~</value>
+      <footprint>1_Custom_Library:1x2P_5.00_Screw_Terminal_Block</footprint>
+      <description>Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <fields>
+        <field name="LCSC">C8269</field>
+        <field name="Footprint">1_Custom_Library:1x2P_5.00_Screw_Terminal_Block</field>
+        <field name="Datasheet"/>
+        <field name="Description">Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <libsource lib="Connector" part="Screw_Terminal_01x02" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="LCSC" value="C8269"/>
+      <property name="Sheetname" value="Raíz"/>
+      <property name="Sheetfile" value="adaptador_bl0940.kicad_sch"/>
+      <property name="ki_keywords" value="screw terminal"/>
+      <property name="ki_fp_filters" value="TerminalBlock*:*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e97f5417-ebb7-4dde-bd94-fb006c3ed6e6</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>~</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical</footprint>
+      <description>Generic connector, single row, 01x08, script generated</description>
+      <fields>
+        <field name="LCSC"/>
+        <field name="Footprint">Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x08, script generated</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_01x08_Socket" description="Generic connector, single row, 01x08, script generated"/>
+      <property name="LCSC" value=""/>
+      <property name="Sheetname" value="Raíz"/>
+      <property name="Sheetfile" value="adaptador_bl0940.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9506b570-0670-4866-a2f7-a70b0c620af2</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="LCSC">C103904</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C103904"/>
+      <property name="Sheetname" value="Raíz"/>
+      <property name="Sheetfile" value="adaptador_bl0940.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bf395c8f-e58c-40d2-a6e5-14c254d9322f</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>1.0K</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="LCSC">C140871</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C140871"/>
+      <property name="Sheetname" value="Raíz"/>
+      <property name="Sheetfile" value="adaptador_bl0940.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8afb8da9-e6c3-419b-b14a-a2183d8b923f</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>1.0K</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="LCSC">C140871</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C140871"/>
+      <property name="Sheetname" value="Raíz"/>
+      <property name="Sheetfile" value="adaptador_bl0940.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ec69d50d-a340-409d-bc4b-2eaad91c62fd</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>3.3</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Raíz"/>
+      <property name="Sheetfile" value="adaptador_bl0940.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>66a3a13a-39a3-4852-9721-682f092f86a9</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>1.0K</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="LCSC">C140871</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C140871"/>
+      <property name="Sheetname" value="Raíz"/>
+      <property name="Sheetfile" value="adaptador_bl0940.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>181cf74d-424e-48cb-8a45-9baf361e0e5a</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>24.9</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="LCSC">C5153988</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C5153988"/>
+      <property name="Sheetname" value="Raíz"/>
+      <property name="Sheetfile" value="adaptador_bl0940.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7e76609b-43a8-45c5-82b0-d380c15e9caf</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>20K</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="LCSC">C18003</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C18003"/>
+      <property name="Sheetname" value="Raíz"/>
+      <property name="Sheetfile" value="adaptador_bl0940.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>866c8b31-8082-4986-ba22-94f9326f81ec</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>20K</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="LCSC">C18003</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C18003"/>
+      <property name="Sheetname" value="Raíz"/>
+      <property name="Sheetfile" value="adaptador_bl0940.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>300e8317-eea5-45f0-b2e1-853cc56f2928</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>20K</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="LCSC">C18003</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C18003"/>
+      <property name="Sheetname" value="Raíz"/>
+      <property name="Sheetfile" value="adaptador_bl0940.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5b8704b8-8a2d-464d-af96-e70b087680fa</tstamps>
+    </comp>
+    <comp ref="R11">
+      <value>20K</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="LCSC">C18003</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C18003"/>
+      <property name="Sheetname" value="Raíz"/>
+      <property name="Sheetfile" value="adaptador_bl0940.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b7f2c0dd-92c3-450e-a5b3-e669ea92c7c8</tstamps>
+    </comp>
+    <comp ref="R12">
+      <value>20K</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="LCSC">C18003</field>
+        <field name="Footprint">Resistor_SMD:R_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C18003"/>
+      <property name="Sheetname" value="Raíz"/>
+      <property name="Sheetfile" value="adaptador_bl0940.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>171c4373-7c96-4381-b96e-9eef4b6585d3</tstamps>
+    </comp>
+    <comp ref="R13">
+      <value>1.0K</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="LCSC">C140871</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC" value="C140871"/>
+      <property name="Sheetname" value="Raíz"/>
+      <property name="Sheetfile" value="adaptador_bl0940.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>174cc897-9243-4819-b93b-ff7483013dfa</tstamps>
+    </comp>
+    <comp ref="TR1">
+      <value>ZMPT107-1</value>
+      <footprint>1_Custom_Library:ZMPT107-1</footprint>
+      <datasheet>https://5krorwxhmqqirik.leadongcdn.com/ZMPT101K+specification-aidikBqoKomRilSkopqmikp.pdf</datasheet>
+      <description>Qingxian Zeming Langxi Electronic ZMPT101K voltage transformer 1000:1000 2mA:2mA</description>
+      <fields>
+        <field name="LCSC">C125191</field>
+        <field name="Footprint">1_Custom_Library:ZMPT107-1</field>
+        <field name="Datasheet">https://5krorwxhmqqirik.leadongcdn.com/ZMPT101K+specification-aidikBqoKomRilSkopqmikp.pdf</field>
+        <field name="Description">Qingxian Zeming Langxi Electronic ZMPT101K voltage transformer 1000:1000 2mA:2mA</field>
+      </fields>
+      <libsource lib="Transformer" part="ZMPT101K" description="Qingxian Zeming Langxi Electronic ZMPT101K voltage transformer 1000:1000 2mA:2mA"/>
+      <property name="LCSC" value="C125191"/>
+      <property name="Sheetname" value="Raíz"/>
+      <property name="Sheetfile" value="adaptador_bl0940.kicad_sch"/>
+      <property name="ki_fp_filters" value="Transformer*ZMPT101K*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cff028cd-2ac1-49c4-a9d4-836570ddaf6b</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="Conn_01x08_Socket">
+      <description>Generic connector, single row, 01x08, script generated</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x08_Socket</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Generic connector, single row, 01x08, script generated</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Screw_Terminal_01x02">
+      <description>Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TerminalBlock*:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Screw_Terminal_01x02</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Custom_Library_Symbols" part="BL0940">
+      <description>High accuracy electrical energy measurement IC</description>
+      <fields>
+        <field name="Reference">BL0940</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">High accuracy electrical energy measurement IC</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VDD" type="power_in"/>
+        <pin num="2" name="VT" type="input"/>
+        <pin num="3" name="IP1" type="input"/>
+        <pin num="4" name="IN1" type="input"/>
+        <pin num="5" name="VP" type="input"/>
+        <pin num="6" name="VN" type="input"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="ZX" type="output"/>
+        <pin num="9" name="CF" type="output"/>
+        <pin num="10" name="SEL" type="input"/>
+        <pin num="11" name="SCLK" type="input"/>
+        <pin num="12" name="RX/SDI" type="input"/>
+        <pin num="13" name="TX/SDO" type="output"/>
+        <pin num="14" name="VPP" type="no_connect"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Transformer" part="ZMPT101K">
+      <description>Qingxian Zeming Langxi Electronic ZMPT101K voltage transformer 1000:1000 2mA:2mA</description>
+      <docs>https://5krorwxhmqqirik.leadongcdn.com/ZMPT101K+specification-aidikBqoKomRilSkopqmikp.pdf</docs>
+      <footprints>
+        <fp>Transformer*ZMPT101K*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TR</field>
+        <field name="Value">ZMPT101K</field>
+        <field name="Footprint">Transformer_THT:Transformer_Zeming_ZMPT101K</field>
+        <field name="Datasheet">https://5krorwxhmqqirik.leadongcdn.com/ZMPT101K+specification-aidikBqoKomRilSkopqmikp.pdf</field>
+        <field name="Description">Qingxian Zeming Langxi Electronic ZMPT101K voltage transformer 1000:1000 2mA:2mA</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+        <pin num="3" name="" type="passive"/>
+        <pin num="4" name="" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\8.0\share\kicad\symbols\/Connector.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\8.0\share\kicad\symbols\/Device.kicad_sym</uri>
+    </library>
+    <library logical="Transformer">
+      <uri>C:\Program Files\KiCad\8.0\share\kicad\symbols\/Transformer.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3.3V">
+      <node ref="BL1" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="J3" pin="7" pinfunction="Pin_7" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+    </net>
+    <net code="2" name="/CF">
+      <node ref="BL1" pin="9" pinfunction="CF" pintype="output"/>
+      <node ref="J3" pin="5" pinfunction="Pin_5" pintype="passive"/>
+    </net>
+    <net code="3" name="/IN1">
+      <node ref="BL1" pin="4" pinfunction="IN1" pintype="input"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+    </net>
+    <net code="4" name="/IP1">
+      <node ref="BL1" pin="3" pinfunction="IP1" pintype="input"/>
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+    </net>
+    <net code="5" name="/SCLK">
+      <node ref="BL1" pin="11" pinfunction="SCLK" pintype="input"/>
+      <node ref="J3" pin="3" pinfunction="Pin_3" pintype="passive"/>
+    </net>
+    <net code="6" name="/SDI{slash}MOSI">
+      <node ref="BL1" pin="12" pinfunction="RX/SDI" pintype="input"/>
+      <node ref="J3" pin="2" pinfunction="Pin_2" pintype="passive"/>
+    </net>
+    <net code="7" name="/SDO{slash}MISO">
+      <node ref="BL1" pin="13" pinfunction="TX/SDO" pintype="output"/>
+      <node ref="J3" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+    </net>
+    <net code="8" name="/SS">
+      <node ref="BL1" pin="10" pinfunction="SEL" pintype="input"/>
+      <node ref="J3" pin="4" pinfunction="Pin_4" pintype="passive"/>
+    </net>
+    <net code="9" name="/VN">
+      <node ref="BL1" pin="6" pinfunction="VN" pintype="input"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="R13" pin="1" pintype="passive"/>
+    </net>
+    <net code="10" name="/VP">
+      <node ref="BL1" pin="5" pinfunction="VP" pintype="input"/>
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+    </net>
+    <net code="11" name="/ZX">
+      <node ref="BL1" pin="8" pinfunction="ZX" pintype="output"/>
+      <node ref="J3" pin="6" pinfunction="Pin_6" pintype="passive"/>
+    </net>
+    <net code="12" name="GND">
+      <node ref="BL1" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="J3" pin="8" pinfunction="Pin_8" pintype="passive"/>
+    </net>
+    <net code="13" name="LINE">
+      <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="TR1" pin="1" pintype="passive"/>
+    </net>
+    <net code="14" name="NEUT">
+      <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="R9" pin="2" pintype="passive"/>
+    </net>
+    <net code="15" name="Net-(J1-Pin_1)">
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+    </net>
+    <net code="16" name="Net-(J1-Pin_2)">
+      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+    </net>
+    <net code="17" name="Net-(R6-Pad2)">
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="TR1" pin="3" pintype="passive"/>
+    </net>
+    <net code="18" name="Net-(R8-Pad2)">
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+    </net>
+    <net code="19" name="Net-(R10-Pad1)">
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+    </net>
+    <net code="20" name="Net-(R10-Pad2)">
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="R11" pin="1" pintype="passive"/>
+    </net>
+    <net code="21" name="Net-(R11-Pad2)">
+      <node ref="R11" pin="2" pintype="passive"/>
+      <node ref="R12" pin="2" pintype="passive"/>
+    </net>
+    <net code="22" name="Net-(R12-Pad1)">
+      <node ref="R12" pin="1" pintype="passive"/>
+      <node ref="TR1" pin="2" pintype="passive"/>
+    </net>
+    <net code="23" name="Net-(R13-Pad2)">
+      <node ref="R13" pin="2" pintype="passive"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="TR1" pin="4" pintype="passive"/>
+    </net>
+    <net code="24" name="unconnected-(BL1-VPP-Pad14)">
+      <node ref="BL1" pin="14" pinfunction="VPP" pintype="no_connect"/>
+    </net>
+    <net code="25" name="unconnected-(BL1-VT-Pad2)">
+      <node ref="BL1" pin="2" pinfunction="VT" pintype="input+no_connect"/>
+    </net>
+  </nets>
+</export>
